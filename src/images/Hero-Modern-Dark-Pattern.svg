@@ -1,0 +1,73 @@
+<svg width="1440" height="700" viewBox="0 0 1440 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M940.456 230.456C947.207 223.705 951 214.548 951 205C951 195.452 947.207 186.295 940.456 179.544C933.941 173.029 925.185 169.269 916 169.014L916 136.007C933.938 136.267 951.086 143.506 963.79 156.21C976.73 169.15 984 186.7 984 205C984 223.3 976.73 240.85 963.79 253.79C951.086 266.494 933.938 273.733 916 273.993L916 240.986C925.185 240.731 933.941 236.971 940.456 230.456Z" stroke="#141125" stroke-width="2"/>
+<circle cx="387.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="387.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="387.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="387.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="387.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="387.5" cy="240.5" r="1.5" fill="#141125"/>
+<circle cx="421.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="421.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="421.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="421.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="421.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="421.5" cy="240.5" r="1.5" fill="#141125"/>
+<circle cx="455.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="455.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="455.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="455.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="455.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="455.5" cy="240.5" r="1.5" fill="#141125"/>
+<circle cx="489.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="489.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="489.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="489.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="489.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="489.5" cy="240.5" r="1.5" fill="#141125"/>
+<circle cx="523.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="523.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="523.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="523.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="523.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="523.5" cy="240.5" r="1.5" fill="#141125"/>
+<circle cx="557.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="557.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="557.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="557.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="557.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="557.5" cy="240.5" r="1.5" fill="#141125"/>
+<circle cx="591.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="591.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="591.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="591.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="591.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="591.5" cy="240.5" r="1.5" fill="#141125"/>
+<circle cx="625.5" cy="110.5" r="1.5" fill="#141125"/>
+<circle cx="625.5" cy="136.5" r="1.5" fill="#141125"/>
+<circle cx="625.5" cy="162.5" r="1.5" fill="#141125"/>
+<circle cx="625.5" cy="188.5" r="1.5" fill="#141125"/>
+<circle cx="625.5" cy="214.5" r="1.5" fill="#141125"/>
+<circle cx="625.5" cy="240.5" r="1.5" fill="#141125"/>
+<path d="M145.48 347.52C116.975 319.014 78.3129 303 38 303C-2.31293 303 -40.9746 319.014 -69.4801 347.52C-97.7499 375.79 -113.734 414.048 -113.997 454L-262.998 454C-262.735 374.531 -231.052 298.374 -174.839 242.161C-118.391 185.712 -41.8302 154 38 154C117.83 154 194.391 185.712 250.839 242.161C307.052 298.374 338.735 374.531 338.998 454L189.997 454C189.734 414.048 173.75 375.79 145.48 347.52Z" stroke="url(#paint0_linear)" stroke-width="2"/>
+<path d="M1499.55 338H1199L1199 43.3806L1499.55 338Z" stroke="url(#paint1_linear)" stroke-width="2"/>
+<path d="M847.001 930C847.265 818.439 891.696 711.506 970.601 632.601C1049.51 553.696 1156.44 509.265 1268 509.001V930H847.001Z" stroke="url(#paint2_linear)" stroke-width="2"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="340" y1="304" x2="-264" y2="304" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5EC6E8"/>
+<stop offset="0.532216" stop-color="#5EC6E8" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="1198" y1="190" x2="1439" y2="190" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9BD64"/>
+<stop offset="1" stop-color="#F9BD64" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="1057.5" y1="381" x2="1057.5" y2="709" gradientUnits="userSpaceOnUse">
+<stop stop-color="#99FFDA"/>
+<stop offset="1" stop-color="#99FFDA" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="1440" height="700" fill="white"/>
+</clipPath>
+</defs>
+</svg>

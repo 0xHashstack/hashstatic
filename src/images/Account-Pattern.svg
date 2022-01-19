@@ -1,0 +1,65 @@
+<svg width="740" height="900" viewBox="0 0 740 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="740" height="900">
+<rect width="740" height="900" fill="#5138EE"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="393.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="393.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="393.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="393.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="393.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="393.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<circle cx="427.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="427.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="427.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="427.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="427.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="427.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<circle cx="461.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="461.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="461.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="461.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="461.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="461.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<circle cx="495.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="495.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="495.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="495.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="495.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="495.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<circle cx="529.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="529.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="529.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="529.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="529.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="529.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<circle cx="563.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="563.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="563.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="563.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="563.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="563.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<circle cx="597.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="597.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="597.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="597.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="597.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="597.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<circle cx="631.5" cy="374.5" r="1.5" fill="#3521B5"/>
+<circle cx="631.5" cy="400.5" r="1.5" fill="#3521B5"/>
+<circle cx="631.5" cy="426.5" r="1.5" fill="#3521B5"/>
+<circle cx="631.5" cy="452.5" r="1.5" fill="#3521B5"/>
+<circle cx="631.5" cy="478.5" r="1.5" fill="#3521B5"/>
+<circle cx="631.5" cy="504.5" r="1.5" fill="#3521B5"/>
+<path d="M739.65 497V564.13H672.52V631.26H605.39V698.39H538.26V765.52H471.13V832.65H404V899.78H471.13H806.78V564.13V497H739.65Z" fill="#3521B5"/>
+<path d="M-66.87 335.78V268.65H0.26001V201.52H67.39V134.39H134.52V67.26H201.65V0.130035H268.78V-67H201.65H-134V268.65V335.78H-66.87Z" fill="#3521B5"/>
+<path d="M460 60H514.985V115L460 60Z" fill="#3521B5"/>
+<path d="M514.984 60H569.989V115L514.984 60Z" fill="#3521B5"/>
+<path d="M569.99 60H624.995V115L569.99 60Z" fill="#3521B5"/>
+<path d="M624.995 60H680V115L624.995 60Z" fill="#3521B5"/>
+<path d="M460 115H514.985V170L460 115Z" fill="#3521B5"/>
+<path d="M514.984 115H569.989V170L514.984 115Z" fill="#3521B5"/>
+<path d="M569.99 115H624.995V170L569.99 115Z" fill="#3521B5"/>
+<path d="M624.995 115H680V170L624.995 115Z" fill="#3521B5"/>
+</g>
+</svg>
