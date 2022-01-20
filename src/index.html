@@ -1,4 +1,5 @@
-<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Thu Jan 20 2022 05:51:45 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61e65b2341037b76ecd3a9d8" data-wf-site="61e65b2341037bd530d3a967">
 
@@ -132,6 +133,14 @@
       </div>
     </div>
   </div>
+
+  <!--------------------------- NOTIFICATION PLACEHOLDER ----------------------->
+  <div class="container-extra-small">
+    <div class="title-dark centre-content" style="margin-bottom: 0;">
+      Notifications placeholder
+    </div>
+  </div>
+  
   <div class="header-section-dark">
     <div class="container">
       <div class="hero-centre-wrapper">
@@ -237,7 +246,7 @@
       </div>
     </div>
   </div>
-  <!-- <div class="content-section-large-dark">
+  <div class="content-section-large-dark">
     <div class="container"></div>
     <div class="title-wrap-centre">
       <div class="title-blue">Calculator</div>
@@ -254,45 +263,49 @@
                     <div class="w-layout-grid grid-3">
                       <div><label for="About-You">Type :</label></div>
                       <div class="form-title-wrapper">
-                        <div class="w-row">
-                          <div class="w-col w-col-6"><label class="w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom w-radio-input"></div>
-                              <input type="radio" name="Radio" id="Deposit" value="Deposit" data-name="Radio" required="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="Deposit">Deposit </span>
-                            </label></div>
-                          <div class="w-col w-col-6"><label class="w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom w-radio-input"></div><input type="radio" name="radio" id="Borrow" value="Borrow" data-name="Radio" required="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="Borrow">Borrow </span>
-                            </label></div>
+                        <div class="columns w-row">
+                          <div class="w-col w-col-6">
+                            <label id="radio" class="w-radio">
+                              <input type="radio" name="Type" id="Yes-3" value="Yes" data-name="Type"
+                                class="w-form-formradioinput w-radio-input" checked>
+                              <span class="w-form-label" for="Yes-3">
+                                Deposit
+                              </span>
+                            </label>
+                          </div>
+                          <div class="w-col w-col-6">
+                            <label id="radio2" class="w-radio">
+                              <input type="radio" name="Type" id="No-3" value="No" data-name="Type"
+                                class="w-form-formradioinput w-radio-input">
+                              <span class="w-form-label" for="No-3">
+                                Borrow
+                              </span>
+                            </label>
+                          </div>
                         </div>
                       </div>
                       <div><label for="About-You">Commitment :</label></div>
                       <div id="w-node-_5e13f3e3-ba24-e1ab-9f45-5f7d757cb224-76a9ef67" class="div-block">
-                        <div data-hover="false" data-delay="0" class="w-dropdown">
-                          <div class="dropdown-toggle-5 w-dropdown-toggle">
-                            <div class="icon w-icon-dropdown-toggle"></div>
-                            <div class="text-block-3">Select</div>
-                          </div>
-                          <nav class="w-dropdown-list">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </nav>
-                        </div>
+                        <select id="Commitment" name="Commitment" data-name="Commitment" class="select-field w-select">
+                          <option value="none">None</option>
+                          <option value="TWO_WEEKS">Two Weeks</option>
+                          <option value="Third">One Month</option>
+                          <option value="THREE_MONTHS">Three Months</option>
+                        </select>
                       </div>
                       <div><label for="About-You">Loan Amount :</label></div>
-                      <div id="w-node-a0ac1124-5c76-1839-66c5-18dbcea50c20-76a9ef67"><input type="number" class="text-field-2 w-input" maxlength="256" name="Loan-Amount" data-name="Loan Amount" placeholder="Amount USD" id="Loan-Amount" required=""></div>
+                      <div id="w-node-a0ac1124-5c76-1839-66c5-18dbcea50c20-76a9ef67" class="div-block-2">
+                        <input type="number" class="text-field-2 w-input" maxlength="256" name="Loan-Amount"
+                          data-name="Loan Amount" placeholder="Amount USD" id="Loan-Amount" required="">
+                      </div>
                       <div><label for="About-You">Crypto :</label></div>
                       <div id="w-node-_17d0b3b2-8cec-adc1-b654-3cfd5cc35567-76a9ef67">
-                        <div data-hover="false" data-delay="0" class="w-dropdown">
-                          <div class="dropdown-toggle-6 w-dropdown-toggle">
-                            <div class="icon w-icon-dropdown-toggle"></div>
-                            <div class="text-block-3">Select</div>
-                          </div>
-                          <nav class="w-dropdown-list">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </nav>
-                        </div>
+                        <select id="Commitment-2" name="Commitment-2" data-name="Commitment 2" required=""
+                          class="select-field w-select">
+                          <option value="ETH">Ethereum</option>
+                          <option value="BNB">Binance</option>
+                          <option value="BTC">Bitcoin</option>
+                        </select>
                       </div>
                     </div>
                   </div>
@@ -308,29 +321,208 @@
           </div>
         </div>
       </div>
-      <div class="w-col w-col-2"></div>
+      <div class="column-7 w-col w-col-2"></div>
       <div class="w-col w-col-5">
         <div>
           <div class="pricing-top-block-dark">
             <div class="price-header">
               <div class="w-layout-grid grid-4">
                 <div>
-                  <h6 class="heading-white"><span>Collateral Needed : </span></h6>
-                </div>
-                <div id="w-node-fac975fa-81f9-aa0d-9fa3-9c636cb09f79-76a9ef67" class="w-row">
-                  <div class="w-col w-col-3"><img src="../images/Icon-Rocket.svg" loading="lazy" alt="" class="image-4"></div>
-                  <div class="column-6 w-col w-col-9">
-                    <div class="text-block-4"> 137.13</div>
-                  </div>
+                  <h5 class="heading-white"><span>Collateral Needed : </span></h5>
                 </div>
               </div>
-              <div class="body-medium-grey">Collateral amount based on a 50% Loan to Value (LTV). Learn more about LTV ratios. Loans originate for a 12-month term</div>
+              <div class="body-medium-grey">Collateral amount based on a 50% Loan to Value (LTV). Learn more about LTV
+                ratios. Loans originate for a 12-month term</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+  <div class="pricing-table-section">
+    <div class="container">
+      <div class="title-wrap-centre">
+        <div class="title">FEATURES</div>
+        <h3 class="heading-3">Competition Landscape</h3>
+      </div>
+      <div data-w-id="ada37d64-c591-6bfe-228b-cd4caa3ea246"
+        style="-webkit-transform:translate3d(35px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(35px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(35px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(35px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="pricing-grid-wrap">
+        <div class="w-layout-grid pricing-banner">
+          <div class="pricing-cell-lead">
+            <div class="heading-medium">CATEGORY</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="heading-medium">COMPOUND</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="heading-medium">AAVE</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="heading-medium">BENQI</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="heading-medium">HashSTACK</div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead">
+            <div class="pricing-feature">Loans</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text">Over collateralized</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text">Over collateralized</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-cell">
+              <div class="pricing-grid-text">Over collateralized</div>
+            </div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-cell">
+              <div class="pricing-grid-text">Under collateralized</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead">
+            <div class="pricing-feature">Collateral-to-loan</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">100:70</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">100:70<br>for some markets, 100:20</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">100:70</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">100:300</div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead">
+            <div class="pricing-feature">Permissible withdrawal</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">70% collateral</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">70% collateral<br>for some markets, 20% of collateral</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">70% collateral</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">70% collateral</div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead">
+            <div class="pricing-feature">Stable coin loans</div>
+          </div>
+          <div class="pricing-cell"><img src="./images/Checkbox-Felix.svg" alt=""></div>
+          <div class="pricing-cell"><img src="./images/Checkbox-Felix.svg" alt=""></div>
+          <div class="pricing-cell"><img src="./images/Checkbox-Felix.svg" alt=""></div>
+          <div class="pricing-cell"><img src="./images/Checkbox-Felix.svg" alt=""></div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead last-cell">
+            <div class="pricing-feature">Lending purpose</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Personal needs</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Personal needs</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Personal needs</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Personal needs,<br>trading capital</div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead last-cell">
+            <div class="pricing-feature">Third party integrations</div>
+          </div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Checkbox-Tick.svg" alt="">
+            <div class="pricing-grid-text-dark">AMM, Launchpads <br>&amp; DEX.</div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead last-cell">
+            <div class="pricing-feature">Liquidation</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Liquidators</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Liquidators</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Liquidators</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Liquidators,<br>Protocol automated (fail-safe)</div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead last-cell">
+            <div class="pricing-feature">Multi-chain</div>
+          </div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Checkbox-Felix.svg" alt=""></div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead last-cell">
+            <div class="pricing-feature">Interest rate model</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Base rate + algorithmic<br>determinant</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Base rate + algorithmic<br>determinant</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Base rate + algorithmic<br>determinant</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">Base rate + algorithmic<br>determinant</div>
+          </div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead last-cell">
+            <div class="pricing-feature">Supported chains</div>
+          </div>
+          <div class="pricing-cell last-cell"><img src="./images/Icon-Quality.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Icon-Quality.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Icon-Quality.svg" alt=""></div>
+          <div class="pricing-cell"><img src="./images/Icon-Reliable.svg" alt=""></div>
+        </div>
+        <div class="w-layout-grid price-grid-row">
+          <div class="pricing-cell-lead last-cell">
+            <div class="pricing-feature">Notifications</div>
+          </div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell last-cell"><img src="./images/Comparison-Check.svg" alt=""></div>
+          <div class="pricing-cell">
+            <div class="pricing-grid-text-dark">In-app, email, WhatsApp<br>notification service.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="feature-section-dark">
     <div class="container-small">
       <div class="title-wrap-centre">
@@ -343,7 +535,7 @@
           <div class="feature-number">01</div>
           <h5 class="h5-title-white">We are hiring!</h5>
           <p class="body-medium">We keep our promises, provide upfront timelines and bring predictability.</p>
-          <a href="../company/about-us-3.html" class="button-link-blue w-inline-block">
+          <a href="#" class="button-link-blue w-inline-block">
             <div>Find openings</div><img src="./images/Chevron-Blue.svg" loading="lazy" alt="" class="chevron">
           </a>
         </div>
@@ -351,7 +543,7 @@
           <div class="feature-number">02</div>
           <h5 class="h5-title-white">Connect with us!</h5>
           <p class="body-medium">For collaboration requests, or general queries, we are just an email away. </p>
-          <a href="../company/contact-3.html" class="button-link-blue w-inline-block">
+          <a href="mailto:hello@hashstack.finance" class="button-link-blue w-inline-block">
             <div>hello@hashstack.finance</div><img src="./images/Chevron-Blue.svg" loading="lazy" alt="" class="chevron">
           </a>
         </div>
