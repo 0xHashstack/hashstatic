@@ -535,6 +535,8 @@ blockquote {
 
 .logo {
   min-width: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
   -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
   -ms-flex-order: 0;
@@ -958,6 +960,7 @@ blockquote {
   display: flex;
   max-height: 1200px;
   max-width: 1000px;
+  margin-top: -180px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-orient: vertical;
@@ -980,7 +983,7 @@ blockquote {
 
 .hero-heading-white {
   margin-top: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   color: #fff;
   font-size: 64px;
   line-height: 72px;
@@ -7280,11 +7283,19 @@ blockquote {
 }
 
 .column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding-right: 36px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .column-2 {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 36px;
 }
 
@@ -7334,9 +7345,31 @@ blockquote {
 }
 
 .column-4 {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 36px;
   white-space: break-spaces;
+}
+
+.image-2 {
+  float: none;
+  border: 1px none #000;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.image-3 {
+  max-width: 100%;
+}
+
+.column-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -7423,6 +7456,10 @@ blockquote {
 
   .header-section-dark {
     min-height: auto;
+  }
+
+  .hero-centre-wrapper {
+    margin-top: 0px;
   }
 
   .hero-heading-white {
@@ -7833,6 +7870,11 @@ blockquote {
     padding-right: 32px;
     padding-bottom: 32px;
     padding-left: 32px;
+  }
+
+  .body-large-400.max-width {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .title-grid-saas {
@@ -8423,14 +8465,27 @@ blockquote {
     padding: 0px;
   }
 
+  .body-large {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
   .banner {
     background-position: 0% 50%;
     background-size: auto;
     text-align: center;
   }
 
+  .logo {
+    padding-bottom: 20px;
+  }
+
   .button.margin-right-16 {
     margin-right: 0px;
+  }
+
+  .button.margin-top-32.w--current {
+    margin-left: 5px;
   }
 
   .button.button-space {
@@ -8495,6 +8550,8 @@ blockquote {
   }
 
   .hero-heading-white {
+    padding-right: 5px;
+    padding-left: 5px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -8849,6 +8906,11 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .h3-title {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
   .content-image-modern {
     left: 12px;
     bottom: 12px;
@@ -9017,6 +9079,11 @@ blockquote {
     padding: 20px;
   }
 
+  .body-large-400.max-width {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
   .pricing-top-block-dark {
     padding-right: 20px;
     padding-left: 20px;
@@ -9115,6 +9182,17 @@ blockquote {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+}
+
+#w-node-d667362f-3d76-0aba-5d94-efeb72b93135-72b9312f {
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
 }
 
 #w-node-d667362f-3d76-0aba-5d94-efeb72b93136-72b9312f {
