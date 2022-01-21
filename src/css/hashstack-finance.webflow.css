@@ -3400,7 +3400,7 @@ blockquote {
   border-radius: 50px;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
-  color: #5b5675;
+  color: #8c87a6;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -3408,7 +3408,7 @@ blockquote {
 }
 
 .dropdown-link:hover {
-  color: #5138ee;
+  color: #fff;
 }
 
 .dropdown-link.w--current {
