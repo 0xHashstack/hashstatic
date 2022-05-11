@@ -1,0 +1,33 @@
+name: deploy
+concurrency: testnet
+
+on:
+  push:
+    branches:
+      - production
+  pull_request:
+    branches:
+      - production
+  workflow_dispatch:
+
+jobs:
+  deploy-open-offchain:
+    name: deployment
+    runs-on: ubuntu-20.04
+    environment: testnet
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: AWS SSM Send-Command
+        uses: peterkimzz/aws-ssm-send-command@1.0.1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-1
+          instance-ids: ${{ secrets.DEPLOY_INSTANCE_IDS }}
+          working-directory: /home/ubuntu/apps
+          command: /bin/sh ./deploy_static.sh > output.log
+
+        # Catch SSM outputs
+      - name: Get the outputs
+        run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
