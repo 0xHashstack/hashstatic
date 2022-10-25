@@ -24,7 +24,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
-          instance-ids: ${{ secrets.DEPLOY_INSTANCE_IDS }}
+          instance-ids: i-0e606741d0e38ee6e
           working-directory: /home/ubuntu/apps
           command: /bin/sh ./deploy_static.sh > output.log
 
