@@ -18,17 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      # Instance should have `CodeDeploy-EC2-Instance-Profile` IAM role from our account
-      - name: AWS SSM Send-Command
-        uses: peterkimzz/aws-ssm-send-command@1.0.1
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-1
-          instance-ids: i-0e606741d0e38ee6e
-          working-directory: /home/ubuntu/apps
-          command: /bin/sh ./deploy_static.sh > output.log
+          aws-region: ap-south-1
 
-        # Catch SSM outputs
-      - name: Get the outputs
-        run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
+      - name: Deploy
+        run: aws s3 sync ./src s3://www.hashstack.finance
