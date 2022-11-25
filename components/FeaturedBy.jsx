@@ -17,21 +17,25 @@ function FeaturedBy() {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      paddingY={{ base: "4rem", md: "2rem" }}
+      paddingTop={{ base: "4rem", md: "4rem", xl: "1rem" }}
+      paddingBottom={{ base: "4rem", md: "2rem" }}
     >
-      <VStack width="100%" gap={{ base: "2rem", md: "2rem", "2xl": "3rem" }}>
+      <VStack
+        width="100%"
+        spacing={{ base: "2rem", md: "2rem", "2xl": "3rem" }}
+      >
         {" "}
         <Text
-          fontSize={{ base: "4xl", md: "3xl", lg: "5xl" }}
+          fontSize={{ base: "1.125rem", md: "4xl", xl: "5xl" }}
           textColor="white"
-          // opacity="60%"
+          fontWeight={500}
         >
           Featured by
         </Text>
         <Box
           bgColor="featured_by-background"
           paddingX={{ base: "1rem", md: "2rem" }}
-          paddingY={{ base: "2rem", md: "2rem" }}
+          paddingY={{ base: "2rem", md: "3rem" }}
           width="100%"
         >
           <Marquee

@@ -1,5 +1,36 @@
 import { createIcon } from "@chakra-ui/react";
 
+export const MilestoneLarge = createIcon({
+  displayName: "MilestoneLarge",
+  viewBox: "0 0 12 12",
+  // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
+  path: [
+    <path
+      key="1"
+      d="M2.2892 5.86053C2.2892 7.75708 3.82667 9.29454 5.72322 9.29454C7.61978 9.29454 9.15723 7.75708 9.15723 5.86053C9.15723 3.96397 7.61978 2.42651 5.72322 2.42651C3.82667 2.42651 2.2892 3.96397 2.2892 5.86053Z"
+      fill="currentColor"
+    />,
+    <path
+      key="2"
+      d="M5.72344 11.0832C2.83865 11.0832 0.500064 8.74461 0.500064 5.85983C0.500064 2.97505 2.83866 0.636474 5.72344 0.636474C8.60822 0.636474 10.9468 2.97505 10.9468 5.85983C10.9468 8.74461 8.60822 11.0832 5.72344 11.0832Z"
+      stroke="currenColor"
+      fill="currentColor"
+    />,
+  ],
+});
+
+export const MilestoneSmall = createIcon({
+  displayName: "MilestoneSmall",
+  viewBox: "0 0 4 4",
+  // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
+  path: (
+    <path
+      d="M0.415805 2.24132C0.415805 3.08423 1.09913 3.76754 1.94204 3.76754C2.78495 3.76754 3.46826 3.08423 3.46826 2.24132C3.46826 1.3984 2.78495 0.715088 1.94204 0.715088C1.09913 0.715088 0.415805 1.3984 0.415805 2.24132Z"
+      fill="currentColor"
+    />
+  ),
+});
+
 export const DiscordIcon = createIcon({
   displayName: "DiscordIcon",
   viewBox: "0 0 24 24",
@@ -116,7 +147,7 @@ export const TwitterIcon = createIcon({
 
 export const HamburgerMenuIcon = createIcon({
   displayName: "HamburgerMenuIcon",
-  viewBox: "0 0 24 24",
+  viewBox: "0 0 24 16",
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: [
     <path

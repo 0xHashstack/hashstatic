@@ -5,7 +5,7 @@ export const theme = extendTheme({
     Avenir: `Avenir, ${base.fonts.body}`,
   },
   colors: {
-    "header-black-translucent": "rgba(5,3,6,0.85)",
+    "header-black-translucent": "rgba(1,2,3,0.85)",
     "header-black": "rgba(5,3,6,1)",
     "header-white": "#F5F5F5",
     "header-button-start": "#6936FC",
@@ -19,9 +19,19 @@ export const theme = extendTheme({
     background: "#040716",
     "card-border": "#2A263E",
     "featured_by-background": "#0C0822",
-    "footer-icon": "#CACACA",
+    "contribute-icon": "#CACACA",
+    "footer-icon": "#858C94",
   },
   breakpoints: {
+    xs: "23rem",
     ipadLandscape: "73.75em",
+    "4k": "160em",
+  },
+  styles: {
+    global: () => ({
+      body: {
+        bg: "",
+      },
+    }),
   },
 });

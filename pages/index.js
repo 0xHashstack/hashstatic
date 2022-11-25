@@ -1,5 +1,4 @@
-import { Box, useBreakpointValue } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
+import { Box } from "@chakra-ui/react";
 import BackedByBar from "../components/BackedByBar";
 import Benefits from "../components/Benefits";
 import Contribute from "../components/Contribute";
@@ -8,39 +7,32 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IntegrateOpen from "../components/IntegrateOpen";
 import Investors from "../components/Investors";
-import Milestones from "../components/Milestones";
 import Process from "../components/Process";
 import Hero from "../components/Hero";
+// import MilestonesAnimated from "../components/MilestonesAnimated";
+import MilestonesAnimatedMobile from "../components/MilestonesAnimatedMobile";
+import MilestonesAnimatedTemp from "../components/MilestonesAnimatedTemp";
 
 export default function Home() {
-  const processIllustration = useBreakpointValue({
-    base: null,
-    xl: "/illustrations/background-circles-min.png",
-  });
-  const processBackground = useBreakpointValue({
-    base: "background",
-  });
-
-  // const HeroWithNoSSR = dynamic(() => import("../components/Hero"), {
-  //   ssr: false,
-  // });
-
   return (
     <Box
-      bgImage={processIllustration}
-      bgColor={processBackground}
+      bgImage={{
+        base: "/illustrations/background-circles-mobile.png",
+        md: "/illustrations/background-circles-min.png",
+      }}
+      bgColor="background"
       bgRepeat="no-repeat"
       bgSize="cover"
-      // objectFit="cover"
       fontFamily="Avenir"
     >
       <Header />
-      {/* <HeroWithNoSSR /> */}
       <Hero />
       <BackedByBar />
       <Process />
       <Benefits />
-      <Milestones />
+      <MilestonesAnimatedTemp />
+      {/* <MilestonesAnimated /> */}
+      <MilestonesAnimatedMobile />
       <Investors />
       <Contribute />
       <FeaturedBy />
