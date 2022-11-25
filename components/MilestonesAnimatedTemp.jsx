@@ -63,7 +63,11 @@ function MilestonesAnimatedTemp() {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
 
-  const onClickHandler = async (year, recursionAllowed = true) => {
+  const onClickHandler = async (
+    year,
+    recursionAllowed = true,
+    sideEffectCall = false
+  ) => {
     if (isUnCollapsed[year]) {
       setIsUnCollapsed((oldValue) => {
         const newValue = { ...oldValue };
@@ -81,7 +85,14 @@ function MilestonesAnimatedTemp() {
       const alreadyUncollapsedYear = [2020, 2021, 2022].filter(
         (element) => isUnCollapsed[element] && element !== year
       );
-      if (alreadyUncollapsedYear?.length === 0 && year !== 2022) {
+      console.log(year);
+      console.log(isUnCollapsed);
+      console.log(alreadyUncollapsedYear);
+      if (
+        alreadyUncollapsedYear?.length === 0 &&
+        year !== 2022 &&
+        !sideEffectCall
+      ) {
         await sleep(600);
         await onClickHandler(2022, false);
       }
@@ -92,7 +103,7 @@ function MilestonesAnimatedTemp() {
       // alreadyUncollapsedYears.forEach((year) => onClickHandler(year));
 
       if (alreadyUncollapsedYear?.length > 0 && recursionAllowed) {
-        await onClickHandler(alreadyUncollapsedYear[0]);
+        await onClickHandler(alreadyUncollapsedYear[0], true, true);
         await sleep(400);
       }
       setIsUnCollapsedDisplay((oldValue) => {
