@@ -7,12 +7,11 @@ import {
   IconButton,
   Image,
   Link,
-  Text,
   useDisclosure,
-  VisuallyHidden,
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import { urls } from "../consts/urls";
 import { HamburgerMenuIcon } from "./Icons";
 
 function Header() {
@@ -24,7 +23,6 @@ function Header() {
       zIndex="10"
       top="0"
       w="full"
-      paddingX={4}
       paddingY={4}
       backdropFilter="auto"
       backdropBlur="0.5rem"
@@ -34,28 +32,51 @@ function Header() {
     >
       <Flex
         borderBottomRadius="1rem"
-        width={{ base: "100%", md: "80%" }}
+        width={{ base: "90%", md: "90%", xl: "85%", "2xl": "80%" }}
         alignItems="center"
-        justifyContent={{ base: "space-between", lg: "space-between" }}
+        justifyContent={{
+          base: "space-between",
+          md: "space-between",
+          xl: "space-between",
+        }}
         mx="auto"
       >
         <Flex alignItems="center">
-          <Link
-            href="/"
-            title="Hashstack Homepage"
-            display="flex"
-            alignItems="center"
+          <HStack
+            fontSize={{
+              base: "1.3rem",
+              md: "2xl",
+              xl: "3xl",
+            }}
+            textColor="white"
+            // paddingLeft={{ xl: "2rem" }}
           >
             <Image
-              boxSize={{ base: "3rem", md: "4rem" }}
+              boxSize={{
+                base: "1.7rem",
+                md: "3rem",
+              }}
               src="/company_logos/hashstack.svg"
               alt="Company Logo"
             />
-            <VisuallyHidden>Hashstack</VisuallyHidden>
-          </Link>
-          <Text fontSize="2xl" fontWeight="medium" ml="2">
-            Hashstack
-          </Text>
+            <Link
+              _hover={{ textDecoration: "none" }}
+              href="/"
+              target="_blank"
+              title="Hashstack Homepage"
+            >
+              <Box
+                href="/"
+                fontWeight="medium"
+                display="flex"
+                alignItems="start"
+                justifyContent="center"
+                lineHeight="1rem"
+              >
+                Hashstack
+              </Box>
+            </Link>
+          </HStack>
         </Flex>
         <HStack
           spacing="20"
@@ -66,22 +87,48 @@ function Header() {
             xl: "inline-flex",
           }}
         >
-          <Button as="a" variant="link" _hover={{ color: "header-link-hover" }}>
+          <Button
+            as="a"
+            variant="link"
+            href={urls.Community}
+            target="_blank"
+            _hover={{ color: "header-link-hover" }}
+          >
             Community
           </Button>
-          <Button as="a" variant="link" _hover={{ color: "header-link-hover" }}>
+          <Button
+            as="a"
+            href={urls.Whitepaper}
+            target="_blank"
+            variant="link"
+            _hover={{ color: "header-link-hover" }}
+          >
             Whitepaper
           </Button>
-          <Button as="a" variant="link" _hover={{ color: "header-link-hover" }}>
+          <Button
+            as="a"
+            variant="link"
+            href={urls.Contracts}
+            _hover={{ color: "header-link-hover" }}
+          >
             Contracts
           </Button>
-          <Button as="a" variant="link" _hover={{ color: "header-link-hover" }}>
+          <Button
+            as="a"
+            href={urls.Docs}
+            target="_blank"
+            variant="link"
+            _hover={{ color: "header-link-hover" }}
+          >
             Docs
           </Button>
         </HStack>
-        <HStack display="flex" alignItems="center" spacing={1}>
+        <HStack display="flex" alignItems="center" spacing={{ md: "2.5rem" }}>
           <Button
             borderWidth="0.1rem"
+            as="a"
+            href={urls.Testnet}
+            target="_blank"
             borderColor="background"
             bgGradient={"linear(to-l, header-button-start, header-button-end )"}
             size="lg"
@@ -105,6 +152,7 @@ function Header() {
               borderWidth: "0.1rem",
               borderStyle: "solid",
             }}
+            fontWeight={500}
           >
             Testnet
           </Button>
@@ -152,16 +200,34 @@ function Header() {
           onClick={mobileNav.onClose}
           icon={<HamburgerMenuIcon color="white" />}
         />
-        <Button w="full" variant="ghost">
+        <Button
+          w="full"
+          href={urls.Community}
+          target="_blank"
+          as="a"
+          variant="link"
+        >
           Community
         </Button>
-        <Button w="full" variant="ghost">
+        <Button
+          w="full"
+          href={urls.Whitepaper}
+          target="_blank"
+          as="a"
+          variant="link"
+        >
           Whitepaper
         </Button>
-        <Button w="full" variant="ghost">
+        <Button
+          w="full"
+          href={urls.Contracts}
+          target="_blank"
+          as="a"
+          variant="link"
+        >
           Contracts
         </Button>
-        <Button w="full" variant="ghost">
+        <Button w="full" href={urls.Docs} target="_blank" as="a" variant="link">
           Docs
         </Button>
       </VStack>
