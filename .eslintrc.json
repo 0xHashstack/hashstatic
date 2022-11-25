@@ -1,0 +1,8 @@
+{
+  "extends": "next/core-web-vitals",
+  "env": { "es6": true },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-undef": "error"
+  }
+}

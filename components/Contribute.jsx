@@ -1,5 +1,6 @@
 import { Box, Button, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { urls } from "../consts/urls";
 import {
   InstagramIcon,
   LinkedinIcon,
@@ -15,11 +16,12 @@ function Contribute() {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      paddingY={{ base: "6rem", xl: "8rem" }}
+      paddingTop={{ base: "6rem", xl: "8rem" }}
+      paddingBottom={{ base: "6rem", xl: "12rem" }}
     >
       <VStack
-        width={{ base: "90%", md: "60%", xl: "45%", "2xl": "35%" }}
-        gap="2rem"
+        width={{ base: "85%", md: "60%", xl: "45%", "2xl": "40%" }}
+        spacing="2rem"
       >
         <Button
           as="a"
@@ -28,9 +30,14 @@ function Contribute() {
           bgGradient={"linear(to-l, header-button-start, header-button-end )"}
           size="lg"
           color="white"
-          href="/"
+          href="https://hashstack.crew3.xyz/questboard"
+          target="_blank"
+          transition="1s"
+          padding={{ md: "1.8rem" }}
           _hover={{
-            color: "header-link-hover",
+            // bgColor: "header-link-hover",
+            bgGradient:
+              "linear(to-l, header-button-start, header-button-start )",
           }}
           _active={{
             bgGradient: "linear(to-l, header-button-start, header-button-end )",
@@ -43,47 +50,61 @@ function Contribute() {
             borderWidth: "0.1rem",
             borderStyle: "solid",
           }}
+          fontWeight={500}
         >
           Contribute
         </Button>
         <Text
           textAlign="center"
           textColor="hero-grey"
-          lineHeight="20px"
+          lineHeight={{ base: "1.25rem", md: "1.5rem" }}
           fontSize={{ base: "0.9rem", lg: "1.1rem" }}
-          opacity="60%"
+          opacity="90%"
           // letterSpacing={{ base: "0.05rem", md: "0.08rem", xl: "0.1rem" }}
+          fontWeight={500}
         >
-          Learn more about Hashstack, chat with the team, others in the
-          community, and have your say in shaping the future of decentralized
-          finance.
+          Learn more about Hashstack and join our community in shaping the
+          future of decentralized finance.
         </Text>
-        <HStack gap="2rem" justifyContent="space-between">
-          <TwitterIcon
-            fontSize="1.5rem"
-            color="white"
-            _hover={{ color: "footer-icon" }}
-          />
-          <InstagramIcon
-            fontSize="1.5rem"
-            color="white"
-            _hover={{ color: "footer-icon" }}
-          />
-          <RedditIcon
-            fontSize="1.5rem"
-            color="white"
-            _hover={{ color: "footer-icon" }}
-          />
-          <YoutubeIcon
-            fontSize="1.5rem"
-            color="white"
-            _hover={{ color: "footer-icon" }}
-          />
-          <LinkedinIcon
-            fontSize="1.5rem"
-            color="white"
-            _hover={{ color: "footer-icon" }}
-          />
+        <HStack spacing="2rem" justifyContent="space-between">
+          <a target="_blank" rel="noreferrer" href={urls.Twitter}>
+            <TwitterIcon
+              fontSize="1.5rem"
+              color="contribute-icon"
+              _hover={{ color: "white" }}
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href={urls.Instagram}>
+            <InstagramIcon
+              fontSize="1.5rem"
+              color="contribute-icon"
+              _hover={{ color: "white" }}
+            />
+          </a>
+
+          <a target="_blank" rel="noreferrer" href={urls.Reddit}>
+            <RedditIcon
+              fontSize="1.5rem"
+              color="contribute-icon"
+              _hover={{ color: "white" }}
+            />
+          </a>
+
+          <a target="_blank" rel="noreferrer" href={urls.Youtube}>
+            <YoutubeIcon
+              fontSize="1.5rem"
+              color="contribute-icon"
+              _hover={{ color: "white" }}
+            />
+          </a>
+
+          <a target="_blank" rel="noreferrer" href={urls.Linkedin}>
+            <LinkedinIcon
+              fontSize="1.5rem"
+              color="contribute-icon"
+              _hover={{ color: "white" }}
+            />
+          </a>
         </HStack>
       </VStack>
     </Box>

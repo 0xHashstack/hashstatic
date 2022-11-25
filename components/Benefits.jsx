@@ -9,6 +9,28 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
+const cardTextProps = {
+  textAlign: "center",
+  textColor: { base: "#D4D5F1", md: "#ADB5BD", xl: "#D4D5F1" },
+  fontSize: { base: "0.9rem", md: "0.75rem", lg: "0.9rem", xl: "1rem" },
+  letterSpacing: { md: "0.015rem" },
+  lineHeight: { md: "1.25rem", xl: "1.5rem" },
+  opacity: "100%",
+};
+
+const cardProps = {
+  borderStyle: "solid",
+  borderWidth: "0.07rem",
+  borderColor: "card-border",
+  bgColor: "backed_by-black",
+  borderRadius: "0.5rem",
+  paddingX: { base: "1rem", xl: "2rem" },
+  justifyContent: "space-around",
+  paddingY: { base: "3rem", md: "1rem", xl: "3rem" },
+  spacing: { base: "1rem", md: "0rem", xl: "4rem" },
+  height: "100%",
+};
+
 function Benefits() {
   return (
     <Box
@@ -17,214 +39,121 @@ function Benefits() {
       alignItems="center"
       justifyContent="center"
       height="fit-content"
-      paddingY={{ base: "4rem", lg: "8rem" }}
+      paddingTop={{ base: "4rem", md: "9rem", lg: "10rem" }}
+      paddingBottom={{ md: "4rem", lg: "10rem" }}
     >
       <VStack
         // paddingX={{ base: "3rem", md: "1.5rem", lg: "16rem" }}
-        width={{ base: "90%", xl: "85%", "2xl": "80%" }}
-        gap={{ base: "2rem", xl: "2rem", "2xl": "3rem" }}
+        width={{ base: "70%", md: "90%", xl: "85%", "2xl": "80%" }}
+        spacing={{ base: "2rem", xl: "2rem", "2xl": "3rem" }}
       >
         <Text
-          fontSize={{ base: "4xl", md: "3xl", lg: "5xl" }}
+          fontSize={{ base: "1.125rem", md: "4xl", xl: "5xl" }}
           textColor="white"
-          // opacity="60%"
+          // opacity="100%"
+          fontWeight={500}
         >
           Benefits
         </Text>
         <Grid
           templateColumns={{ base: "repeat(1,1fr)", md: "repeat(3, 1fr)" }}
           templateRows={{ base: "repeat(6,1fr)", md: "repeat(2,1fr)" }}
-          gap={{ base: "3rem", xl: "6rem" }}
+          columnGap={{
+            base: "2rem",
+            md: "1.5rem",
+            lg: "3rem",
+            xl: "5.5rem",
+            "2xl": "6rem",
+          }}
+          rowGap={{ base: "3rem", md: "2.5rem", lg: "4rem", xl: "5.5rem" }}
           width="100%"
         >
           <GridItem height="100%">
-            <VStack
-              borderStyle="solid"
-              borderWidth="0.15rem"
-              borderColor="card-border"
-              bgColor="backed_by-black"
-              borderRadius="2xl"
-              paddingX={{ base: "1rem", lg: "2rem" }}
-              justifyContent="space-around"
-              paddingY="3rem"
-              gap="1rem"
-              height="100%"
-            >
+            <VStack {...cardProps}>
               <AspectRatio ratio={202 / 167} maxWidth="100%" minWidth="60%">
                 <Image
                   src="/illustrations/card1-illustration.svg"
                   alt="Card 1 Illustration"
                 />
               </AspectRatio>
-              <Text
-                textAlign="center"
-                textColor="hero-grey"
-                lineHeight="20px"
-                fontSize="0.9rem"
-                opacity="60%"
-              >
+              <Text {...cardTextProps}>
                 Earn interest on long-term assets instead of keeping them
-                dormant on centralised exchanges/cold wallets
+                dormant on centralised exchanges or cold wallets.
               </Text>
             </VStack>
           </GridItem>
           <GridItem
-            marginTop={{ base: "0rem", md: "3rem", lg: "6rem" }}
+            marginTop={{ base: "0rem", md: "2.5rem", lg: "4rem", xl: "4rem" }}
             height="100%"
           >
-            <VStack
-              borderStyle="solid"
-              borderWidth="0.15rem"
-              borderColor="card-border"
-              bgColor="backed_by-black"
-              borderRadius="2xl"
-              paddingX={{ base: "1rem", lg: "2rem" }}
-              justifyContent="space-around"
-              paddingY="3rem"
-              gap="1rem"
-              height="100%"
-            >
+            <VStack {...cardProps}>
               <AspectRatio ratio={204 / 243} maxWidth="100%" minWidth="60%">
                 <Image
                   src="/illustrations/card2-illustration.svg"
                   alt="Card 1 Illustration"
                 />
               </AspectRatio>
-              <Text
-                textAlign="center"
-                textColor="hero-grey"
-                lineHeight="20px"
-                fontSize="0.9rem"
-                opacity="60%"
-              >
-                Hedge against inflation
+              <Text {...cardTextProps}>
+                Hedge your funds against inflation.
               </Text>
             </VStack>
           </GridItem>
           <GridItem height="100%">
-            <VStack
-              borderStyle="solid"
-              borderWidth="0.15rem"
-              borderColor="card-border"
-              bgColor="backed_by-black"
-              borderRadius="2xl"
-              paddingX={{ base: "1rem", lg: "2rem" }}
-              justifyContent="space-around"
-              paddingY="3rem"
-              gap="1rem"
-              height="100%"
-            >
+            <VStack {...cardProps}>
               <AspectRatio ratio={203 / 246} maxWidth="100%" minWidth="60%">
                 <Image
                   src="/illustrations/card3-illustration.svg"
                   alt="Card 1 Illustration"
                 />
               </AspectRatio>
-              <Text
-                textAlign="center"
-                textColor="hero-grey"
-                lineHeight="20px"
-                fontSize="0.9rem"
-                opacity="60%"
-              >
+              <Text {...cardTextProps}>
                 Do not sell your crypto assets at bottom in a bear market to
                 meet your cash crunch.
               </Text>
             </VStack>
           </GridItem>
           <GridItem height="100%">
-            <VStack
-              borderStyle="solid"
-              borderWidth="0.15rem"
-              borderColor="card-border"
-              bgColor="backed_by-black"
-              borderRadius="2xl"
-              paddingX={{ base: "1rem", lg: "2rem" }}
-              justifyContent="space-around"
-              paddingY="3rem"
-              gap="1rem"
-              height="100%"
-            >
+            <VStack {...cardProps}>
               <AspectRatio ratio={204 / 243} maxWidth="100%" minWidth="60%">
                 <Image
                   src="/illustrations/card4-illustration.svg"
                   alt="Card 1 Illustration"
                 />
               </AspectRatio>
-              <Text
-                textAlign="center"
-                textColor="hero-grey"
-                lineHeight="20px"
-                fontSize="0.9rem"
-                opacity="60%"
-              >
-                Traders can finance new ICO investments by borrowing Ether,
-                using their existing portfolio as collateral
+              <Text {...cardTextProps}>
+                Finance new ICO investments by borrowing using your existing
+                portfolio as collateral.
               </Text>
             </VStack>
           </GridItem>
           <GridItem
             height="100%"
-            marginTop={{ base: "0rem", md: "3rem", lg: "6rem" }}
+            marginTop={{ base: "0rem", md: "2.5rem", lg: "4rem", xl: "4rem" }}
           >
-            <VStack
-              borderStyle="solid"
-              borderWidth="0.15rem"
-              borderColor="card-border"
-              bgColor="backed_by-black"
-              borderRadius="2xl"
-              paddingX={{ base: "1rem", lg: "2rem" }}
-              justifyContent="space-around"
-              paddingY="3rem"
-              gap="1rem"
-              height="100%"
-            >
+            <VStack {...cardProps}>
               <AspectRatio ratio={198 / 212} maxWidth="100%" minWidth="60%">
                 <Image
                   src="/illustrations/card5-illustration.svg"
                   alt="Card 1 Illustration"
                 />
               </AspectRatio>
-              <Text
-                textAlign="center"
-                textColor="hero-grey"
-                lineHeight="20px"
-                fontSize="0.9rem"
-                opacity="60%"
-              >
-                Liquidation discounts incentivises arbitrageurs upto to step in
-                & liquidate borrowers exposure, eliminating protocol&apos;s risk
+              <Text {...cardTextProps}>
+                Incentivised arbitrages through liquidation discounts offered by
+                the protocol to liquidate borrower positions.
               </Text>
             </VStack>
           </GridItem>
           <GridItem height="100%">
-            <VStack
-              borderStyle="solid"
-              borderWidth="0.15rem"
-              borderColor="card-border"
-              bgColor="backed_by-black"
-              borderRadius="2xl"
-              paddingX={{ base: "1rem", lg: "2rem" }}
-              justifyContent="space-around"
-              paddingY="3rem"
-              gap="1rem"
-              height="100%"
-            >
+            <VStack {...cardProps}>
               <AspectRatio ratio={176 / 231} maxWidth="100%" minWidth="60%">
                 <Image
                   src="/illustrations/card6-illustration.svg"
                   alt="Card 1 Illustration"
                 />
               </AspectRatio>
-              <Text
-                textAlign="center"
-                textColor="hero-grey"
-                lineHeight="20px"
-                fontSize="0.9rem"
-                opacity="60%"
-              >
-                Do not sell your crypto assets at bottom in a bear market to
-                meet your cash crunch.
+              <Text {...cardTextProps}>
+                Use Hashstack’s 3x loan on collateral to continue growing your
+                portfolio.
               </Text>
             </VStack>
           </GridItem>

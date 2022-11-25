@@ -2,33 +2,21 @@ import {
   AspectRatio,
   Box,
   Button,
-  Fade,
   HStack,
   SlideFade,
   Stack,
   Text,
-  useBreakpointValue,
   VStack,
 } from "@chakra-ui/react";
 import { Image as ChakraImage } from "@chakra-ui/react";
 import Image from "next/image";
 import React, { useCallback, useEffect, useState } from "react";
+import { urls } from "../consts/urls";
+import heroIllustration from "../public/illustrations/hero-illustration.png";
+import heroIllustrationVertical from "../public/illustrations/hero-illustration_vertical.png";
+import heroIllustrationVerticalMobile from "../public/illustrations/hero-illustration_vertical_mobile.png";
 
 function Hero() {
-  const renderVerticalImage = useBreakpointValue(
-    {
-      base: true,
-      sm: true,
-      md: true,
-      lg: true,
-      ipadLandscape: true,
-      xl: false,
-      "2xl": false,
-    }
-    // { ssr: false }
-  );
-
-  const [fadeIn, setFadeIn] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
 
   const shuffle = useCallback(() => {
@@ -40,65 +28,77 @@ function Hero() {
     return () => clearInterval(intervalID);
   }, [shuffle]);
   return (
-    <Box height={{ base: "70vh", md: "90vh" }} display="flex">
+    <Box
+      minHeight={{
+        base: "90vh",
+        xs: "60vh",
+        sm: "70vh",
+        md: "100vh",
+        xl: "90vh",
+      }}
+      display="flex"
+      overflowX="hidden"
+      overflowY="hidden"
+    >
       <Stack
         flexDirection={{ base: "column-reverse", xl: "row" }}
+        justifyContent={{ base: "flex-end", xl: "center" }}
         marginLeft="auto"
         marginRight={{ base: "auto", xl: "0rem" }}
         width={{ base: "100%", xl: "90%" }}
-        overflow="clip"
-        // position="relative"
       >
         <VStack
-          flexBasis={{ base: "60%", xl: "55%" }}
-          height="100%"
+          flexBasis={{ base: "60%", md: "60%", lg: "60%", xl: "55%" }}
+          height={{ base: "100%", xl: "auto" }}
           display="flex"
           alignItems={{ base: "center", xl: "flex-start" }}
           justifyContent={{ base: "flex-start", xl: "center" }}
           spacing={{
-            base: "6rem",
-            md: "4rem",
+            base: "2.5rem",
+            md: "4.625rem",
             ipadLandscape: "3rem",
             xl: "4rem",
-            "2xl": "3rem",
+            "2xl": "3.5rem",
           }}
-          paddingY={{ md: "2rem" }}
-          paddingX="2rem"
+          // paddingY={{ base: "0rem", md: "0rem", xl: "2rem" }}
+          marginTop={{ base: "0rem", md: "4rem", xl: "2rem" }}
+          marginBottom={{ base: "0rem", xs: "4rem", md: "4rem" }}
+          paddingX={{ base: "2rem", xl: "0rem" }}
         >
-          <VStack alignItems={{ base: "center", xl: "flex-start" }}>
+          <VStack
+            alignItems={{ base: "center", xl: "flex-start" }}
+            spacing={{ md: "2.25rem" }}
+          >
             <HStack
               width={{ base: "100%", xl: "auto" }}
               justifyContent={{ base: "center", xl: "flex-start" }}
-              gap={{ md: "0.5rem" }}
+              spacing={{ base: "0.5rem", md: "1rem" }}
+              fontSize={{
+                base: "1.5rem",
+                sm: "2rem",
+                md: "3.5rem",
+                lg: "4rem",
+                ipadLandscape: "3.5rem",
+                xl: "3rem",
+                "2xl": "4.5rem",
+              }}
+              lineHeight={{ base: "4.75rem" }}
             >
               <Text
                 textColor="hero-green"
                 textAlign={{ base: "right", xl: "left" }}
-                fontSize={{
-                  base: "1.5rem",
-                  md: "4rem",
-                  ipadLandscape: "2.5rem",
-                  xl: "3rem",
-                  "2xl": "4rem",
-                }}
                 flexBasis={{ base: "50%", xl: "auto" }}
                 whiteSpace="nowrap"
+                fontWeight={500}
               >
                 Move Over{" "}
               </Text>
-              <Box flexBasis={{ base: "50%", md: "xl" }}>
+              <Box flexBasis={{ base: "50%", xl: "xl" }}>
                 {textIndex === 0 && (
                   <SlideFade transition="30s" in offsetY="20px">
                     <Text
                       textColor="white"
-                      textAlign={{ base: "left", xl: "left" }}
-                      fontSize={{
-                        base: "1.5rem",
-                        md: "4rem",
-                        ipadLandscape: "2.5rem",
-                        xl: "3rem",
-                        "2xl": "4rem",
-                      }}
+                      textAlign="left"
                       fontWeight={{ base: "bold" }}
                       // style={{ color: "white", fontWeight: "600" }}
                     >
@@ -110,18 +110,11 @@ function Hero() {
                   <SlideFade transition="30s" in offsetY="20px">
                     <Text
                       textColor="hero-green"
-                      textAlign={{ base: "left", xl: "left" }}
-                      fontSize={{
-                        base: "1.5rem",
-                        md: "4rem",
-                        ipadLandscape: "2.5rem",
-                        xl: "3rem",
-                        "2xl": "4rem",
-                      }}
+                      textAlign="left"
                       fontWeight={{ base: "bold" }}
                       color="white"
                     >
-                      Maker Dao
+                      MakerDAO
                     </Text>
                   </SlideFade>
                 )}
@@ -129,14 +122,7 @@ function Hero() {
                   <SlideFade transition="30s" in offsetY="20px">
                     <Text
                       textColor="hero-green"
-                      textAlign={{ base: "left", xl: "left" }}
-                      fontSize={{
-                        base: "1.5rem",
-                        md: "4rem",
-                        ipadLandscape: "2.5rem",
-                        xl: "3rem",
-                        "2xl": "4rem",
-                      }}
+                      textAlign="left"
                       fontWeight={{ base: "bold" }}
                       color="white"
                     >
@@ -148,26 +134,45 @@ function Hero() {
             </HStack>
             <Text
               textColor="hero-grey"
-              mt="1rem"
-              width={{ md: "60%", xl: "90%", "2xl": "70%" }}
+              // mt="1rem"
+              width={{
+                base: "100%",
+                md: "70%",
+                lg: "60%",
+                ipadLandscape: "60%",
+                xl: "70%",
+                "2xl": "70%",
+              }}
+              lineHeight={{ base: "1.5rem", md: "2rem", xl: "1.5rem" }}
               fontSize={{
-                base: "0.9rem",
-                md: "1.5rem",
-                ipadLandscape: "1.2rem",
+                base: "1rem",
+                md: "1.4rem",
+                lg: "1.5rem",
+                ipadLandscape: "1.1rem",
                 xl: "1rem",
+                "2xl": "1.4rem",
               }}
               textAlign={{ base: "center", xl: "left" }}
+              fontWeight="500"
+              letterSpacing="0.01rem"
             >
-              Hashstack’s users are able to borrow upto{" "}
-              <span style={{ color: "#2BDBBD" }}>328%</span> more loan on their
-              collateral in comparison to Aave, Compound, MakerDao.
+              <span>
+                Hashstack’s users enjoy up to{" "}
+                <span style={{ color: "#2BDBBD" }}>328%</span> more loan on
+                their collateral than Aave, Compound, or MakerDAO.
+              </span>
             </Text>
           </VStack>
+
           <HStack
             justifyContent={{ base: "center", xl: "flex-start" }}
             width="100%"
+            spacing={{ base: "0.65rem" }}
           >
             <Button
+              as="a"
+              href={urls.Testnet}
+              target="_blank"
               borderWidth="0.1rem"
               borderColor="background"
               bgGradient={
@@ -177,7 +182,9 @@ function Hero() {
               color="white"
               // opacity="90%"
               _hover={{
-                color: "header-link-hover",
+                // bgColor: "header-link-hover",
+                bgGradient:
+                  "linear(to-l, header-button-start, header-button-start )",
               }}
               _active={{
                 bgGradient:
@@ -191,10 +198,14 @@ function Hero() {
                 borderWidth: "0.1rem",
                 borderStyle: "solid",
               }}
+              fontWeight={500}
             >
               Testnet
             </Button>
             <Button
+              as="a"
+              href={urls.Whitepaper}
+              target="_blank"
               fontSize="0.9rem"
               variant="ghost"
               color="white"
@@ -208,7 +219,6 @@ function Hero() {
               Whitepaper
             </Button>
           </HStack>
-
           <HStack
             width="100%"
             justifyContent={{ md: "center", xl: "flex-start" }}
@@ -222,45 +232,69 @@ function Hero() {
               alt="StarkNet Logo"
             />
           </HStack>
+          {/* </VStack> */}
         </VStack>
-        <Box flexBasis={{ base: "50%", xl: "45%" }} position="relative">
+        <Box
+          flexBasis={{ base: "40%", md: "40%", lg: "40%", xl: "45%" }}
+          flexShrink="0"
+          style={{ marginTop: "0rem" }}
+          marginTop="0rem"
+          position="relative"
+        >
+          <Box
+            display={{ base: "none", md: "flex", xl: "none" }}
+            maxWidth={{ md: "80%", lg: "80%" }}
+            marginInline="auto"
+            justifyContent="center"
+          >
+            <Image
+              src={heroIllustrationVertical}
+              alt="hero-illustration"
+              priority
+              placeholder="blur"
+            />
+          </Box>
+          <Box
+            display={{ base: "flex", md: "none" }}
+            maxWidth={{ base: "70%", md: "80%", lg: "80%" }}
+            marginInline="auto"
+            justifyContent="center"
+          >
+            <Image
+              src={heroIllustrationVerticalMobile}
+              alt="hero-illustration"
+              priority
+              placeholder="blur"
+            />
+          </Box>
+
           <AspectRatio
             position="absolute"
             right={{
               base: "5%",
               ipadLandscape: "25%",
-              xl: "-15rem",
-              "2xl": "-15rem",
+              xl: "-12rem",
+              "2xl": "-16.5rem",
+              "4k": "-30rem",
             }}
             top={{
               base: "-6rem",
               md: "-12rem",
               ipadLandscape: "-10 rem",
-              xl: "-5rem",
-              "2xl": "-8rem",
+              xl: "-7rem",
+              "2xl": "-9rem",
             }}
-            width={{ base: "90%", ipadLandscape: "50%", xl: "120%" }}
+            minWidth={{ base: "90%", ipadLandscape: "50%", xl: "130%" }}
             ratio={996 / 943}
+            display={{ base: "none", xl: "block" }}
           >
-            {renderVerticalImage ? (
-              <Image
-                src={"/illustrations/hero-illustration_vertical.svg"}
-                alt="hero-illustration"
-                // width="100%"
-                layout="fill"
-              />
-            ) : (
-              <Fade in={true}>
-                <Image
-                  src={"/illustrations/hero-illustration.png"}
-                  alt="hero-illustration"
-                  onLoad={() => {
-                    setFadeIn(true);
-                  }}
-                  layout="fill"
-                />
-              </Fade>
-            )}
+            <Image
+              src={heroIllustration}
+              alt="hero-illustration"
+              layout="fill"
+              priority
+              placeholder="blur"
+            />
           </AspectRatio>
         </Box>
       </Stack>
