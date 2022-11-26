@@ -31,7 +31,7 @@ function Hero() {
     <Box
       minHeight={{
         base: "90vh",
-        xs: "60vh",
+        xs: "80vh",
         sm: "70vh",
         md: "100vh",
         xl: "90vh",
@@ -48,7 +48,7 @@ function Hero() {
         width={{ base: "100%", xl: "90%" }}
       >
         <VStack
-          flexBasis={{ base: "60%", md: "60%", lg: "60%", xl: "55%" }}
+          flexBasis={{ base: "65%", md: "60%", lg: "60%", xl: "55%" }}
           height={{ base: "100%", xl: "auto" }}
           display="flex"
           alignItems={{ base: "center", xl: "flex-start" }}
@@ -219,23 +219,35 @@ function Hero() {
               Whitepaper
             </Button>
           </HStack>
-          <HStack
+          <Stack
+            direction={{ base: "column", md: "row" }}
             width="100%"
             justifyContent={{ md: "center", xl: "flex-start" }}
-            display={{ base: "none", md: "flex" }}
+            display={{ base: "flex", md: "flex" }}
+            spacing={{ base: "0.75rem", md: "0rem" }}
           >
-            <Text textColor="hero-grey" fontSize="1.2rem" mr="0.5rem">
+            <Text
+              textColor="hero-grey"
+              display="flex"
+              alignItems="center"
+              justifyContent={{ base: "center", md: "flex-start" }}
+              fontSize={{ base: "1rem", md: "1.2rem" }}
+              mr="0.5rem"
+              textAlign={{ base: "center", md: "start" }}
+            >
               Backed By
             </Text>
             <ChakraImage
+              alignSelf="center"
               src="/company_logos/starknet.png"
               alt="StarkNet Logo"
+              width={{ base: "50%", md: "auto" }}
             />
-          </HStack>
+          </Stack>
           {/* </VStack> */}
         </VStack>
         <Box
-          flexBasis={{ base: "40%", md: "40%", lg: "40%", xl: "45%" }}
+          flexBasis={{ base: "35%", md: "40%", lg: "40%", xl: "45%" }}
           flexShrink="0"
           style={{ marginTop: "0rem" }}
           marginTop="0rem"

@@ -1,4 +1,11 @@
-import { Box, Image, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Link,
+  Text,
+  useBreakpointValue,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
@@ -46,49 +53,64 @@ function FeaturedBy() {
             speed={speed}
             gradient={isGradientVisible}
             gradientColor={[12, 8, 34]}
+            pauseOnHover={true}
           >
-            <Image
-              marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-              src="/company_logos/bloomberg.svg"
-              alt="GHAF Logo"
-              maxWidth={{ base: "6rem", md: "100%" }}
-            />
-            <Image
-              marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-              src="/company_logos/nasdaq.svg"
-              alt="GHAF Logo"
-              maxWidth={{ base: "6rem", md: "100%" }}
-            />
-            <Image
-              marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-              src="/company_logos/yahoo_finance.svg"
-              alt="GHAF Logo"
-              maxWidth={{ base: "6rem", md: "100%" }}
-            />
-            <Image
-              marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-              src="/company_logos/coin_telegraph.svg"
-              alt="GHAF Logo"
-              maxWidth={{ base: "6rem", md: "100%" }}
-            />
-            <Image
-              marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-              src="/company_logos/coin_market_cap.svg"
-              alt="GHAF Logo"
-              maxWidth={{ base: "6rem", md: "100%" }}
-            />
-            <Image
-              marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-              src="/company_logos/investing.svg"
-              alt="GHAF Logo"
-              maxWidth={{ base: "6rem", md: "100%" }}
-            />
-            <Image
-              marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-              src="/company_logos/inc42.svg"
-              alt="GHAF Logo"
-              maxWidth={{ base: "6rem", md: "100%" }}
-            />
+            <Link href="/" target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/bloomberg.svg"
+                alt="GHAF Logo"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
+            <Link href="/" target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/nasdaq.svg"
+                alt="GHAF Logo"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
+            <Link href="/" target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/yahoo_finance.svg"
+                alt="GHAF Logo"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
+            <Link href="/" target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/coin_telegraph.svg"
+                alt="GHAF Logo"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
+            <Link href="/" target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/coin_market_cap.svg"
+                alt="GHAF Logo"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
+            <Link href="/" target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/investing.svg"
+                alt="GHAF Logo"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
+            <Link href="/" target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/inc42.svg"
+                alt="GHAF Logo"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
           </Marquee>
         </Box>
       </VStack>

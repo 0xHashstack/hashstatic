@@ -658,7 +658,7 @@ function MilestonesAnimatedMobile() {
                   lineHeight={{ base: "2rem" }}
                   as="span"
                 >
-                  Staknet TVL
+                  Starknet TVL
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
                   $2.4 <br />
