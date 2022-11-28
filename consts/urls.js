@@ -4,6 +4,21 @@ export const urls = {
   Whitepaper: "https://docs.hashstack.finance/whitepaper",
   Contracts: "",
   Docs: "https://hashstack.notion.site/docs-hashstack-finance-54a0bf3be7414481b01934ab000d029c",
+  //Featured By
+  Bloomberg:
+    "https://www.bloomberg.com/press-releases/2022-08-08/announcing-hashstack-s-switch-to-starknet",
+  Nasdaq:
+    "https://www.nasdaq.com/press-release/announcing-hashstacks-switch-to-starknet-2022-08-08",
+  YahooFinance:
+    "https://finance.yahoo.com/news/announcing-hashstack-switch-starknet-080452728.html",
+  Hackernoon:
+    "https://hackernoon.com/hashstack-is-bringing-under-collateralized-loans-to-crypto-lending",
+  CoinTelegraph:
+    "https://cointelegraph.com/news/hashstack-launches-open-protocol-testnet-offering-under-collateralized-loans",
+  Investing:
+    "https://www.investing.com/news/cryptocurrency-news/hashstack-finance-secures-1m-for-open-protocol-development-2775231",
+  Inc42:
+    "https://inc42.com/startups/30-startups-to-watch-the-startups-that-caught-our-eye-in-july-2022/",
   //Footer
   Hashnomics: "/",
   Testnet: "https://zk.hashstack.finance/",

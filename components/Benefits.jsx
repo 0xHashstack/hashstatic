@@ -121,8 +121,9 @@ function Benefits() {
                 />
               </AspectRatio>
               <Text {...cardTextProps}>
-                Finance new ICO investments by borrowing using your existing
-                portfolio as collateral.
+                Finance new ICO investments by using your existing portfolio as
+                collateral. Collateralise assets to meet your cash crunch during
+                bear markets.
               </Text>
             </VStack>
           </GridItem>
