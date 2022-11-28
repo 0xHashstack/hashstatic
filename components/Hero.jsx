@@ -225,7 +225,7 @@ function Hero() {
             display={{ base: "none", md: "flex" }}
           >
             <Text textColor="hero-grey" fontSize="1.2rem" mr="0.5rem">
-              Backed By
+              Powered by
             </Text>
             <ChakraImage
               src="/company_logos/starknet.png"
