@@ -841,11 +841,10 @@ function MilestonesAnimatedTemp() {
                         >
                           <ListItem>Private testnet</ListItem>{" "}
                           <ListItem>Public testnet</ListItem>{" "}
-                          <ListItem>Strategic round - 1</ListItem>
                           <ListItem>
                             EIP 5299 - Storage scaling standard
                           </ListItem>{" "}
-                          <ListItem>Mainnet</ListItem>
+                          <ListItem>Starknet testnet</ListItem>
                         </UnorderedList>
                       </motion.div>
                     )}
@@ -883,7 +882,6 @@ function MilestonesAnimatedTemp() {
                           <motion.div layout>
                             <UnorderedList {...UnorderedListProps} width="80%">
                               <ListItem>Public testnet</ListItem>{" "}
-                              <ListItem>Strategic round - 1</ListItem>
                               <ListItem>
                                 EIP 5299 - Storage scaling standard
                               </ListItem>{" "}
@@ -904,7 +902,7 @@ function MilestonesAnimatedTemp() {
                         >
                           <motion.div layout>
                             <UnorderedList {...UnorderedListProps}>
-                              <ListItem>Mainnet</ListItem>
+                              <ListItem>Starknet testnet</ListItem>
                             </UnorderedList>
                           </motion.div>
                         </motion.span>
