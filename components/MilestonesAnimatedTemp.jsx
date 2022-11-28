@@ -844,7 +844,7 @@ function MilestonesAnimatedTemp() {
                           <ListItem>
                             EIP 5299 - Storage scaling standard
                           </ListItem>{" "}
-                          <ListItem>StarkNet testnet</ListItem>
+                          <ListItem>Starknet testnet</ListItem>
                         </UnorderedList>
                       </motion.div>
                     )}
@@ -902,7 +902,7 @@ function MilestonesAnimatedTemp() {
                         >
                           <motion.div layout>
                             <UnorderedList {...UnorderedListProps}>
-                              <ListItem>StarkNet testnet</ListItem>
+                              <ListItem>Starknet testnet</ListItem>
                             </UnorderedList>
                           </motion.div>
                         </motion.span>

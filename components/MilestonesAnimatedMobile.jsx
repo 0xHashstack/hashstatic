@@ -573,7 +573,7 @@ function MilestonesAnimatedMobile() {
                     <ListItem marginTop="0.75rem">
                       EIP 5299 - Storage scaling standard
                     </ListItem>{" "}
-                    <ListItem marginTop="0.75rem">StarkNet testnet</ListItem>
+                    <ListItem marginTop="0.75rem">Starknet testnet</ListItem>
                   </UnorderedList>
                 </GridItem>
                 <GridItem
@@ -606,8 +606,7 @@ function MilestonesAnimatedMobile() {
                   {...animationInfoProps2022}
                 >
                   <UnorderedList>
-                    <ListItem>StarkNet testnet</ListItem>
-                    <ListItem></ListItem>
+                    <ListItem>Starknet testnet</ListItem>
                   </UnorderedList>
                 </GridItem>
               </Grid>
