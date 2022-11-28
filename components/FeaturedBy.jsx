@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { urls } from "../consts/urls";
 
 function FeaturedBy() {
   const speed = useBreakpointValue({
@@ -55,59 +56,80 @@ function FeaturedBy() {
             gradientColor={[12, 8, 34]}
             pauseOnHover={true}
           >
-            <Link href="/" target="_blank">
+            <Link href={urls["Bloomberg"]} target="_blank">
               <Image
                 marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
                 src="/company_logos/bloomberg.svg"
+                opacity="50%"
+                _hover={{ opacity: "100%" }}
+                transition="0.2s"
                 alt="GHAF Logo"
                 maxWidth={{ base: "6rem", md: "100%" }}
               />
             </Link>
-            <Link href="/" target="_blank">
+            <Link href={urls["Nasdaq"]} target="_blank">
               <Image
                 marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
                 src="/company_logos/nasdaq.svg"
                 alt="GHAF Logo"
+                opacity="50%"
+                _hover={{ opacity: "100%" }}
+                transition="0.2s"
                 maxWidth={{ base: "6rem", md: "100%" }}
               />
             </Link>
-            <Link href="/" target="_blank">
+            <Link href={urls["YahooFinance"]} target="_blank">
               <Image
                 marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
                 src="/company_logos/yahoo_finance.svg"
                 alt="GHAF Logo"
+                opacity="50%"
+                _hover={{ opacity: "100%" }}
+                transition="0.2s"
                 maxWidth={{ base: "6rem", md: "100%" }}
               />
             </Link>
-            <Link href="/" target="_blank">
+            <Link href={urls["Hackernoon"]} target="_blank">
+              <Image
+                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
+                src="/company_logos/hackernoon.svg"
+                alt="GHAF Logo"
+                opacity="50%"
+                _hover={{ opacity: "100%" }}
+                transition="0.2s"
+                maxWidth={{ base: "6rem", md: "100%" }}
+              />
+            </Link>
+            <Link href={urls["CoinTelegraph"]} target="_blank">
               <Image
                 marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
                 src="/company_logos/coin_telegraph.svg"
                 alt="GHAF Logo"
+                opacity="50%"
+                _hover={{ opacity: "100%" }}
+                transition="0.2s"
                 maxWidth={{ base: "6rem", md: "100%" }}
               />
             </Link>
-            <Link href="/" target="_blank">
-              <Image
-                marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
-                src="/company_logos/coin_market_cap.svg"
-                alt="GHAF Logo"
-                maxWidth={{ base: "6rem", md: "100%" }}
-              />
-            </Link>
-            <Link href="/" target="_blank">
+            <Link href={urls["Investing"]} target="_blank">
               <Image
                 marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
                 src="/company_logos/investing.svg"
                 alt="GHAF Logo"
+                opacity="50%"
+                _hover={{ opacity: "100%" }}
+                transition="0.2s"
                 maxWidth={{ base: "6rem", md: "100%" }}
               />
             </Link>
-            <Link href="/" target="_blank">
+            <Link href={urls["Inc42"]} target="_blank">
               <Image
                 marginInline={{ base: "1rem", md: "2rem", xl: "4rem" }}
                 src="/company_logos/inc42.svg"
                 alt="GHAF Logo"
+                opacity="50%"
+                _hover={{ opacity: "100%" }}
+                transition="0.2s"
                 maxWidth={{ base: "6rem", md: "100%" }}
               />
             </Link>

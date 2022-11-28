@@ -570,11 +570,10 @@ function MilestonesAnimatedMobile() {
                   >
                     <ListItem>First prototype</ListItem>{" "}
                     <ListItem marginTop="0.75rem">Public testnet</ListItem>{" "}
-                    <ListItem marginTop="0.75rem">Strategic round - 1</ListItem>
                     <ListItem marginTop="0.75rem">
                       EIP 5299 - Storage scaling standard
                     </ListItem>{" "}
-                    <ListItem marginTop="0.75rem">Mainnet</ListItem>
+                    <ListItem marginTop="0.75rem">StarkNet testnet</ListItem>
                   </UnorderedList>
                 </GridItem>
                 <GridItem
@@ -595,7 +594,6 @@ function MilestonesAnimatedMobile() {
                 >
                   <UnorderedList>
                     <ListItem>First prototype</ListItem>{" "}
-                    <ListItem marginTop="0.75rem">Strategic round - 1</ListItem>
                     <ListItem marginTop="0.75rem">
                       EIP 5299 - Storage scaling standard
                     </ListItem>{" "}
@@ -608,7 +606,8 @@ function MilestonesAnimatedMobile() {
                   {...animationInfoProps2022}
                 >
                   <UnorderedList>
-                    <ListItem>Mainnet</ListItem>
+                    <ListItem>StarkNet testnet</ListItem>
+                    <ListItem></ListItem>
                   </UnorderedList>
                 </GridItem>
               </Grid>

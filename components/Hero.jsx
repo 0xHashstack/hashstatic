@@ -12,7 +12,8 @@ import { Image as ChakraImage } from "@chakra-ui/react";
 import Image from "next/image";
 import React, { useCallback, useEffect, useState } from "react";
 import { urls } from "../consts/urls";
-import heroIllustration from "../public/illustrations/hero-illustration.png";
+// import heroIllustration from "../public/illustrations/hero-illustration.png";
+import heroIllustration from "../public/illustrations/hero-illustration-min.png";
 import heroIllustrationVertical from "../public/illustrations/hero-illustration_vertical.png";
 import heroIllustrationVerticalMobile from "../public/illustrations/hero-illustration_vertical_mobile.png";
 
@@ -31,7 +32,7 @@ function Hero() {
     <Box
       minHeight={{
         base: "90vh",
-        xs: "80vh",
+        xs: "75vh",
         sm: "70vh",
         md: "100vh",
         xl: "90vh",
@@ -48,7 +49,7 @@ function Hero() {
         width={{ base: "100%", xl: "90%" }}
       >
         <VStack
-          flexBasis={{ base: "65%", md: "60%", lg: "60%", xl: "55%" }}
+          flexBasis={{ base: "68%", md: "60%", lg: "60%", xl: "55%" }}
           height={{ base: "100%", xl: "auto" }}
           display="flex"
           alignItems={{ base: "center", xl: "flex-start" }}
@@ -163,7 +164,6 @@ function Hero() {
               </span>
             </Text>
           </VStack>
-
           <HStack
             justifyContent={{ base: "center", xl: "flex-start" }}
             width="100%"
@@ -247,7 +247,7 @@ function Hero() {
           {/* </VStack> */}
         </VStack>
         <Box
-          flexBasis={{ base: "35%", md: "40%", lg: "40%", xl: "45%" }}
+          flexBasis={{ base: "32%", md: "40%", lg: "40%", xl: "45%" }}
           flexShrink="0"
           style={{ marginTop: "0rem" }}
           marginTop="0rem"
