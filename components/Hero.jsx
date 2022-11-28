@@ -228,6 +228,7 @@ function Hero() {
               Powered by
             </Text>
             <ChakraImage
+            
               src="/company_logos/starknet.png"
               alt="StarkNet Logo"
             />
