@@ -3,6 +3,7 @@ import Head from "next/head";
 import Fonts from "../theme/Fonts";
 import { theme } from "../theme/theme";
 import "../styles/globals.css";
+import { useEffect } from "react";
 
 //Import clarity
 import { clarity } from "react-microsoft-clarity";
