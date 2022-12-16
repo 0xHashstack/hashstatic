@@ -235,7 +235,7 @@ function Hero() {
               mr="0.5rem"
               textAlign={{ base: "center", md: "start" }}
             >
-              Backed By
+              Powered by
             </Text>
             <ChakraImage
               alignSelf="center"
