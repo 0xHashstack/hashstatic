@@ -4,18 +4,7 @@ import Fonts from "../theme/Fonts";
 import { theme } from "../theme/theme";
 import "../styles/globals.css";
 
-//Import clarity
-import { clarity } from "react-microsoft-clarity";
-
-const clarityID = "ey9bk9ce0a";
-
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      clarity.init(clarityID);
-    }
-  }, []);
-
   return (
     <>
       <Head>
