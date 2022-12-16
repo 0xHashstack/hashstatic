@@ -3,8 +3,20 @@ import Head from "next/head";
 import Fonts from "../theme/Fonts";
 import { theme } from "../theme/theme";
 import "../styles/globals.css";
+import { useEffect } from "react";
+
+//Import clarity
+import { clarity } from "react-microsoft-clarity";
+
+const clarityID = "ez93xhf6s8";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      clarity.init(clarityID);
+    }
+  }, []);
+
   return (
     <>
       <Head>
