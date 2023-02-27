@@ -127,7 +127,7 @@ function Header() {
           <Button
             borderWidth="0.1rem"
             as="a"
-            href={urls.Testnet}
+            href="https://discord.com/invite/hashstack"
             target="_blank"
             borderColor="background"
             bgGradient={"linear(to-l, header-button-start, header-button-end )"}
@@ -154,7 +154,7 @@ function Header() {
             }}
             fontWeight={500}
           >
-            Testnet
+            Join Community
           </Button>
           <Box
             display={{
