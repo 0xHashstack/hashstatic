@@ -1,5 +1,7 @@
 export const urls = {
   //header
+  About: "https://docs.hashstack.finance/",
+  Developers: "https://github.com/0xHashstack",
   Community: "https://discord.gg/hashstack-community-907151419650482217",
   Whitepaper: "https://docs.hashstack.finance/whitepaper",
   Contracts: "",

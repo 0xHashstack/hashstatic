@@ -19,13 +19,15 @@ function MilestonesAnimatedMobile() {
   const [isUnCollapsed, setIsUnCollapsed] = useState({
     2020: false,
     2021: false,
-    2022: true,
+    2022: false,
+    2023: true,
   });
 
   const [isUnCollapsedDisplay, setIsUnCollapsedDisplay] = useState({
     2020: false,
     2021: false,
-    2022: true,
+    2022: false,
+    2023: true,
   });
 
   const sleep = async (ms) => {
@@ -47,15 +49,15 @@ function MilestonesAnimatedMobile() {
           return newValue;
         });
       }, 500);
-      const alreadyUncollapsedYear = [2020, 2021, 2022].filter(
+      const alreadyUncollapsedYear = [2020, 2021, 2022, 2023].filter(
         (element) => isUnCollapsed[element] && element !== year
       );
-      if (alreadyUncollapsedYear?.length === 0 && year !== 2022) {
+      if (alreadyUncollapsedYear?.length === 0 && year !== 2023) {
         await sleep(600);
         await onClickHandler(2022, false);
       }
     } else {
-      const alreadyUncollapsedYear = ["2020", "2021", "2022"].filter(
+      const alreadyUncollapsedYear = ["2020", "2021", "2022", "2023"].filter(
         (year) => isUnCollapsed[year]
       );
       if (alreadyUncollapsedYear?.length > 0 && recursionAllowed) {
@@ -113,6 +115,12 @@ function MilestonesAnimatedMobile() {
     } 0.5s`,
   };
 
+  const animationTextProps2023 = {
+    animation: `${
+      isUnCollapsed["2023"] ? fadeInQuarterText : fadeOutQuarterText
+    } 0.5s`,
+  };
+
   const animationInfoProps2020 = {
     animation: `${
       isUnCollapsed["2020"] ? fadeInQuarterInfo : fadeOutQuarterInfo
@@ -128,6 +136,12 @@ function MilestonesAnimatedMobile() {
   const animationInfoProps2022 = {
     animation: `${
       isUnCollapsed["2022"] ? fadeInQuarterInfo : fadeOutQuarterInfo
+    } 0.5s`,
+  };
+
+  const animationInfoProps2023 = {
+    animation: `${
+      isUnCollapsed["2023"] ? fadeInQuarterInfo : fadeOutQuarterInfo
     } 0.5s`,
   };
 
@@ -303,6 +317,40 @@ function MilestonesAnimatedMobile() {
                 >
                   Q3
                 </GridItem>
+
+                <GridItem
+                  onClick={async () => {
+                    await onClickHandler(2023);
+                  }}
+                  _hover={{
+                    cursor: "pointer",
+                  }}
+                  rowSpan={isUnCollapsedDisplay["2023"] ? 1 : 5}
+                  fontWeight={600}
+                  marginTop="1rem"
+                >
+                  2023
+                </GridItem>
+                <GridItem
+                  rowSpan={2}
+                  opacity={quarterOpacity}
+                  fontWeight={500}
+                  display={isUnCollapsedDisplay["2023"] ? "block" : "none"}
+                  {...animationTextProps2023}
+                  marginTop="1rem"
+                >
+                  Q1
+                </GridItem>
+                <GridItem
+                  rowSpan={4}
+                  display={isUnCollapsedDisplay["2023"] ? "block" : "none"}
+                  opacity={quarterOpacity}
+                  fontWeight={500}
+                  {...animationTextProps2023}
+                  marginTop="1rem"
+                >
+                  Q2
+                </GridItem>
               </Grid>
               <Box
                 borderRadius="1rem"
@@ -355,6 +403,7 @@ function MilestonesAnimatedMobile() {
                   >
                     <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
                   </GridItem>
+
                   <GridItem
                     onClick={async () => {
                       await onClickHandler(2021);
@@ -401,6 +450,7 @@ function MilestonesAnimatedMobile() {
                   >
                     <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
                   </GridItem>
+
                   <GridItem
                     rowSpan={isUnCollapsedDisplay["2022"] ? 1 : 5}
                     marginTop="1rem"
@@ -435,6 +485,44 @@ function MilestonesAnimatedMobile() {
                     rowSpan={2}
                     display={isUnCollapsedDisplay["2022"] ? "flex" : "none"}
                     {...animationInfoProps2022}
+                    justifyContent="start"
+                    alignItems="start"
+                    marginTop="1rem"
+                  >
+                    <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
+                  </GridItem>
+
+                  <GridItem
+                    onClick={async () => {
+                      await onClickHandler(2023);
+                    }}
+                    _hover={{
+                      cursor: "pointer",
+                    }}
+                    rowSpan={isUnCollapsedDisplay["2023"] ? 1 : 3}
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="start"
+                    position="relative"
+                    marginTop="1rem"
+                  >
+                    <MilestoneLarge marginLeft="-4px" />
+                  </GridItem>
+                  <GridItem
+                    rowSpan={2}
+                    {...animationInfoProps2023}
+                    display={isUnCollapsedDisplay["2023"] ? "flex" : "none"}
+                    marginTop="1rem"
+                    // display="flex"
+                    justifyContent="start"
+                    alignItems="start"
+                  >
+                    <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
+                  </GridItem>
+                  <GridItem
+                    rowSpan={2}
+                    {...animationInfoProps2023}
+                    display={isUnCollapsedDisplay["2023"] ? "flex" : "none"}
                     justifyContent="start"
                     alignItems="start"
                     marginTop="1rem"
@@ -516,6 +604,7 @@ function MilestonesAnimatedMobile() {
                     <ListItem>Research Phase</ListItem>
                   </UnorderedList>
                 </GridItem>
+
                 <GridItem
                   rowSpan={isUnCollapsedDisplay["2021"] ? 1 : 3}
                   marginTop="1rem"
@@ -609,10 +698,48 @@ function MilestonesAnimatedMobile() {
                     <ListItem>Starknet testnet</ListItem>
                   </UnorderedList>
                 </GridItem>
+
+                <GridItem
+                  rowSpan={isUnCollapsedDisplay["2023"] ? 1 : 5}
+                  marginTop="1rem"
+                >
+                  <UnorderedList
+                    display={isUnCollapsedDisplay["2023"] ? "none" : "block"}
+                    lineHeight="1rem"
+                  >
+                    <ListItem>Hashstack Mainnet alpha</ListItem>{" "}
+                    <ListItem marginTop="0.75rem">
+                      Hashstack Mainnet beta.
+                    </ListItem>{" "}
+                  </UnorderedList>
+                </GridItem>
+                <GridItem
+                  marginTop="1rem"
+                  rowSpan={2}
+                  display={isUnCollapsedDisplay["2023"] ? "block" : "none"}
+                  {...animationInfoProps2023}
+                >
+                  <UnorderedList>
+                    <ListItem>Hashstack Mainnet alpha</ListItem>{" "}
+                  </UnorderedList>{" "}
+                </GridItem>
+                <GridItem
+                  marginTop="1rem"
+                  rowSpan={4}
+                  display={isUnCollapsedDisplay["2023"] ? "block" : "none"}
+                  {...animationInfoProps2023}
+                >
+                  <UnorderedList>
+                    <ListItem marginTop="0.75rem">
+                      Hashstack Mainnet beta
+                    </ListItem>{" "}
+                  </UnorderedList>
+                </GridItem>
               </Grid>
             </HStack>
 
             <Grid width="100%" templateColumns="repeat(4,1fr)" gap="1rem">
+              {/* 
               <GridItem
                 colSpan={{ base: 2 }}
                 borderRadius="0.5rem"
@@ -637,32 +764,9 @@ function MilestonesAnimatedMobile() {
                   $392 <br />
                   Million+
                 </Text>
-              </GridItem>
-              <GridItem
-                borderRadius="0.5rem"
-                colSpan={{ base: 2 }}
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                justifyContent="center"
-                padding={{ base: "1rem" }}
-                bgColor="backed_by-black"
-                align="center"
-                color="white"
-              >
-                <Text
-                  opacity="60%"
-                  fontSize={{ base: "0.9rem" }}
-                  lineHeight={{ base: "2rem" }}
-                  as="span"
-                >
-                  Starknet TVL
-                </Text>{" "}
-                <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  $2.4 <br />
-                  Million+
-                </Text>
-              </GridItem>
+              </GridItem> 
+              */}
+
               <GridItem
                 borderRadius="0.5rem"
                 colSpan={{ base: 2 }}
@@ -684,10 +788,11 @@ function MilestonesAnimatedMobile() {
                   Twitter
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  22K+ <br />
+                  28.6K+ <br />
                   Followers
                 </Text>
               </GridItem>
+
               <GridItem
                 borderRadius="0.5rem"
                 colSpan={{ base: 2 }}
@@ -709,38 +814,61 @@ function MilestonesAnimatedMobile() {
                   Discord
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  12.5K+ <br />
+                  17.4K+ <br />
                   Members
                 </Text>
               </GridItem>
+
               <GridItem
-                colSpan={{ base: 4 }}
+                borderRadius="0.5rem"
+                colSpan={{ base: 2 }}
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="center"
+                padding={{ base: "1rem" }}
+                bgColor="backed_by-black"
                 align="center"
                 color="white"
               >
-                <Box
-                  padding={{ base: "1rem", "2xl": "2rem" }}
-                  borderRadius="0.5rem"
-                  bgColor="backed_by-black"
-                  width="50%"
+                <Text
+                  opacity="60%"
+                  fontSize={{ base: "0.9rem" }}
+                  lineHeight={{ base: "2rem" }}
+                  as="span"
                 >
-                  <Text
-                    opacity="60%"
-                    fontSize={{ base: "0.9rem" }}
-                    lineHeight={{ base: "2rem" }}
-                    as="span"
-                  >
-                    Transactions
-                  </Text>{" "}
-                  <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                    45,000+ <br />
-                    Completed
-                  </Text>
-                </Box>
+                  Starknet TVL
+                </Text>{" "}
+                <Text fontSize={{ base: "1rem" }} fontWeight="600">
+                  $72+ <br />
+                  Million
+                </Text>
+              </GridItem>
+
+              <GridItem
+                borderRadius="0.5rem"
+                colSpan={{ base: 2 }}
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                justifyContent="center"
+                padding={{ base: "1rem" }}
+                bgColor="backed_by-black"
+                align="center"
+                color="white"
+              >
+                <Text
+                  opacity="60%"
+                  fontSize={{ base: "0.9rem" }}
+                  lineHeight={{ base: "2rem" }}
+                  as="span"
+                >
+                  Transactions
+                </Text>{" "}
+                <Text fontSize={{ base: "1rem" }} fontWeight="600">
+                  87,500+ <br />
+                  Completed
+                </Text>
               </GridItem>
             </Grid>
           </VStack>

@@ -36,7 +36,7 @@ export default function Home() {
       <Investors />
       <Contribute />
       <FeaturedBy />
-      <IntegrateOpen />
+      {/* <IntegrateOpen /> */}
       <Footer />
     </Box>
   );

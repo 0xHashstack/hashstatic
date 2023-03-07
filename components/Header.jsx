@@ -90,6 +90,24 @@ function Header() {
           <Button
             as="a"
             variant="link"
+            href={urls.About}
+            target="_blank"
+            _hover={{ color: "header-link-hover" }}
+          >
+            About
+          </Button>
+          <Button
+            as="a"
+            variant="link"
+            href="https://hashstack.crew3.xyz/questboard"
+            target="_blank"
+            _hover={{ color: "header-link-hover" }}
+          >
+            Contribute-2-Earn
+          </Button>
+          <Button
+            as="a"
+            variant="link"
             href={urls.Community}
             target="_blank"
             _hover={{ color: "header-link-hover" }}
@@ -98,36 +116,19 @@ function Header() {
           </Button>
           <Button
             as="a"
-            href={urls.Whitepaper}
+            href={urls.Developers}
             target="_blank"
             variant="link"
             _hover={{ color: "header-link-hover" }}
           >
-            Whitepaper
-          </Button>
-          <Button
-            as="a"
-            variant="link"
-            href={urls.Contracts}
-            _hover={{ color: "header-link-hover" }}
-          >
-            Contracts
-          </Button>
-          <Button
-            as="a"
-            href={urls.Docs}
-            target="_blank"
-            variant="link"
-            _hover={{ color: "header-link-hover" }}
-          >
-            Docs
+            Developers
           </Button>
         </HStack>
         <HStack display="flex" alignItems="center" spacing={{ md: "2.5rem" }}>
           <Button
             borderWidth="0.1rem"
             as="a"
-            href="https://discord.com/invite/hashstack"
+            href="https://spearmint.xyz/p/hashstack"
             target="_blank"
             borderColor="background"
             bgGradient={"linear(to-l, header-button-start, header-button-end )"}
@@ -154,7 +155,7 @@ function Header() {
             }}
             fontWeight={500}
           >
-            Join Community
+            Join Waitlist
           </Button>
           <Box
             display={{

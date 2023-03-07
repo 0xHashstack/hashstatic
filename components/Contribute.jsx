@@ -52,7 +52,7 @@ function Contribute() {
           }}
           fontWeight={500}
         >
-          Contribute
+          Contribute-2-Earn
         </Button>
         <Text
           textAlign="center"
