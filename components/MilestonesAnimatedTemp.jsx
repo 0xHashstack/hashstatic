@@ -92,11 +92,11 @@ function MilestonesAnimatedTemp() {
       console.log(alreadyUncollapsedYear);
       if (
         alreadyUncollapsedYear?.length === 0 &&
-        year !== 2022 &&
+        year !== 2023 &&
         !sideEffectCall
       ) {
         await sleep(600);
-        await onClickHandler(2022, false);
+        await onClickHandler(2023, false);
       }
     } else {
       const alreadyUncollapsedYear = [2020, 2021, 2022, 2023].filter(

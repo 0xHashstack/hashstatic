@@ -54,7 +54,7 @@ function MilestonesAnimatedMobile() {
       );
       if (alreadyUncollapsedYear?.length === 0 && year !== 2023) {
         await sleep(600);
-        await onClickHandler(2022, false);
+        await onClickHandler(2023, false);
       }
     } else {
       const alreadyUncollapsedYear = ["2020", "2021", "2022", "2023"].filter(
@@ -189,7 +189,6 @@ function MilestonesAnimatedMobile() {
                 templateRows={templateRows}
                 width="35%"
                 color="white"
-                // paddingX="1rem"
                 marginX="0.5rem"
                 textAlign="right"
                 lineHeight="1rem"
@@ -231,6 +230,7 @@ function MilestonesAnimatedMobile() {
                 >
                   Q1-Q4
                 </GridItem>
+
                 <GridItem
                   onClick={async () => {
                     await onClickHandler(2021);
@@ -274,7 +274,52 @@ function MilestonesAnimatedMobile() {
                 >
                   Q4
                 </GridItem>
+
                 <GridItem
+                  onClick={async () => {
+                    await onClickHandler(2022);
+                  }}
+                  _hover={{
+                    cursor: "pointer",
+                  }}
+                  rowSpan={isUnCollapsedDisplay["2022"] ? 1 : 3}
+                  fontWeight={600}
+                  marginTop="1rem"
+                >
+                  2022
+                </GridItem>
+                <GridItem
+                  rowSpan={2}
+                  opacity={quarterOpacity}
+                  fontWeight={500}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  {...animationTextProps2022}
+                  marginTop="1rem"
+                >
+                  Q1
+                </GridItem>
+                <GridItem
+                  rowSpan={2}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  opacity={quarterOpacity}
+                  fontWeight={500}
+                  {...animationTextProps2022}
+                  marginTop="1rem"
+                >
+                  Q2
+                </GridItem>
+                <GridItem
+                  rowSpan={2}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  opacity={quarterOpacity}
+                  fontWeight={500}
+                  {...animationTextProps2022}
+                  marginTop="1rem"
+                >
+                  Q3
+                </GridItem>
+
+                {/* <GridItem
                   onClick={async () => {
                     await onClickHandler(2022);
                   }}
@@ -316,7 +361,7 @@ function MilestonesAnimatedMobile() {
                   marginTop="1rem"
                 >
                   Q3
-                </GridItem>
+                </GridItem> */}
 
                 <GridItem
                   onClick={async () => {
@@ -325,7 +370,7 @@ function MilestonesAnimatedMobile() {
                   _hover={{
                     cursor: "pointer",
                   }}
-                  rowSpan={isUnCollapsedDisplay["2023"] ? 1 : 5}
+                  rowSpan={isUnCollapsedDisplay["2023"] ? 1 : 3}
                   fontWeight={600}
                   marginTop="1rem"
                 >
@@ -352,6 +397,7 @@ function MilestonesAnimatedMobile() {
                   Q2
                 </GridItem>
               </Grid>
+
               <Box
                 borderRadius="1rem"
                 // paddingY="1rem"
@@ -452,6 +498,53 @@ function MilestonesAnimatedMobile() {
                   </GridItem>
 
                   <GridItem
+                    onClick={async () => {
+                      await onClickHandler(2022);
+                    }}
+                    _hover={{
+                      cursor: "pointer",
+                    }}
+                    rowSpan={isUnCollapsedDisplay["2022"] ? 1 : 3}
+                    marginTop="1rem"
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="start"
+                    position="relative"
+                  >
+                    <MilestoneLarge marginLeft="-4px" />
+                  </GridItem>
+                  <GridItem
+                    rowSpan={2}
+                    display={isUnCollapsedDisplay["2022"] ? "flex" : "none"}
+                    {...animationInfoProps2022}
+                    justifyContent="start"
+                    alignItems="start"
+                    marginTop="1rem"
+                  >
+                    <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
+                  </GridItem>
+                  <GridItem
+                    rowSpan={2}
+                    display={isUnCollapsedDisplay["2022"] ? "flex" : "none"}
+                    {...animationInfoProps2022}
+                    justifyContent="start"
+                    alignItems="start"
+                    marginTop="1rem"
+                  >
+                    <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
+                  </GridItem>
+                  <GridItem
+                    rowSpan={2}
+                    display={isUnCollapsedDisplay["2022"] ? "flex" : "none"}
+                    {...animationInfoProps2022}
+                    justifyContent="start"
+                    alignItems="start"
+                    marginTop="1rem"
+                  >
+                    <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
+                  </GridItem>
+
+                  {/* <GridItem
                     rowSpan={isUnCollapsedDisplay["2022"] ? 1 : 5}
                     marginTop="1rem"
                     display="flex"
@@ -490,7 +583,7 @@ function MilestonesAnimatedMobile() {
                     marginTop="1rem"
                   >
                     <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
-                  </GridItem>
+                  </GridItem> */}
 
                   <GridItem
                     onClick={async () => {
@@ -529,6 +622,7 @@ function MilestonesAnimatedMobile() {
                   >
                     <MilestoneSmall marginY="0.2rem" fontSize={"0.5rem"} />
                   </GridItem>
+
                   {/* <GridItem
                     rowSpan={1}
                     marginTop="1rem"
@@ -650,6 +744,56 @@ function MilestonesAnimatedMobile() {
                 </GridItem>
 
                 <GridItem
+                  rowSpan={isUnCollapsedDisplay["2022"] ? 1 : 3}
+                  marginTop="1rem"
+                >
+                  <UnorderedList
+                    display={isUnCollapsedDisplay["2022"] ? "none" : "block"}
+                    lineHeight="1rem"
+                  >
+                    <ListItem>First prototype</ListItem>{" "}
+                    <ListItem marginTop="0.75rem">Public testnet</ListItem>{" "}
+                    <ListItem marginTop="0.75rem">
+                      EIP 5299 - Storage scaling standard
+                    </ListItem>{" "}
+                    <ListItem marginTop="0.75rem">Starknet testnet</ListItem>
+                  </UnorderedList>
+                </GridItem>
+                <GridItem
+                  marginTop="1rem"
+                  rowSpan={2}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  {...animationInfoProps2022}
+                >
+                  <UnorderedList>
+                    <ListItem>Public testnet</ListItem>
+                  </UnorderedList>{" "}
+                </GridItem>
+                <GridItem
+                  marginTop="1rem"
+                  rowSpan={2}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  {...animationInfoProps2022}
+                >
+                  <UnorderedList>
+                    <ListItem>First prototype</ListItem>{" "}
+                    <ListItem marginTop="0.75rem">
+                      EIP 5299 - Storage scaling standard
+                    </ListItem>{" "}
+                  </UnorderedList>
+                </GridItem>
+                <GridItem
+                  marginTop="1rem"
+                  rowSpan={2}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  {...animationInfoProps2022}
+                >
+                  <UnorderedList>
+                    <ListItem>Starknet testnet</ListItem>
+                  </UnorderedList>
+                </GridItem>
+
+                {/* <GridItem
                   rowSpan={isUnCollapsedDisplay["2022"] ? 1 : 5}
                   marginTop="1rem"
                 >
@@ -697,17 +841,19 @@ function MilestonesAnimatedMobile() {
                   <UnorderedList>
                     <ListItem>Starknet testnet</ListItem>
                   </UnorderedList>
-                </GridItem>
+                </GridItem> */}
 
                 <GridItem
-                  rowSpan={isUnCollapsedDisplay["2023"] ? 1 : 5}
+                  rowSpan={isUnCollapsedDisplay["2023"] ? 1 : 3}
                   marginTop="1rem"
                 >
                   <UnorderedList
                     display={isUnCollapsedDisplay["2023"] ? "none" : "block"}
                     lineHeight="1rem"
                   >
-                    <ListItem>Hashstack Mainnet alpha</ListItem>{" "}
+                    <ListItem marginTop="0.75rem">
+                      Hashstack Mainnet alpha
+                    </ListItem>{" "}
                     <ListItem marginTop="0.75rem">
                       Hashstack Mainnet beta.
                     </ListItem>{" "}
