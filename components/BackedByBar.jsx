@@ -67,7 +67,13 @@ function BackedByBar() {
             >
               <Image src="/company_logos/braavos.png" alt="Braavos Logo" />
             </AspectRatio> */}
-            <Image src="/company_logos/braavos.png" alt="Braavos Logo" />
+            <a target="_blank" href="https://braavos.app">
+              <Image
+                cursor={{ base: "pointer" }}
+                src="/company_logos/braavos.png"
+                alt="Braavos Logo"
+              />
+            </a>
           </Box>
           <Box {...boxProps} display="flex">
             {/* <AspectRatio
@@ -76,11 +82,14 @@ function BackedByBar() {
             >
               <Image src="/company_logos/empiric.png" alt="Empiric Logo" />
             </AspectRatio> */}
-            <Image
-              src="/company_logos/empiric.png"
-              width="73%"
-              alt="Empiric Logo"
-            />
+            <a target="_blank" href="https://empiric.network/">
+              <Image
+                cursor={{ base: "pointer" }}
+                src="/company_logos/empiric.png"
+                width="73%"
+                alt="Empiric Logo"
+              />
+            </a>
           </Box>
           <Box {...boxProps} display="flex">
             {/* <AspectRatio
@@ -89,17 +98,20 @@ function BackedByBar() {
             >
               <Image src="/company_logos/myswap.png" width="80%" alt="Myswap Logo" />
             </AspectRatio> */}
-            <Image
-              src="/company_logos/myswap.png"
-              width={{
-                base: "90%",
-                md: "70%",
-                lg: "60%",
-                xl: "90%",
-                "2xl": "80%",
-              }}
-              alt="Myswap Logo"
-            />
+            <a target="_blank" href="https://www.myswap.xyz/">
+              <Image
+                cursor={{ base: "pointer" }}
+                src="/company_logos/myswap.png"
+                width={{
+                  base: "90%",
+                  md: "70%",
+                  lg: "60%",
+                  xl: "90%",
+                  "2xl": "80%",
+                }}
+                alt="Myswap Logo"
+              />
+            </a>
           </Box>
           <Box {...boxProps} display="flex">
             {/* <AspectRatio
@@ -108,11 +120,14 @@ function BackedByBar() {
             >
               <Image src="/company_logos/yagi.png" alt="Yagi Logo" />
             </AspectRatio> */}
-            <Image
-              width={{ base: "60%", md: "50%", lg: "40%", xl: "60%" }}
-              src="/company_logos/yagi.png"
-              alt="Yagi Logo"
-            />
+            <a href="https://yagi.fi/" target="_blank">
+              <Image
+                cursor={{ base: "pointer" }}
+                width={{ base: "60%", md: "50%", lg: "40%", xl: "60%" }}
+                src="/company_logos/yagi.png"
+                alt="Yagi Logo"
+              />
+            </a>
           </Box>
 
           {/* <Box {...boxProps} display="flex">

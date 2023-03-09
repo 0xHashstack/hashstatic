@@ -89,7 +89,7 @@ function Footer() {
               >
                 Testnet
               </Text>
-              <Text
+              {/* <Text
                 fontSize={{ base: "xs", md: "sm" }}
                 as="a"
                 _hover={{ fontWeight: "600", cursor: "pointer" }}
@@ -99,14 +99,14 @@ function Footer() {
                 opacity="60%"
               >
                 Integrate your dApp
-              </Text>
+              </Text> */}
               <Text
                 fontSize={{ base: "xs", md: "sm" }}
                 as="a"
                 _hover={{ fontWeight: "600", cursor: "pointer" }}
                 transition="0.1s"
                 target="_blank"
-                href={urls["Hashstack 101"]}
+                href={urls.Hashstack_101}
                 opacity="60%"
               >
                 Hashstack 101
@@ -177,7 +177,7 @@ function Footer() {
                 _hover={{ fontWeight: "600", cursor: "pointer" }}
                 transition="0.1s"
                 target="_blank"
-                href={urls["Bug Bounty"]}
+                href={urls.Bug_Bounty}
                 opacity="60%"
               >
                 Bug Bounty
@@ -391,7 +391,7 @@ function Footer() {
               href="/"
               opacity="60%"
             >
-              © 2022 Hashstack Limited
+              © 2023 Hashstack Limited
             </Text>
           </Stack>
         </Box>
