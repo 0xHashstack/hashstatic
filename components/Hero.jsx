@@ -171,7 +171,7 @@ function Hero() {
           >
             <Button
               as="a"
-              href="https://spearmint.xyz/p/hashstack"
+              href="https://discord.com/invite/hashstack"
               target="_blank"
               borderWidth="0.1rem"
               borderColor="background"
@@ -200,7 +200,7 @@ function Hero() {
               }}
               fontWeight={500}
             >
-              Join Waitlist
+              Join our discord
             </Button>
             {/* <Button
               as="a"

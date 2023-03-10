@@ -50,13 +50,15 @@ function MilestonesAnimatedTemp() {
   const [isUnCollapsed, setIsUnCollapsed] = useState({
     2020: false,
     2021: false,
-    2022: true,
+    2022: false,
+    2023: true,
   });
 
   const [isUnCollapsedDisplay, setIsUnCollapsedDisplay] = useState({
     2020: false,
     2021: false,
-    2022: true,
+    2022: false,
+    2023: true,
   });
 
   const sleep = async (ms) => {
@@ -82,7 +84,7 @@ function MilestonesAnimatedTemp() {
         });
       }, 400);
 
-      const alreadyUncollapsedYear = [2020, 2021, 2022].filter(
+      const alreadyUncollapsedYear = [2020, 2021, 2022, 2023].filter(
         (element) => isUnCollapsed[element] && element !== year
       );
       console.log(year);
@@ -90,14 +92,14 @@ function MilestonesAnimatedTemp() {
       console.log(alreadyUncollapsedYear);
       if (
         alreadyUncollapsedYear?.length === 0 &&
-        year !== 2022 &&
+        year !== 2023 &&
         !sideEffectCall
       ) {
         await sleep(600);
-        await onClickHandler(2022, false);
+        await onClickHandler(2023, false);
       }
     } else {
-      const alreadyUncollapsedYear = [2020, 2021, 2022].filter(
+      const alreadyUncollapsedYear = [2020, 2021, 2022, 2023].filter(
         (year) => isUnCollapsed[year]
       );
       // alreadyUncollapsedYears.forEach((year) => onClickHandler(year));
@@ -217,6 +219,7 @@ function MilestonesAnimatedTemp() {
                       </motion.div>
                     )}
                   </AnimatePresence>
+
                   <Box
                     as="motion.div"
                     onClick={() => onClickHandler(2021)}
@@ -279,6 +282,7 @@ function MilestonesAnimatedTemp() {
                       </motion.div>
                     )}
                   </AnimatePresence>
+
                   <Box
                     as="motion.div"
                     onClick={() => onClickHandler(2022)}
@@ -344,8 +348,61 @@ function MilestonesAnimatedTemp() {
                       </motion.div>
                     )}
                   </AnimatePresence>
+
+                  <Box
+                    as="motion.div"
+                    onClick={() => onClickHandler(2023)}
+                    layout="position"
+                    transition={{ duration: 0.3 }}
+                    className="gridItemYear"
+                    // style={{
+                    //   gridColumnStart: isUnCollapsedDisplay[2022]
+                    //     ? "span 3"
+                    //     : "span 6",
+                    // }}
+                    sx={{
+                      gridColumnStart: {
+                        md: isUnCollapsedDisplay[2023] ? "span 3" : "span 6",
+                        lg: isUnCollapsedDisplay[2023] ? "span 2" : "span 5",
+                      },
+                    }}
+                  >
+                    <motion.div layout>2023</motion.div>
+                  </Box>
+                  <AnimatePresence>
+                    {isUnCollapsed[2023] && (
+                      <motion.div className="gridItemQuarterTop">
+                        <motion.span
+                          initial="collapsed"
+                          animate="uncollapsed"
+                          exit="collapsed"
+                          variants={variantsQuarterText}
+                        >
+                          <motion.div layout>Q1</motion.div>
+                        </motion.span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  <AnimatePresence>
+                    {isUnCollapsed[2023] && (
+                      <motion.div
+                        className="gridItemQuarterTop"
+                        style={{ gridColumnStart: "span 5" }}
+                      >
+                        <motion.span
+                          initial="collapsed"
+                          animate="uncollapsed"
+                          exit="collapsed"
+                          variants={variantsQuarterText}
+                        >
+                          <motion.div layout>Q2</motion.div>
+                        </motion.span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </LayoutGroup>
               </motion.div>
+
               {/* second grid */}
               <Box
                 borderRadius="0.5rem"
@@ -359,6 +416,8 @@ function MilestonesAnimatedTemp() {
               >
                 <motion.div layout={true} className="gridParentMiddle">
                   <LayoutGroup>
+                    {/* 2020 */}
+
                     <Box
                       as="motion.div"
                       _hover={{
@@ -428,6 +487,9 @@ function MilestonesAnimatedTemp() {
                         </motion.div>
                       )}
                     </AnimatePresence>
+
+                    {/* 2021 */}
+
                     <Box
                       as="motion.div"
                       _hover={{
@@ -519,6 +581,9 @@ function MilestonesAnimatedTemp() {
                         </motion.div>
                       )}
                     </AnimatePresence>
+
+                    {/* 2022 */}
+
                     <Box
                       as="motion.div"
                       _hover={{
@@ -615,17 +680,92 @@ function MilestonesAnimatedTemp() {
                         </motion.div>
                       )}
                     </AnimatePresence>
-                    {/* <motion.div layout="position" className="gridItemYear">
+
+                    {/* 2023 */}
+
+                    <Box
+                      as="motion.div"
+                      _hover={{
+                        cursor: "pointer",
+                      }}
+                      onClick={() => onClickHandler(2023)}
+                      layout="position"
+                      transition={{ duration: 0.3 }}
+                      className="gridItemYear"
+                      // style={{
+                      //   gridColumnStart: isUnCollapsedDisplay[2022]
+                      //     ? "span 3"
+                      //     : "span 6",
+                      // }}
+                      sx={{
+                        gridColumnStart: {
+                          md: isUnCollapsedDisplay[2023] ? "span 3" : "span 6",
+                          lg: isUnCollapsedDisplay[2023] ? "span 2" : "span 5",
+                        },
+                      }}
+                      // variants={variantsYear}
+                      // initial="uncollapsed"
+                    >
                       <motion.div layout>
                         <MilestoneLarge />
                       </motion.div>
-                    </motion.div> */}
+                    </Box>
+                    <AnimatePresence>
+                      {isUnCollapsed[2023] && (
+                        <motion.div className="gridItemQuarter">
+                          <motion.span
+                            initial="collapsed"
+                            animate="uncollapsed"
+                            exit="collapsed"
+                            variants={variantsQuarterText}
+                          >
+                            <motion.div layout>
+                              <Box
+                                display="flex"
+                                justifyContent="start"
+                                alignItems="center"
+                              >
+                                <MilestoneSmall fontSize={"0.5rem"} />
+                              </Box>
+                            </motion.div>
+                          </motion.span>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                    <AnimatePresence>
+                      {isUnCollapsed[2023] && (
+                        <motion.div
+                          className="gridItemQuarter"
+                          style={{ gridColumnStart: "span 5" }}
+                        >
+                          <motion.span
+                            initial="collapsed"
+                            animate="uncollapsed"
+                            exit="collapsed"
+                            variants={variantsQuarterText}
+                          >
+                            <motion.div layout>
+                              <Box
+                                display="flex"
+                                justifyContent="start"
+                                alignItems="center"
+                              >
+                                <MilestoneSmall fontSize={"0.5rem"} />
+                              </Box>
+                            </motion.div>
+                          </motion.span>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </LayoutGroup>
                 </motion.div>
               </Box>
+
               {/* third grid */}
               <motion.div className="gridParent">
                 <LayoutGroup>
+                  {/* 2020 */}
+
                   <Box
                     as="motion.div"
                     onClick={() => onClickHandler(2020)}
@@ -706,6 +846,9 @@ function MilestonesAnimatedTemp() {
                       </motion.div>
                     )}
                   </AnimatePresence>
+
+                  {/* 2021 */}
+
                   <Box
                     as="motion.div"
                     onClick={() => onClickHandler(2021)}
@@ -807,6 +950,9 @@ function MilestonesAnimatedTemp() {
                       </motion.div>
                     )}
                   </AnimatePresence>
+
+                  {/* 2022 */}
+
                   <Box
                     as="motion.div"
                     onClick={() => onClickHandler(2022)}
@@ -909,11 +1055,91 @@ function MilestonesAnimatedTemp() {
                       </motion.div>
                     )}
                   </AnimatePresence>
+
+                  {/* 2023 */}
+
+                  <Box
+                    as="motion.div"
+                    onClick={() => onClickHandler(2023)}
+                    layout="position"
+                    transition={{ duration: 0.3 }}
+                    className="gridItemYearBottom"
+                    // style={{
+                    //   gridColumnStart: isUnCollapsedDisplay[2022]
+                    //     ? "span 3"
+                    //     : "span 6",
+                    // }}
+                    sx={{
+                      gridColumnStart: {
+                        md: isUnCollapsedDisplay[2023] ? "span 3" : "span 6",
+                        lg: isUnCollapsedDisplay[2023] ? "span 2" : "span 5",
+                      },
+                    }}
+                  >
+                    {!isUnCollapsedDisplay[2023] && (
+                      <motion.div
+                        initial="uncollapsed"
+                        animate="collapsed"
+                        exit="uncollapsed"
+                        variants={variantsYearText}
+                        layout
+                      >
+                        <UnorderedList
+                          display={
+                            isUnCollapsedDisplay[2023] ? "none" : "block"
+                          }
+                          {...UnorderedListProps}
+                        >
+                          <ListItem>Hashstack Mainnet alpha</ListItem>{" "}
+                          <ListItem>Hashstack Mainnet beta</ListItem>{" "}
+                        </UnorderedList>
+                      </motion.div>
+                    )}
+                  </Box>
+                  <AnimatePresence>
+                    {isUnCollapsed[2023] && (
+                      <motion.div className="gridItemQuarterBottom">
+                        <motion.span
+                          initial="collapsed"
+                          animate="uncollapsed"
+                          exit="collapsed"
+                          variants={variantsQuarterText}
+                        >
+                          <motion.div layout>
+                            <UnorderedList {...UnorderedListProps}>
+                              <ListItem>Hashstack Mainnet alpha</ListItem>{" "}
+                            </UnorderedList>
+                          </motion.div>
+                        </motion.span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  <AnimatePresence>
+                    {isUnCollapsed[2023] && (
+                      <motion.div
+                        className="gridItemQuarterBottom"
+                        style={{ gridColumnStart: "span 5" }}
+                      >
+                        <motion.span
+                          initial="collapsed"
+                          animate="uncollapsed"
+                          exit="collapsed"
+                          variants={variantsQuarterText}
+                        >
+                          <motion.div layout>
+                            <UnorderedList {...UnorderedListProps} width="80%">
+                              <ListItem>Hashstack Mainnet beta</ListItem>{" "}
+                            </UnorderedList>
+                          </motion.div>
+                        </motion.span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </LayoutGroup>
               </motion.div>
             </VStack>
-            <Grid width="100%" templateColumns="repeat(5,1fr)" gap="1rem">
-              <GridItem
+            <Grid width="100%" templateColumns="repeat(4,1fr)" gap="2rem">
+              {/* <GridItem
                 colSpan={{ base: 2, md: 1 }}
                 borderRadius="0.5rem"
                 display="flex"
@@ -957,52 +1183,7 @@ function MilestonesAnimatedTemp() {
                   $392 <br />
                   Million +
                 </Text>
-              </GridItem>
-              <GridItem
-                borderRadius="0.5rem"
-                colSpan={{ base: 2, md: 1 }}
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                justifyContent="start"
-                padding={{ base: "1rem", xl: "1rem", "2xl": "1.5rem" }}
-                bgColor="backed_by-black"
-                align="center"
-                color="white"
-              >
-                <Text
-                  fontSize={{
-                    base: "1.3rem",
-                    md: "0.8rem",
-                    lg: "1.1rem",
-                    "2xl": "1.5rem",
-                  }}
-                  opacity="60%"
-                  lineHeight={{
-                    md: "2rem",
-                    lg: "2.5rem",
-                    xl: "3rem",
-                    "2xl": "4rem",
-                  }}
-                  as="span"
-                >
-                  Starknet TVL
-                </Text>{" "}
-                <Text
-                  fontSize={{
-                    base: "1.3rem",
-                    md: "1rem",
-                    lg: "1.3rem",
-                    xl: "1.5rem",
-                    "2xl": "2rem",
-                  }}
-                  lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
-                  fontWeight="600"
-                >
-                  $2.4 <br />
-                  Million +
-                </Text>
-              </GridItem>
+              </GridItem> */}
               <GridItem
                 colSpan={{ base: 2, md: 1 }}
                 borderRadius="0.5rem"
@@ -1044,10 +1225,11 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  22K+ <br />
+                  28.6K+ <br />
                   Followers
                 </Text>
               </GridItem>
+
               <GridItem
                 colSpan={{ base: 2, md: 1 }}
                 borderRadius="0.5rem"
@@ -1089,10 +1271,57 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  12.5K+ <br />
+                  17.4K+ <br />
                   Members
                 </Text>
               </GridItem>
+
+              <GridItem
+                borderRadius="0.5rem"
+                colSpan={{ base: 2, md: 1 }}
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                justifyContent="start"
+                padding={{ base: "1rem", xl: "1rem", "2xl": "1.5rem" }}
+                bgColor="backed_by-black"
+                align="center"
+                color="white"
+              >
+                <Text
+                  fontSize={{
+                    base: "1.3rem",
+                    md: "0.8rem",
+                    lg: "1.1rem",
+                    "2xl": "1.5rem",
+                  }}
+                  opacity="60%"
+                  lineHeight={{
+                    md: "2rem",
+                    lg: "2.5rem",
+                    xl: "3rem",
+                    "2xl": "4rem",
+                  }}
+                  as="span"
+                >
+                  Starknet TVL
+                </Text>{" "}
+                <Text
+                  fontSize={{
+                    base: "1.3rem",
+                    md: "1rem",
+                    lg: "1.3rem",
+                    xl: "1.5rem",
+                    "2xl": "2rem",
+                  }}
+                  lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
+                  fontWeight="600"
+                >
+                  $72+ <br />
+                  Million
+                </Text>
+              </GridItem>
+
               <GridItem
                 colSpan={{ base: 2, md: 1 }}
                 borderRadius="0.5rem"
@@ -1134,7 +1363,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  45,000+ <br />
+                  87,500+ <br />
                   Completed
                 </Text>
               </GridItem>

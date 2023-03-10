@@ -60,19 +60,23 @@ const colSpan = {
   "2022_Q1": { md: 4, lg: 4, xl: 3, "2xl": 4 },
   "2022_Q3": { md: 4, lg: 5, xl: 3, "2xl": 4 },
   "2022_Q4": { md: 4, lg: 4, xl: 3, "2xl": 4 },
+  "2023_Q1": { md: 4, lg: 4, xl: 3, "2xl": 4 },
+  "2023_Q2": { md: 4, lg: 4, xl: 3, "2xl": 4 },
 };
 
 function MilestonesAnimated() {
   const [isUnCollapsed, setIsUnCollapsed] = useState({
     2020: false,
     2021: false,
-    2022: true,
+    2022: false,
+    2023: true,
   });
 
   const [isUnCollapsedDisplay, setIsUnCollapsedDisplay] = useState({
     2020: false,
     2021: false,
-    2022: true,
+    2022: false,
+    2023: true,
   });
 
   const sleep = async (ms) => {
@@ -95,7 +99,7 @@ function MilestonesAnimated() {
         });
       }, 400);
     } else {
-      const alreadyUncollapsedYear = ["2020", "2021", "2022"].filter(
+      const alreadyUncollapsedYear = ["2020", "2021", "2022", "2023"].filter(
         (year) => isUnCollapsed[year]
       );
       // alreadyUncollapsedYears.forEach((year) => onClickHandler(year));
@@ -182,6 +186,18 @@ function MilestonesAnimated() {
     } 0.4s`,
   };
 
+  const animationTextProps2023 = {
+    animation: `${
+      isUnCollapsed["2023"] ? fadeInQuarterText : fadeOutQuarterText
+    } 0.4s`,
+  };
+
+  const animationIconProps2023 = {
+    animation: `${
+      isUnCollapsed["2023"] ? fadeInQuarterIcon : fadeOutQuarterIcon
+    } 0.4s`,
+  };
+
   const animationListProps2020 = {
     animation: `${!isUnCollapsed["2020"] ? fadeInList : fadeOutList} 0.5s`,
   };
@@ -192,6 +208,10 @@ function MilestonesAnimated() {
 
   const animationListProps2022 = {
     animation: `${!isUnCollapsed["2022"] ? fadeInList : fadeOutList} 0.5s`,
+  };
+
+  const animationListProps2023 = {
+    animation: `${!isUnCollapsed["2023"] ? fadeInList : fadeOutList} 0.5s`,
   };
 
   return (
@@ -277,6 +297,7 @@ function MilestonesAnimated() {
                 >
                   Q1-Q4
                 </GridItem>
+
                 <GridItem
                   as="motion.div"
                   layout
@@ -325,6 +346,7 @@ function MilestonesAnimated() {
                 >
                   Q4
                 </GridItem>
+
                 <GridItem
                   as="motion.div"
                   layout
@@ -373,7 +395,47 @@ function MilestonesAnimated() {
                 >
                   Q3
                 </GridItem>
+
+                <GridItem
+                  as="motion.div"
+                  layout
+                  colSpan={{
+                    md: isUnCollapsedDisplay["2022"] ? 2 : 7,
+                    lg: isUnCollapsedDisplay["2022"] ? 2 : 7,
+                    xl: isUnCollapsedDisplay["2022"] ? 2 : 5,
+                    "2xl": isUnCollapsedDisplay["2022"] ? 1 : 5,
+                  }}
+                  onClick={async () => {
+                    await onClickHandler(2022);
+                  }}
+                  marginLeft={marginLeft}
+                  {...yearTextProps}
+                >
+                  {/* 2022 */}
+                  2023
+                </GridItem>
+                <GridItem
+                  as="motion.div"
+                  layout
+                  colSpan={colSpan["2022_Q1"]}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  {...animationTextProps2022}
+                  {...quarterTextProps}
+                >
+                  Q1
+                </GridItem>
+                <GridItem
+                  as="motion.div"
+                  layout
+                  colSpan={colSpan["2022_Q3"]}
+                  display={isUnCollapsedDisplay["2022"] ? "block" : "none"}
+                  {...animationTextProps2022}
+                  {...quarterTextProps}
+                >
+                  Q2
+                </GridItem>
               </Grid>
+
               <Box
                 borderRadius="0.5rem"
                 height="0.5rem"
