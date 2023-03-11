@@ -67,7 +67,7 @@ function BackedByBar() {
             >
               <Image src="/company_logos/braavos.png" alt="Braavos Logo" />
             </AspectRatio> */}
-            <a target="_blank" href="https://braavos.app">
+            <a target="_blank" href="https://braavos.app" rel="noreferrer">
               <Image
                 cursor={{ base: "pointer" }}
                 src="/company_logos/braavos.png"
@@ -82,7 +82,7 @@ function BackedByBar() {
             >
               <Image src="/company_logos/empiric.png" alt="Empiric Logo" />
             </AspectRatio> */}
-            <a target="_blank" href="https://empiric.network/">
+            <a target="_blank" href="https://empiric.network/" rel="noreferrer">
               <Image
                 cursor={{ base: "pointer" }}
                 src="/company_logos/empiric.png"
@@ -98,7 +98,7 @@ function BackedByBar() {
             >
               <Image src="/company_logos/myswap.png" width="80%" alt="Myswap Logo" />
             </AspectRatio> */}
-            <a target="_blank" href="https://www.myswap.xyz/">
+            <a target="_blank" href="https://www.myswap.xyz/" rel="noreferrer">
               <Image
                 cursor={{ base: "pointer" }}
                 src="/company_logos/myswap.png"
@@ -120,7 +120,7 @@ function BackedByBar() {
             >
               <Image src="/company_logos/yagi.png" alt="Yagi Logo" />
             </AspectRatio> */}
-            <a href="https://yagi.fi/" target="_blank">
+            <a href="https://yagi.fi/" target="_blank" rel="noreferrer">
               <Image
                 cursor={{ base: "pointer" }}
                 width={{ base: "60%", md: "50%", lg: "40%", xl: "60%" }}
