@@ -5,22 +5,23 @@ import { theme } from "../theme/theme";
 import "../styles/globals.css";
 import { useEffect } from "react";
 
-// Import amplitude
-import * as amplitude from "@amplitude/analytics-browser";
-
 //Import clarity
 import { clarity } from "react-microsoft-clarity";
 
 /* Initializing amplitude analytics */
 
-amplitude.init("0c6ca142b8f758aec64963ebdea8fdb1", undefined, {
-  defaultTracking: {
-    sessions: true,
-    pageViews: true,
-    formInteractions: true,
-    fileDownloads: true,
-  },
-});
+if (typeof window !== "undefined") {
+  const amplitude = require("@amplitude/analytics-browser");
+  /* Initializing amplitude analytics */
+  amplitude.init("0c6ca142b8f758aec64963ebdea8fdb1", undefined, {
+    defaultTracking: {
+      sessions: true,
+      pageViews: true,
+      formInteractions: true,
+      fileDownloads: true,
+    },
+  });
+}
 
 /* Initializing Clarity */
 
