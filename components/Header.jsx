@@ -123,6 +123,15 @@ function Header() {
           >
             Developers
           </Button>
+          <Button
+            as="a"
+            href={urls.Invest}
+            target="_blank"
+            variant="link"
+            _hover={{ color: "header-link-hover" }}
+          >
+            Invest
+          </Button>
         </HStack>
         <HStack display="flex" alignItems="center" spacing={{ md: "2.5rem" }}>
           <Button
