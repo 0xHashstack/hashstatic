@@ -171,7 +171,7 @@ function Hero() {
           >
             <Button
               as="a"
-              href={urls.Testnet}
+              href="https://discord.com/invite/hashstack"
               target="_blank"
               borderWidth="0.1rem"
               borderColor="background"
@@ -200,9 +200,9 @@ function Hero() {
               }}
               fontWeight={500}
             >
-              Testnet
+              Join our discord
             </Button>
-            <Button
+            {/* <Button
               as="a"
               href={urls.Whitepaper}
               target="_blank"
@@ -217,7 +217,7 @@ function Hero() {
               _hover={{ borderColor: "header-link-hover" }}
             >
               Whitepaper
-            </Button>
+            </Button> */}
           </HStack>
           <Stack
             direction={{ base: "column", md: "row" }}
