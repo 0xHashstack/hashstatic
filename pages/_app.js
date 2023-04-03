@@ -10,11 +10,6 @@ import { clarity } from "react-microsoft-clarity";
 
 const clarityID = "ey9bk9ce0a";
 
-//Import clarity
-import { clarity } from "react-microsoft-clarity";
-
-const clarityID = "ey9bk9ce0a";
-
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
