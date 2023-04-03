@@ -8,7 +8,7 @@ import { useEffect } from "react";
 //Import clarity
 import { clarity } from "react-microsoft-clarity";
 
-const clarityID = "ey9bk9ce0a";
+const clarityID = "ez93xhf6s8";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
