@@ -52,7 +52,8 @@ function Footer() {
                   //   xl: "3rem",
                   //   "2xl": "4rem",
                 }}
-                src="/company_logos/hashstack.svg"
+                // src="/company_logos/hashstack.svg"
+                src="/company_logos/doge.png"
                 alt="Company Logo"
               />
               <Link href="/ " target="_blank" title="Hashstack Homepage">
