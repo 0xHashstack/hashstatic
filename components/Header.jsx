@@ -56,7 +56,8 @@ function Header() {
                 base: "1.7rem",
                 md: "3rem",
               }}
-              src="/company_logos/hashstack.svg"
+              // src="/company_logos/hashstack.svg"
+              src="/company_logos/doge.png"
               alt="Company Logo"
             />
             <Link
@@ -122,6 +123,15 @@ function Header() {
             _hover={{ color: "header-link-hover" }}
           >
             Developers
+          </Button>
+          <Button
+            as="a"
+            href={urls.Invest}
+            target="_blank"
+            variant="link"
+            _hover={{ color: "header-link-hover" }}
+          >
+            Invest
           </Button>
         </HStack>
         <HStack display="flex" alignItems="center" spacing={{ md: "2.5rem" }}>
