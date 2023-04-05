@@ -58,7 +58,7 @@ function BackedByBar() {
           justifyContent="center"
           direction="row"
           flexWrap="wrap"
-          gap={{ lg: "2%", xl: "2%", "2xl": "2%" }}
+          gap={{ lg: "2%", xl: "3%", "2xl": "4%" }}
         >
           <Box {...boxProps} display="flex">
             {/* <AspectRatio
@@ -82,12 +82,16 @@ function BackedByBar() {
             >
               <Image src="/company_logos/empiric.png" alt="Empiric Logo" />
             </AspectRatio> */}
-            <a target="_blank" href="https://empiric.network/" rel="noreferrer">
+            <a
+              target="_blank"
+              href="https://www.empiric.network/"
+              rel="noreferrer"
+            >
               <Image
                 cursor={{ base: "pointer" }}
-                src="/company_logos/empiric.png"
-                width="73%"
-                alt="Empiric Logo"
+                src="/company_logos/pragma.png"
+                width="93%"
+                alt="Pragma Logo"
               />
             </a>
           </Box>
