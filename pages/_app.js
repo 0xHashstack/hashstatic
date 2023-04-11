@@ -4,7 +4,7 @@ import Fonts from "../theme/Fonts";
 import { theme } from "../theme/theme";
 import "../styles/globals.css";
 import { useEffect } from "react";
-import Script from 'next/script'
+import Script from "next/script";
 
 //Import clarity
 import { clarity } from "react-microsoft-clarity";
@@ -47,15 +47,15 @@ function MyApp({ Component, pageProps }) {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          // href="/favicon-32x32.png"
-          href="/doge.png"
+          href="/favicon-32x32.png"
+          // href="/doge.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          // href="/favicon-16x16.png"
-          href="/doge.png"
+          href="/favicon-16x16.png"
+          // href="/doge.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
@@ -89,10 +89,8 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta content="summary_large_image" name="twitter:card" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-      
       </Head>
       <ChakraProvider theme={theme}>
-
         {/* <!-- Twitter conversion tracking base code --> */}
         <Script id="twitter-tracking" strategy="afterInteractive">
           {`!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
