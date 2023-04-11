@@ -56,8 +56,8 @@ function Header() {
                 base: "1.7rem",
                 md: "3rem",
               }}
-              // src="/company_logos/hashstack.svg"
-              src="/company_logos/doge.png"
+              src="/company_logos/hashstack.svg"
+              // src="/company_logos/doge.png"
               alt="Company Logo"
             />
             <Link
