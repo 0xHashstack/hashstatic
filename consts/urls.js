@@ -51,8 +51,7 @@ export const urls = {
   Linkedin:
     "https://www.linkedin.com/company/0xhashstack/?originalSubdomain=in",
   Bug_Bounty: "https://blog.hashstack.finance/launching-community-bug-bounty",
-  Hashstack_101:
-    " https://docs.hashstack.finance/zk-testnet-guide/accessing-the-testnet",
+  Hashstack_101: "https://docs.hashstack.finance/testnet-guide/",
   //articles
   article1:
     "https://blog.hashstack.finance/deconstructing-hashstacks-dynamic-interest-algorithm-dial/",

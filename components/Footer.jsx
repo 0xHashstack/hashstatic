@@ -128,11 +128,11 @@ function Footer() {
                 as="a"
                 _hover={{ fontWeight: "600", cursor: "pointer" }}
                 transition="0.1s"
-                target="_blank"
+                target="_self"
                 href={urls.Hashnomics}
                 opacity="60%"
               >
-                Hashnomics
+                Hashnomics (To be announced)
               </Text>
             </VStack>
           </GridItem>
