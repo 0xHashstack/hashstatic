@@ -39,7 +39,7 @@ export const urls = {
   "Privacy Policy": "/",
   "Branding Kit":
     "https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro?usp=share_link",
-  "Status Page": "/",
+  "Status Page": "https://status.hashstack.finance",
   Careers: "https://angel.co/company/hashstack/jobs",
   Discord: "https://discord.gg/hashstack",
   Twitter: "https://twitter.com/0xHashstack",
