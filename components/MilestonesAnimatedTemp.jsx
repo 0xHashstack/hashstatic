@@ -1283,7 +1283,7 @@ function MilestonesAnimatedTemp() {
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="start"
-                padding={{ base: "1rem", xl: "1rem", "2xl": "1.5rem" }}
+                padding={{ base: "1rem", xl: "1rem", "2xl": "1.2rem" }}
                 bgColor="backed_by-black"
                 align="center"
                 color="white"
@@ -1317,13 +1317,13 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  $6,000+<br />
+                  $7,000+<br />
                   <Text fontSize={{
                     base: "1.3rem",
                     md: "1rem",
                     lg: "1.3rem",
                     xl: "1.5rem",
-                    "2xl": "1.7rem",
+                    "2xl": "1.8rem",
                   }}>(Invite-only)</Text>
                   
                   
