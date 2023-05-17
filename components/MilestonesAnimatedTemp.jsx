@@ -1191,7 +1191,7 @@ function MilestonesAnimatedTemp() {
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="start"
-                padding={{ base: "1rem", xl: "1rem", "2xl": "1.5rem" }}
+                padding={{ base: "1rem", xl: "1rem", "2xl": "1rem" }}
                 bgColor="backed_by-black"
                 align="center"
                 color="white"
@@ -1225,7 +1225,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  45.8K+ <br />
+                  45K+ <br />
                   Followers
                 </Text>
               </GridItem>
@@ -1237,7 +1237,7 @@ function MilestonesAnimatedTemp() {
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="start"
-                padding={{ base: "1rem", xl: "1rem", "2xl": "1.5rem" }}
+                padding={{ base: "1rem", xl: "1rem", "2xl": "1rem" }}
                 bgColor="backed_by-black"
                 align="center"
                 color="white"
@@ -1271,7 +1271,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  27.2K+ <br />
+                  27K+ <br />
                   Members
                 </Text>
               </GridItem>
@@ -1283,7 +1283,7 @@ function MilestonesAnimatedTemp() {
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="start"
-                padding={{ base: "1rem", xl: "1rem", "2xl": "1.2rem" }}
+                padding={{ base: "1rem", xl: "1rem", "2xl": "1rem" }}
                 bgColor="backed_by-black"
                 align="center"
                 color="white"
@@ -1304,7 +1304,7 @@ function MilestonesAnimatedTemp() {
                   }}
                   as="span"
                 >
-                  Starknet TVL
+                  Mainnet
                 </Text>{" "}
                 <Text
                   fontSize={{
@@ -1318,13 +1318,7 @@ function MilestonesAnimatedTemp() {
                   fontWeight="600"
                 >
                   $7,000+<br />
-                  <Text fontSize={{
-                    base: "1.3rem",
-                    md: "1rem",
-                    lg: "1.3rem",
-                    xl: "1.5rem",
-                    "2xl": "1.8rem",
-                  }}>(Invite-only)</Text>
+                  (Invite Only)
                   
                   
                 </Text>
@@ -1337,7 +1331,7 @@ function MilestonesAnimatedTemp() {
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="start"
-                padding={{ base: "1rem", xl: "1rem", "2xl": "1.5rem" }}
+                padding={{ base: "1rem", xl: "1rem", "2xl": "1rem" }}
                 bgColor="backed_by-black"
                 align="center"
                 color="white"
