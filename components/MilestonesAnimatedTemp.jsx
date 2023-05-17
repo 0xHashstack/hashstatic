@@ -1225,7 +1225,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  45.8K+ <br />
+                  45K+ <br />
                   Followers
                 </Text>
               </GridItem>
@@ -1271,7 +1271,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  27.2K+ <br />
+                  27K+ <br />
                   Members
                 </Text>
               </GridItem>
