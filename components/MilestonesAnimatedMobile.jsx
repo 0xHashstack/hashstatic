@@ -934,7 +934,7 @@ function MilestonesAnimatedMobile() {
                   Twitter
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  28.6K+ <br />
+                  45.8K+ <br />
                   Followers
                 </Text>
               </GridItem>
@@ -960,7 +960,7 @@ function MilestonesAnimatedMobile() {
                   Discord
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  17.4K+ <br />
+                27.2K+ <br />
                   Members
                 </Text>
               </GridItem>

@@ -1225,7 +1225,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  28.6K+ <br />
+                  45.8K+ <br />
                   Followers
                 </Text>
               </GridItem>
@@ -1271,7 +1271,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  17.4K+ <br />
+                  27.2K+ <br />
                   Members
                 </Text>
               </GridItem>
@@ -1317,8 +1317,16 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  $72+ <br />
-                  Million
+                  $6,000+<br />
+                  <Text fontSize={{
+                    base: "1.3rem",
+                    md: "1rem",
+                    lg: "1.3rem",
+                    xl: "1.5rem",
+                    "2xl": "1.7rem",
+                  }}>(Invite-only)</Text>
+                  
+                  
                 </Text>
               </GridItem>
 
@@ -1363,7 +1371,7 @@ function MilestonesAnimatedTemp() {
                   lineHeight={{ lg: "2rem", xl: "1.5rem", "2xl": "2.5rem" }}
                   fontWeight="600"
                 >
-                  87,500+ <br />
+                  1,100+ <br />
                   Completed
                 </Text>
               </GridItem>
