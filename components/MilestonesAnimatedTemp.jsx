@@ -1304,7 +1304,7 @@ function MilestonesAnimatedTemp() {
                   }}
                   as="span"
                 >
-                  Starknet TVL
+                  Mainnet
                 </Text>{" "}
                 <Text
                   fontSize={{

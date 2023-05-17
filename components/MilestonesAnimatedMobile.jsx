@@ -983,7 +983,7 @@ function MilestonesAnimatedMobile() {
                   lineHeight={{ base: "2rem" }}
                   as="span"
                 >
-                  Starknet TVL
+                  Mainnet
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
                   $7,000+ <br />
