@@ -986,8 +986,8 @@ function MilestonesAnimatedMobile() {
                   Starknet TVL
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  $72+ <br />
-                  Million
+                  $7,000+ <br />
+                  (Invite-only)
                 </Text>
               </GridItem>
 
@@ -1012,7 +1012,7 @@ function MilestonesAnimatedMobile() {
                   Transactions
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  87,500+ <br />
+                  1,100+ <br />
                   Completed
                 </Text>
               </GridItem>
