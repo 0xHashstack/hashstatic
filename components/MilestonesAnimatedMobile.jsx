@@ -934,7 +934,7 @@ function MilestonesAnimatedMobile() {
                   Twitter
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  28.6K+ <br />
+                  45K+ <br />
                   Followers
                 </Text>
               </GridItem>
@@ -960,7 +960,7 @@ function MilestonesAnimatedMobile() {
                   Discord
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  17.4K+ <br />
+                27K+ <br />
                   Members
                 </Text>
               </GridItem>
@@ -983,11 +983,11 @@ function MilestonesAnimatedMobile() {
                   lineHeight={{ base: "2rem" }}
                   as="span"
                 >
-                  Starknet TVL
+                  Mainnet
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  $72+ <br />
-                  Million
+                  $7,000+ <br />
+                  (Invite-only)
                 </Text>
               </GridItem>
 
@@ -1012,7 +1012,7 @@ function MilestonesAnimatedMobile() {
                   Transactions
                 </Text>{" "}
                 <Text fontSize={{ base: "1rem" }} fontWeight="600">
-                  87,500+ <br />
+                  1,100+ <br />
                   Completed
                 </Text>
               </GridItem>
