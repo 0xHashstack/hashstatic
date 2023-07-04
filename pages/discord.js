@@ -6,7 +6,7 @@ const DiscordRedirect = () => {
 
   useEffect(() => {
     // Redirect to the desired URL
-    router.replace(' https://discord.gg/hashstack');
+    window.location.href =' https://discord.gg/hashstack';
   }, []);
 
   return null;
