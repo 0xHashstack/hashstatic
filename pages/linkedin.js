@@ -6,7 +6,7 @@ const DiscordRedirect = () => {
 
   useEffect(() => {
     // Redirect to the desired URL
-    router.replace(' https://in.linkedin.com/company/0xhashstack');
+    window.location.href =' https://in.linkedin.com/company/0xhashstack';
   }, []);
 
   return null;

@@ -6,7 +6,7 @@ const TwitterRedirect = () => {
 
   useEffect(() => {
     // Redirect to the desired URL
-    router.replace('https://twitter.com/0xHashstack');
+    window.location.href ='https://twitter.com/0xHashstack';
   }, []);
 
   return null;

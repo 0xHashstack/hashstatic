@@ -6,7 +6,7 @@ const MediumRedirect = () => {
 
   useEffect(() => {
     // Redirect to the desired URL
-    router.replace(' https://hashstack.medium.com');
+    window.location.href =' https://hashstack.medium.com';
   }, []);
 
   return null;
