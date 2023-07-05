@@ -6,7 +6,8 @@ const DiscordRedirect = () => {
 
   useEffect(() => {
     // Redirect to the desired URL
-    router.replace('https://instagram.com/0xhashstack');
+    window.location.href = 'https://instagram.com/0xhashstack';
+    // router.replace('https://instagram.com/0xhashstack');
   }, []);
 
   return null;

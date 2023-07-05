@@ -6,7 +6,7 @@ const DiscordRedirect = () => {
 
   useEffect(() => {
     // Redirect to the desired URL
-    router.replace('https://zealy.io/c/hashstack/questboard');
+    window.location.href = 'https://zealy.io/c/hashstack/questboard';
   }, []);
 
   return null;
