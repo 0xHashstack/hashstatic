@@ -4,9 +4,9 @@ export const urls = {
   Developers: "https://github.com/0xHashstack",
   Invest: "mailto:invest@hashstack.finance",
   Community: "https://discord.gg/hashstack",
-  Whitepaper: "https://docs.hashstack.finance/whitepaper",
+  Whitepaper: " https://hashstack.finance/whitepaper?utm_source=website&utm_medium=footer",
   Contracts: "",
-  Docs: "https://docs.hashstack.finance/",
+  Docs: "https://hashstack.finance/docs?utm_source=website&utm_medium=footer",
   //Featured By
   Bloomberg:
     "https://www.bloomberg.com/press-releases/2022-08-08/announcing-hashstack-s-switch-to-starknet",
@@ -24,7 +24,7 @@ export const urls = {
     "https://inc42.com/startups/30-startups-to-watch-the-startups-that-caught-our-eye-in-july-2022/",
   //Footer
   Hashnomics: "/",
-  Testnet: "https://zk.hashstack.finance/",
+  Testnet: "https://hashstack.finance/testnet?utm_source=website&utm_medium=footer",
   "Testnet Guide":
     "https://hashstack.notion.site/Hashstack-s-Starknet-Testnet-Guide-461baceeeeed41098bb5366f0033b3f4",
   "Contrubute-CTA-Discord": "https://hashstack.crew3.xyz/questboard",
@@ -32,26 +32,26 @@ export const urls = {
     "https://ethereum-magicians.org/t/eip-5299-layer3-scaling-standard/9039",
   Audit: "https://www.certik.com/projects/hashstack",
   "Bug Bounty": "/",
-  Blog: "https://blog.hashstack.finance/",
+  Blog: "https://hashstack.finance/blog?utm_source=website&utm_medium=footer",
   "Hashstack 101":
-    "https://hashstack.notion.site/Hashstack-s-Starknet-Testnet-Guide-461baceeeeed41098bb5366f0033b3f4",
+    " https://docs.hashstack.finance/hub/101-guides?utm_source=website&utm_medium=footer",
   "Terms Of Service": "/",
   "Privacy Policy": "/",
   "Branding Kit":
-    "https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro?usp=share_link",
-  "Status Page": "https://status.hashstack.finance",
-  Careers: "https://angel.co/company/hashstack/jobs",
-  Discord: "https://discord.gg/hashstack",
-  Twitter: "https://twitter.com/0xHashstack",
-  Medium: "https://hashstack.medium.com/",
+    "https://hashstack.finance/logo?utm_source=website&utm_medium=footer",
+  "Status Page": "https://hashstack.finance/status?utm_source=website&utm_medium=footer",
+  Careers: " https://hashstack.finance/jobs?utm_source=website&utm_medium=footer",
+  Discord: "https://hashstack.finance/discord?utm_source=website&utm_medium=footer",
+  Twitter: "https://hashstack.finance/twitter?utm_source=website&utm_medium=footer",
+  Medium: "https://hashstack.finance/medium?utm_source=website&utm_medium=footer",
   C2E: "https://hashstack.crew3.xyz/questboard",
-  Reddit: "https://www.reddit.com/r/0xHashstack/",
+  Reddit: "https://hashstack.finance/reddit?utm_source=website&utm_medium=footer",
   Instagram: "https://www.instagram.com/0xhashstack/?hl=en",
-  Youtube: "https://www.youtube.com/channel/UC6xDtLop9UD0Q9qgZ32t9wg",
+  Youtube: " https://hashstack.finance/youtube?utm_source=website&utm_medium=footer",
   Linkedin:
     "https://www.linkedin.com/company/0xhashstack/?originalSubdomain=in",
   Bug_Bounty: "https://blog.hashstack.finance/launching-community-bug-bounty",
-  Hashstack_101: "https://docs.hashstack.finance/testnet-guide/",
+  Hashstack_101: "https://docs.hashstack.finance/hub/101-guides?utm_source=website&utm_medium=footer",
   //articles
   article1:
     "https://blog.hashstack.finance/deconstructing-hashstacks-dynamic-interest-algorithm-dial/",
