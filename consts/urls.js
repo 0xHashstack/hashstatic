@@ -24,7 +24,7 @@ export const urls = {
     "https://inc42.com/startups/30-startups-to-watch-the-startups-that-caught-our-eye-in-july-2022/",
   //Footer
   Hashnomics: "/",
-  Testnet: "https://testnet.hashstack.finance/v1/",
+  Testnet: "https://hashstack.finance/testnet?utm_source=website&utm_medium=footer",
   "Testnet Guide":
     "https://hashstack.notion.site/Hashstack-s-Starknet-Testnet-Guide-461baceeeeed41098bb5366f0033b3f4",
   "Contrubute-CTA-Discord": "https://hashstack.crew3.xyz/questboard",
