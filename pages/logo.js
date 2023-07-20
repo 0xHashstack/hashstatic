@@ -6,7 +6,7 @@ const TwitterRedirect = () => {
 
   useEffect(() => {
     // Redirect to the desired URL
-    window.location.href ='https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro';
+    window.location.href ='https://drive.google.com/drive/folders/1ysun5L45Ib4MZAOGr8v9BK-CpZuMpXJr';
   }, []);
 
   return null;
