@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 import { useMediaQuery } from '@chakra-ui/react'
 const Banner = () => {
   const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
-  console.log(isLargerThan800,"true")
+  // console.log(isLargerThan800,"true")
   return (
     <Box 
         bg="#000"
