@@ -4,6 +4,7 @@ import HashstackLogo from '../assets/Icons/hashstackLogo'
 import DicordLogo from '../assets/Icons/dicordLogo'
 import { useRouter } from 'next/router'
 import DiscordLogoWhite from '../assets/Icons/discordLogoWhite'
+import Link from 'next/link'
 const Navbar = () => {
   const router=useRouter();
   const [dashboardHover, setDashboardHover] = useState(false);
@@ -30,7 +31,9 @@ const Navbar = () => {
           color:"#fff"
         }}
         >
+          <Link href="https://testnet.hashstack.finance" target="_blank">
             <Text fontFamily="Inter" fontSize="14px" fontStyle="normal" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px">Launch App</Text>
+          </Link>
         </Box>
         <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer" _hover={{
           background:"#4D59E8",
@@ -38,7 +41,9 @@ const Navbar = () => {
         onMouseEnter={() => setDashboardHover(true)}
         onMouseLeave={() => setDashboardHover(false)}
         >
+          <Link href="https://discord.gg/hashstack" target='_blank'>
           {dashboardHover ?<DiscordLogoWhite/>: <DicordLogo/>}
+          </Link>
            
         </Box>
       </Box>

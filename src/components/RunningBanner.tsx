@@ -10,9 +10,12 @@ import YagiLogo from '../assets/Icons/yagiLogo';
 import PragmaLogo from '../assets/Icons/pragmaLogo';
 
 const RunningBanner = () => {
-    // const speed:any = useBreakpointValue({
+    // const speed = useBreakpointValue({
     //     base: 20,
     //     md: 40,
+       
+    //   },{
+    //     fallback:"md"
     //   });
     //   const speedDetails = speed ? speed.details : null;
     //   const isGradientVisible:any = useBreakpointValue({

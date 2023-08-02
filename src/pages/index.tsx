@@ -6,16 +6,17 @@ import Content from '../components/Content'
 import MarketStats from '../components/MarketStats'
 import RunningBanner from '../components/RunningBanner'
 import Footer from '../components/Footer'
+import { Box } from '@chakra-ui/react'
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <Box  backgroundRepeat="no-repeat" overflowY="scroll" backgroundSize="cover">
       <Banner/>
       <Navbar/>
       <Content/>
       <MarketStats/>
       <RunningBanner/>
       <Footer/>
-    </div>
+    </Box>
   )
 }
 
