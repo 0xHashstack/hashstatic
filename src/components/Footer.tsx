@@ -96,6 +96,8 @@ const Footer = () => {
 
         </Box>
           </Link>
+          <Link href="https://docs.hashstack.finance/hub/faqs" target='_blank'>
+          
         <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
                   _hover={{
                     background:"#4D59E8",
@@ -106,6 +108,7 @@ const Footer = () => {
           {dashboardHover==6 ? <QueryIconWhite/>:<QueryIcon />}
           
         </Box>
+          </Link>
       </Box>
 
 

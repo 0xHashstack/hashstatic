@@ -15,10 +15,10 @@ const MarketStats = () => {
         fetchData();
     },[])
     const [isLargerThan1800] = useMediaQuery('(min-width: 1800px)')
-    const gap=isLargerThan1800==true ? "60rem":"45rem";
+    const gap=isLargerThan1800==true ? "60rem":"33rem";
     console.log(gap,"screen")
     return (
-        <Box display="flex" flexDirection="row" gap={gap} mt="1rem" p="0 2rem">
+        <Box display="flex" flexDirection="row" gap={gap} mt="1.5rem" p="0 2rem">
             <Box display="flex" flexDirection="row" gap="50px">
                 <Box>
                     <Text color="#BDBFC1" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0">

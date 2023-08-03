@@ -24,27 +24,29 @@ const RunningBanner = () => {
     //     md: true,
     //   });
     return (
-        <Box display="flex" mb="2rem">
-            <Box flexShrink="0" zIndex="1" display="flex" bg="#000" padding="0px 10px">
+        <Box display="flex" mb="1rem">
+            <Box  zIndex="1" display="flex" bg="#000" padding="0px 10px">
                 <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight="40px" textAlign="center">
                     We Work with
                 </Text>
             </Box>
-            <Box display="flex" width="100%" overflow="hidden">
+            <Box  width="100%"  background= "rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY="1.2rem">
                 <Marquee
                     style={{
                         display: "flex",
 
-                        justifyContent: "center",
-                        // alignItems: "baseline",
-                        background: "rgba(217, 217, 217, 0.06)",
-                        overflow: "hidden",
+                        // justifyContent: "center",
+                        alignItems: "baseline",
+                        textAlign:"center",
+                        // height:"21px",
+                        // background: "rgba(217, 217, 217, 0.06)",
+                        // overflow: "hidden",
                         // textAlign:"center",
                         // marginTop:"0.2rem"
                     }}
                     gradientColor={[12, 8, 34]}
                     pauseOnHover={true}
-                    speed={20}
+                    speed={200}
                 // speed={speed}
                 // gradient={isGradientVisible}
 
@@ -59,7 +61,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
@@ -72,7 +74,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
@@ -85,7 +87,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
@@ -98,7 +100,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
@@ -112,7 +114,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
@@ -126,7 +128,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
@@ -140,7 +142,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
@@ -154,7 +156,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
                     <Link href={urls["JediSwap"]} target="_blank">
@@ -166,9 +168,10 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
+
 
                     <Link href={urls["MySwap"]} target="_blank">
                         <Image
@@ -179,33 +182,7 @@ const RunningBanner = () => {
                             transition="0.2s"
                             alt="GHAF Logo"
                             maxWidth="100%"
-                            maxHeight="100px"
-                        />
-                    </Link>
-
-                    <Link href={urls["Yagi"]} target="_blank">
-                        <Image
-                            marginInline={isLargerThan800? "4rem":"2rem"}
-                            src="/logos/yagiLogo.svg"
-                            opacity="70%"
-                            _hover={{ opacity: "100%" }}
-                            transition="0.2s"
-                            alt="GHAF Logo"
-                            maxWidth="100%"
-                            maxHeight="100px"
-                        />
-                    </Link>
-
-                    <Link href={urls["Pragma"]} target="_blank">
-                        <Image
-                            marginInline={isLargerThan800? "4rem":"2rem"}
-                            src="/logos/pragmaLogo.svg"
-                            opacity="70%"
-                            _hover={{ opacity: "100%" }}
-                            transition="0.2s"
-                            alt="GHAF Logo"
-                            maxWidth="100%"
-                            maxHeight="100px"
+                            // maxHeight="100px"
                         />
                     </Link>
 
