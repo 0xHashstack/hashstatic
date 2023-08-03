@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import { Box } from '@chakra-ui/react'
 const Home: NextPage = () => {
   return (
-    <Box  >
+    <Box  background="linear-gradient(to bottom left,#7331ea47,#000, #7331ea33)">
       <Banner/>
       <Navbar/>
       <Content/>

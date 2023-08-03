@@ -27,6 +27,7 @@ a {
     background-image:  linear-gradient(to bottom left,#7331ea47,#000, #7331ea33) !important;
     background-repeat: no-repeat;
     overflow-y: scroll;
+    overflow-x: hidden;
     background-size: cover;
   }
 }

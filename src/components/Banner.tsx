@@ -10,8 +10,9 @@ const Banner = () => {
     <Box 
         bg="#000"
         textAlign="center"
-        pt="0.7rem"
+        // pt="100rem"
         color="#00D395"
+        height="25px"
         fontSize="18px"
         fontStyle="normal"
         fontWeight="500"

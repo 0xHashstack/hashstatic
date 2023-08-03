@@ -30,14 +30,19 @@ const RunningBanner = () => {
                     We Work with
                 </Text>
             </Box>
-            <Box  width="100%"  background= "rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY="1.2rem">
+            <Box  width="100%"  background= "rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY="1.2rem" >
                 <Marquee
                     style={{
                         display: "flex",
+                        // background:"blue",
 
                         // justifyContent: "center",
                         alignItems: "baseline",
-                        textAlign:"center",
+                        // textAlign:"center",
+                        paddingTop:"2px",
+                        paddingBottom:"2px"
+                        
+                        // padding:"2.5px 0"
                         // height:"21px",
                         // background: "rgba(217, 217, 217, 0.06)",
                         // overflow: "hidden",
@@ -46,11 +51,14 @@ const RunningBanner = () => {
                     }}
                     gradientColor={[12, 8, 34]}
                     pauseOnHover={true}
-                    speed={200}
+                    speed={40}
                 // speed={speed}
                 // gradient={isGradientVisible}
 
                 >
+                    <Box display="flex" flexGrow="1" ml="1rem" justifyContent="center">
+
+ 
 
                     <Link href={urls["JediSwap"]} target="_blank">
                         <Image
@@ -186,7 +194,7 @@ const RunningBanner = () => {
                         />
                     </Link>
 
-
+                    </Box>
 
                 </Marquee>
             </Box>

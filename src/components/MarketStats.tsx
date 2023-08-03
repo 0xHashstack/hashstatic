@@ -15,25 +15,28 @@ const MarketStats = () => {
         fetchData();
     },[])
     const [isLargerThan1800] = useMediaQuery('(min-width: 1800px)')
-    const gap=isLargerThan1800==true ? "60rem":"33rem";
+    const [isLessThan1475] = useMediaQuery('(max-width: 1475px)')
+    console.log(isLessThan1475,"size")
+
+    const gap=isLargerThan1800==true ? "60rem": isLessThan1475==true?"32rem":"35rem";
     console.log(gap,"screen")
     return (
-        <Box display="flex" flexDirection="row" gap={gap} mt="1.5rem" p="0 2rem">
+        <Box display="flex" flexDirection="row" gap={gap} mt="1.5rem" p="0 2rem" >
             <Box display="flex" flexDirection="row" gap="50px">
                 <Box>
-                    <Text color="#BDBFC1" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0">
+                    <Text color="#BDBFC1" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
                         Utilization Rate
                     </Text>
-                    <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem">
-                        {utilRate} %
+                    <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
+                        {utilRate? `${utilRate}%`:""}
                     </Text>
                 </Box>
                 <Box>
-                    <Text color="#BDBFC1" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0">
+                    <Text color="#BDBFC1" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
                         Total value locked
                     </Text>
-                    <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem">
-                        $ 15.44m
+                    <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
+                        $16.44m
                     </Text>
                 </Box>
 
