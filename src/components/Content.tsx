@@ -15,7 +15,8 @@ const Content = () => {
   // const flexDirection=isLessThan1250 ?"column":"row";
   // console.log(isLessThan1250,"less")
   return (
-    <Box display="flex" flexDirection="row" p="0 2rem"  background="transparent" >
+    <Box>
+ <Box display="flex" flexDirection="row" p="0 2rem"  background="transparent" >
       <Box display="flex" flexDirection="column" mt={isLessThan1250 ?"6rem":"12rem"}>
         {isLessThan1250 ?        <Image
           src="/maxBorrowIpadView.svg"
@@ -57,6 +58,7 @@ const Content = () => {
         <source src="/landingPage_illustration.mp4" type="video/mp4" />
       </video>
       </Box>
+    </Box>
     </Box>
 
   )

@@ -6,6 +6,7 @@ import { useMediaQuery } from '@chakra-ui/react'
 const Banner = () => {
   const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
   // console.log(isLargerThan800,"true")
+  const [isLessThan500] = useMediaQuery('(max-width: 500px)')
   return (
     <Box 
         bg="#000"
@@ -15,7 +16,7 @@ const Banner = () => {
         paddingBottom="0.2rem"
         color="#00D395"
         height="27px"
-        fontSize="18px"
+        fontSize={isLessThan500 ?"14px":"18px"}
         fontStyle="normal"
         fontWeight="500"
         lineHeight="20px"
@@ -23,6 +24,7 @@ const Banner = () => {
         letterSpacing="-0.15px"
         textShadow=" 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
         fontFamily="inter"
+        margin="0"
     >
         Update: Hashstack's v1 public testnet is live
     </Box>
