@@ -21,11 +21,10 @@ const MarketStats = () => {
     const [isHeightLargerThan1000] = useMediaQuery('(min-height: 1000px)')
     const [isLessThan1250] = useMediaQuery('(max-width: 1250px)')
     const margTop=isLargerThan750 ? "2.5rem":"3rem"
-    console.log(isLessThan1475,"size")
     const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
     const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "45rem": isLessThan1475==true?"32rem":"35rem";
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
-    console.log(gap,"screen")
+
     return (
 
         <Box>
