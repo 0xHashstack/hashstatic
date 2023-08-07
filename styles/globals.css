@@ -23,11 +23,11 @@ a {
   html {
     color-scheme: dark;
   }
-  body {
-    background-image:  linear-gradient(to bottom left,#7331ea47,#000, #7331ea33) !important;
+  /* body {
+    background-image:  linear-gradient(to bottom left,#7231ea11 50%,#000, #7231ea11 87%) !important;
     background-repeat: no-repeat;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-size: cover;
-  }
+    background-size: 100% 100% !important;
+  } */
 }
