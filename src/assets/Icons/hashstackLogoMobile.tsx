@@ -12,6 +12,7 @@ const HashstackLogoMobile = () => {
 </defs>
 </svg>
 
+
   )
 }
 

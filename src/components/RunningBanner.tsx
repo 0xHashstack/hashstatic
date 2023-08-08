@@ -43,7 +43,7 @@ const RunningBanner = () => {
     return (
         <Box>
             {isHeightLargerThan850 && !isWidthLessThan1050 ?            <Box display="flex" position="fixed" bottom="90">
-                <Box zIndex="1" display="flex" bg="#000" padding="0px 10px">
+                <Box  display="flex" bg="#000" padding="0px 10px">
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight="40px" textAlign="center">
                         We Work with
                     </Text>
@@ -370,7 +370,7 @@ const RunningBanner = () => {
                 </Box>
     
             </Box>:            <Box display="flex" height={isLessThan1210 ?"50px":""}>
-                <Box zIndex="1" display="flex" bg="#000" padding={isLessThan1210 ?"0px 10px":"0 10px"} >
+                <Box  display="flex" bg="#000" padding={isLessThan1210 ?"0px 10px":"0 10px"} >
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight={isLessThan1210 ?"25px":"40px"} >
                         We Work with
                     </Text>

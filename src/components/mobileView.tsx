@@ -32,16 +32,16 @@ const MobileView = () => {
                 // justifyContent={isLessThan1250 ?"center":""}
                 >
                     {/* <AnimatedFrame/> */}
-                    {/* <Image
-          src="/frame.svg"
+                    <Image
+          src="/landingPage_illustration_gif.gif"
           alt="GHAF Logo"
           maxWidth="100%"
         // maxHeight="100px"
 
-        /> */}
-                    <video autoPlay loop height={200}>
+        />
+                    {/* <video autoPlay loop muted height={200}>
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
-                    </video>
+                    </video> */}
                 </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
@@ -116,7 +116,7 @@ const MobileView = () => {
 
                 </Box>
             </Box>
-            <Box zIndex="1" display="flex" justifyContent="center" textAlign="center" padding="0px 10px" mt="2rem">
+            <Box  display="flex" justifyContent="center" textAlign="center" padding="0px 10px" mt="2rem">
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight="40px" textAlign="center">
                         We Work with
                     </Text>

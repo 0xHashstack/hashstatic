@@ -44,16 +44,16 @@ const IpadView = () => {
                 // justifyContent={isLessThan1250 ?"center":""}
                 >
                     {/* <AnimatedFrame/> */}
-                    {/* <Image
-          src="/frame.svg"
+                    <Image
+          src="/il.gif"
           alt="GHAF Logo"
           maxWidth="100%"
         // maxHeight="100px"
 
-        /> */}
-                    <video autoPlay loop height={400}>
+        />
+                    {/* <video autoPlay loop height={400}>
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
-                    </video>
+                    </video> */}
                 </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
@@ -120,7 +120,7 @@ const IpadView = () => {
 
             </Box>
             <Box display="flex" mt="2.5rem">
-            <Box zIndex="1" display="flex" bg="#000" padding="0px 8px" height="63px">
+            <Box  display="flex" bg="#000" padding="0px 8px" height="63px">
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="12px" fontWeight="600" lineHeight="40px" textAlign="center">
                         We Work with
                     </Text>
@@ -131,6 +131,7 @@ const IpadView = () => {
                         style={{
                             display: "flex",
                             // background:"blue",
+                            zIndex:"100",
                             marginTop:"0.4rem",
     
                             // justifyContent: "center",

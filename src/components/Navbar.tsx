@@ -48,7 +48,6 @@ const Navbar = () => {
       </Box>
 
       {/* Right side with launch app and Discord app logos */}
-      {!isLessThan500 ? (
         <Box
           display="inline-flex"
           alignItems="center"
@@ -59,8 +58,7 @@ const Navbar = () => {
           flexShrink="0"
         >
           {/* Assuming you have the logo for launch app in an image file */}
-
-          <Box
+          {!isLessThan500 && <Box
             display="flex"
             height="40px"
             width="109px"
@@ -88,7 +86,8 @@ const Navbar = () => {
                 Launch App
               </Text>
             </Link>
-          </Box>
+          </Box>}
+
 
           <Box
             display="flex"
@@ -112,7 +111,7 @@ const Navbar = () => {
                 {dashboardHover ? <DiscordLogoWhite /> : <DicordLogo />}
               </Link>
             ) : (
-              <Box onClick={() => handleClick("xs")}>
+              <Box onClick={() => handleClick("sm")}>
                 <Image
                   src="/hamburgerIcon.svg"
                   alt="picture of author"
@@ -122,20 +121,30 @@ const Navbar = () => {
               </Box>
             )}
           </Box>
-          <Drawer onClose={onClose} isOpen={isOpen} size={"xs"}>
+          <Drawer onClose={onClose} isOpen={isOpen} size={"sm"}>
             <DrawerOverlay />
             <DrawerContent>
-              <DrawerCloseButton />
-              <DrawerHeader>{`${size} drawer contents`}</DrawerHeader>
-              <DrawerBody>
-                <Box display="flex" flexDirection="column" gap="2.5rem">
+              {/* <DrawerCloseButton width="50%"  /> */}
+              <DrawerBody >
+                <Box display="flex" bg="#000" alignItems="center" height="100vh" flexDirection="column">
+                  <Box display="flex" flexDirection="row" cursor="pointer" mt="2rem">
+                    {isLessThan500 ? <HashstackLogoMobile /> : <HashstackLogo />}
+                  </Box>
                   <Text
                     color="#4D59E8"
                     fontSize="14px"
                     fontStyle="normal"
                     fontWeight="500"
+                    width="100%"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
                     lineHeight="20px"
                     cursor="pointer"
+                    height="64px"
+                    mt="2rem"
+                    border="1px solid rgb(26, 26, 31)"
+                    mb="0rem"
                   >
                     HomePage
                   </Text>
@@ -146,10 +155,18 @@ const Navbar = () => {
                     fontWeight="500"
                     lineHeight="20px"
                     cursor="pointer"
+                    width="100%"
+                    textAlign="center"
+                    height="64px"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    border="1px solid rgb(26, 26, 31)"
+                    margin="0"
                   >
                     Use Cases
                   </Text>
-                  <Link href="https://docs.hashstack.finance/" target="_blank">
+
                     <Text
                       color="#fff"
                       fontSize="14px"
@@ -157,10 +174,20 @@ const Navbar = () => {
                       fontWeight="500"
                       lineHeight="20px"
                       cursor="pointer"
+                      width="100%"
+                      textAlign="center"
+                      height="64px"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      border="1px solid rgb(26, 26, 31)"
+                      margin="0"
+                      onClick={()=>{
+                        router.push('https://docs.hashstack.finance/')
+                      }}
                     >
                       Documentation
                     </Text>
-                  </Link>
                   <Text
                     color="#fff"
                     fontSize="14px"
@@ -168,10 +195,20 @@ const Navbar = () => {
                     fontWeight="500"
                     lineHeight="20px"
                     cursor="pointer"
+                    width="100%"
+                    textAlign="center"
+                    height="64px"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    border="1px solid rgb(26, 26, 31)"
+                    margin="0"
                   >
                     Tokenomics
                   </Text>
-                  <Link href="https://hashstack.finance/c2e" target="_blank">
+                  <Box>
+                    
+                  </Box>
                     <Text
                       color="#fff"
                       fontSize="14px"
@@ -179,14 +216,21 @@ const Navbar = () => {
                       fontWeight="500"
                       lineHeight="20px"
                       cursor="pointer"
+                      width="100%"
+                      textAlign="center"
+                      height="64px"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      border="1px solid rgb(26, 26, 31)"
+                      margin="0"
+                      onClick={()=>{
+                        router.push('https://hashstack.finance/c2e')
+                      }}
                     >
                       Contribute-2-Earn
                     </Text>
-                  </Link>
-                  <Link
-                    href="https://hashstack.finance/whitepaper"
-                    target="_blank"
-                  >
+
                     <Text
                       color="#fff"
                       fontSize="14px"
@@ -194,18 +238,26 @@ const Navbar = () => {
                       fontWeight="500"
                       lineHeight="20px"
                       cursor="pointer"
+                      width="100%"
+                      textAlign="center"
+                      height="64px"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      border="1px solid rgb(26, 26, 31)"
+                      margin="0"
+                      onClick={()=>{
+                        router.push('https://hashstack.finance/whitepaper')
+                      }}
                     >
                       White Paper
                     </Text>
-                  </Link>
+                  <DrawerCloseButton width="48px" height="48px" borderRadius="8px"  bg="rgba(255, 255, 255, 0.04)"  mt="5rem" />
                 </Box>
               </DrawerBody>
             </DrawerContent>
           </Drawer>
         </Box>
-      ) : (
-        ""
-      )}
     </Flex>
   );
 };
