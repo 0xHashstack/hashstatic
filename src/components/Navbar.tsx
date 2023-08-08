@@ -20,8 +20,10 @@ import DiscordLogoWhite from "../assets/Icons/discordLogoWhite";
 import Link from "next/link";
 import HashstackLogoMobile from "../assets/Icons/hashstackLogoMobile";
 import Image from "next/image";
+import {useDrawerContext} from '../context/DrawerContext'
 const Navbar = () => {
   const router = useRouter();
+  const { isDrawerOpen, toggleDrawer } = useDrawerContext();
   const [dashboardHover, setDashboardHover] = useState(false);
   const [isLessThan1210] = useMediaQuery("(max-width: 1210px)");
   const [isLessThan500] = useMediaQuery("(max-width: 500px)");
@@ -29,6 +31,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleClick = (newSize: any) => {
     setSize(newSize);
+    toggleDrawer();
     onOpen();
   };
 
@@ -122,8 +125,8 @@ const Navbar = () => {
             )}
           </Box>
           <Drawer onClose={onClose} isOpen={isOpen} size={"sm"}>
-            <DrawerOverlay />
-            <DrawerContent>
+            <DrawerOverlay  />
+            <DrawerContent zIndex={500}>
               {/* <DrawerCloseButton width="50%"  /> */}
               <DrawerBody >
                 <Box display="flex" bg="#000" alignItems="center" height="100vh" flexDirection="column">
@@ -252,7 +255,7 @@ const Navbar = () => {
                     >
                       White Paper
                     </Text>
-                  <DrawerCloseButton width="48px" height="48px" borderRadius="8px"  bg="rgba(255, 255, 255, 0.04)"  mt="5rem" />
+                  <DrawerCloseButton width="48px" height="48px" borderRadius="8px"  bg="rgba(255, 255, 255, 0.04)"  mt="5rem" onClick={toggleDrawer}/>
                 </Box>
               </DrawerBody>
             </DrawerContent>

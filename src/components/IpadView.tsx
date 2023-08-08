@@ -21,10 +21,13 @@ import QueryIcon from '../assets/Icons/queryIcon'
 import QueryIconWhite from '../assets/Icons/queryIconWhite'
 import TwitterIcon from '../assets/Icons/twitterIcon'
 import TwitterIconWhite from '../assets/Icons/twitterIconWhite'
+import { useDrawerContext } from '../context/DrawerContext'
 
 const IpadView = () => {
     // const [isLessThan500] = useMediaQuery('(max-width: 500px)')
     const [utilRate, setUtilRate] = useState<any>();
+    const { isDrawerOpen, toggleDrawer } = useDrawerContext();
+    console.log(isDrawerOpen,"opne")
     const [dashboardHover, setDashboardHover] = useState(0);
     useEffect(() => {
         const fetchData = async () => {
@@ -126,12 +129,11 @@ const IpadView = () => {
                     </Text>
             </Box>
             <Box width="100%" background="rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY="0.8rem" mb="2rem">
-
-            <Marquee
+            {!isDrawerOpen &&            <Marquee
                         style={{
                             display: "flex",
                             // background:"blue",
-                            zIndex:"100",
+                            zIndex:100,
                             marginTop:"0.4rem",
     
                             // justifyContent: "center",
@@ -445,7 +447,8 @@ const IpadView = () => {
     
                         </Box>
     
-                    </Marquee>
+                    </Marquee>}
+
             </Box>
             </Box>
             <Box display="flex" flexDirection="row" justifyContent="center" gap="2.5rem" mb="2rem">

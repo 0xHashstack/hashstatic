@@ -2,6 +2,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import '../../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from "next/head";
+import {DrawerContextProvider} from '../context/DrawerContext'
 const theme = extendTheme({
   colors: {
     customBlue: {
@@ -26,7 +27,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="shortcut icon" href="/favicon-32x32.png"/>
       </Head>  
+      <DrawerContextProvider>
+
     <Component {...pageProps} />
+      </DrawerContextProvider>
     </>
 )
 }

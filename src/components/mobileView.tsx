@@ -9,11 +9,13 @@ import StarknetLogo from '../assets/Icons/starknetLogo'
 import RunningBanner from './RunningBanner'
 import Marquee from 'react-fast-marquee'
 import { urls } from '../consts/urls'
+import { useDrawerContext } from '../context/DrawerContext'
 
 const MobileView = () => {
     // const [isLessThan500] = useMediaQuery('(max-width: 500px)')
     const [utilRate, setUtilRate] = useState<any>();
     const [dashboardHover, setDashboardHover] = useState(0);
+    const { isDrawerOpen, toggleDrawer } = useDrawerContext();
     useEffect(() => {
         const fetchData = async () => {
             const promise = await OffchainAPI.httpGet('/api/metrics/urm_platform/daily')
@@ -59,10 +61,7 @@ const MobileView = () => {
                         mining,trading needs.</Text>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center" mt="1rem">
-                    <Box display="flex" height="40px" width="109px" textAlign="center" alignItems="center" justifyContent="center" gap="8px" border="1px solid #4D59E8" borderRadius="4px" color="#4D59E8" cursor="pointer" _hover={{
-                        background: "#4D59E8",
-                        color: "#fff"
-                    }}
+                    <Box display="flex" height="40px" width="109px" textAlign="center" alignItems="center" justifyContent="center" gap="8px" border="1px solid #4D59E8" borderRadius="4px" color="#4D59E8" cursor="pointer" bg="transparent"
                     >
                         <Link href="https://testnet.hashstack.finance" target="_blank">
                             <Text fontFamily="Inter" fontSize="14px" fontStyle="normal" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px">Launch App</Text>
@@ -124,8 +123,7 @@ const MobileView = () => {
 
             </Box>
             <Box width="100%" background="rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY="1.2rem" mb="2rem">
-
-            <Marquee
+                    {!isDrawerOpen &&            <Marquee
                         style={{
                             display: "flex",
                             // background:"blue",
@@ -441,7 +439,8 @@ const MobileView = () => {
     
                         </Box>
     
-                    </Marquee>
+                    </Marquee>}
+
             </Box>
         </Box>
     )
