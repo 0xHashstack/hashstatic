@@ -27,7 +27,7 @@ const MobileView = () => {
             <Banner />
             <Navbar />
             <Box display="flex" flexDirection="column" background="transparent" p="0 2rem">
-                <Box mt="2rem" display="flex" justifyContent="center" mb="1.5rem"
+                <Box mt="2rem" display="flex" justifyContent="center" mb="1.5rem" 
                 // display="flex"
                 // justifyContent={isLessThan1250 ?"center":""}
                 >

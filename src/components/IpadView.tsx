@@ -119,7 +119,7 @@ const IpadView = () => {
 
 
             </Box>
-            <Box display="flex" mt="1.5rem">
+            <Box display="flex" mt="2.5rem">
             <Box zIndex="1" display="flex" bg="#000" padding="0px 8px" height="63px">
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="12px" fontWeight="600" lineHeight="40px" textAlign="center">
                         We Work with
