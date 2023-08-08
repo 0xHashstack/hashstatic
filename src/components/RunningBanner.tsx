@@ -369,13 +369,13 @@ const RunningBanner = () => {
                     </Marquee>
                 </Box>
     
-            </Box>:            <Box display="flex">
-                <Box zIndex="1" display="flex" bg="#000" padding="0px 10px">
-                    <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight="40px" textAlign="center">
+            </Box>:            <Box display="flex" height={isLessThan1210 ?"50px":""}>
+                <Box zIndex="1" display="flex" bg="#000" padding={isLessThan1210 ?"0px 10px":"0 10px"} >
+                    <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight={isLessThan1210 ?"25px":"40px"} >
                         We Work with
                     </Text>
                 </Box>
-                <Box width="100%" background="rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY="1.2rem" >
+                <Box width="100%" background="rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY={isLessThan1210 ?"0.9rem":"1.2rem"} >
                     <Marquee
                         style={{
                             display: "flex",
@@ -694,6 +694,81 @@ const RunningBanner = () => {
     
                     </Marquee>
                 </Box>
+                {isLessThan1210 &&      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="row" gap="2.5rem" ml="1rem" mr="1rem">
+        <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
+          onMouseEnter={() => setIconDashboardHover(1)}
+          onMouseLeave={() => setIconDashboardHover(0)}
+          _hover={{
+            background:"#4D59E8",
+          }}
+          
+        >
+          {iconDashboardHover==1 ? <InfoIconWhite /> : <InfoIcon />}
+  
+        </Box>
+        <Link href="https://x.com/0xhashstack" target="_blank">
+          <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer" 
+                    _hover={{
+                      background:"#4D59E8",
+                    }}
+                    onMouseEnter={() => setIconDashboardHover(2)}
+                    onMouseLeave={() => setIconDashboardHover(0)}
+          >
+            {iconDashboardHover==2? <TwitterIconWhite/>:<TwitterIcon />}
+            
+          </Box>
+        </Link>
+          <Link href="https://discord.gg/hashstack" target="_blank">
+        <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
+                  _hover={{
+                    background:"#4D59E8",
+                  }}
+                  onMouseEnter={() => setIconDashboardHover(3)}
+                  onMouseLeave={() => setIconDashboardHover(0)}
+        >
+          {iconDashboardHover==3 ? <DiscordLogoWhite/>:<DicordLogo />}
+            
+        </Box>
+          </Link>
+          <Link href="https://github.com/0xHashstack/" target="_blank">
+        <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
+                  _hover={{
+                    background:"#4D59E8",
+                  }}
+                  onMouseEnter={() => setIconDashboardHover(4)}
+                  onMouseLeave={() => setIconDashboardHover(0)}
+        >
+          {iconDashboardHover==4 ? <GithubIconWhite/>:<GithubIcon />}
+            
+        </Box>
+          </Link>
+          <Link href="https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro" target="_blank">
+        <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
+                  _hover={{
+                    background:"#4D59E8",
+                  }}
+                  onMouseEnter={() => setIconDashboardHover(5)}
+                  onMouseLeave={() => setIconDashboardHover(0)}
+        >
+          {iconDashboardHover==5 ? <FileIconWhite/>:<FileIcon />}
+            
+  
+        </Box>
+          </Link>
+          <Link href="https://docs.hashstack.finance/hub/faqs" target='_blank'>
+          
+        <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
+                  _hover={{
+                    background:"#4D59E8",
+                  }}
+                  onMouseEnter={() => setIconDashboardHover(6)}
+                  onMouseLeave={() => setIconDashboardHover(0)}
+        >
+          {iconDashboardHover==6 ? <QueryIconWhite/>:<QueryIcon />}
+          
+        </Box>
+          </Link>
+      </Box>}
 
             </Box>}
 
