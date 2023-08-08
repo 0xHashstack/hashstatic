@@ -24,6 +24,7 @@ const MarketStats = () => {
     const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
     const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "45rem": isLessThan1475==true?"32rem":"35rem";
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
+    const [isWidthLessThan1130] = useMediaQuery('(max-width: 1130px)')
 
     return (
 
@@ -70,7 +71,7 @@ const MarketStats = () => {
                 </Box>
             </Box>
 
-            </Box>:            <Box display="flex" flexDirection="row" gap={isLessThan1250? "20rem":gap} mt={margTop} p="0 2rem" 
+            </Box>:            <Box display="flex" flexDirection="row" gap={isWidthLessThan1130 ?"15rem" :isLessThan1250? "20rem": gap} mt={margTop} p="0 2rem" 
         // justifyContent={isLargerThan1600 ? "space-around":""} \
         // alignItems="center"
        
