@@ -54,9 +54,16 @@ const Content = () => {
         // maxHeight="100px"
 
         /> */}
-              <video autoPlay loop height={isLessThan1350 ? 300:""}>
+                            <Image
+          src="/giftry.gif"
+          alt="GHAF Logo"
+          maxWidth="100%"
+        // maxHeight="100px"
+
+        />
+              {/* <video autoPlay loop height={isLessThan1350 ? 300:""}>
         <source src="/landingPage_illustration.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       </Box>
     </Box>
     </Box>

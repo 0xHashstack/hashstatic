@@ -35,7 +35,7 @@ const MobileView = () => {
                 >
                     {/* <AnimatedFrame/> */}
                     <Image
-          src="/landingPage_illustration_gif.gif"
+          src="/giftry.gif"
           alt="GHAF Logo"
           maxWidth="100%"
         // maxHeight="100px"
