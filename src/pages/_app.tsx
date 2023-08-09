@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/favicon-32x32.png"/>
       </Head>  
       <DrawerContextProvider>
-
     <Component {...pageProps} />
       </DrawerContextProvider>
     </>
