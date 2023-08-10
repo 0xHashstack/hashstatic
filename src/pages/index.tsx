@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       isLessThan980  ?<IpadView/>:      <Box>
         <Banner />
         <Navbar />
-        <Box ml={isLargerThan1700 ? "4rem" : "0rem"}>
+        <Box >
           <Content />
           <MarketStats />
 

@@ -9,13 +9,13 @@ import StarknetLogo from '../assets/Icons/starknetLogo'
 import RunningBanner from './RunningBanner'
 import Marquee from 'react-fast-marquee'
 import { urls } from '../consts/urls'
-import { useDrawerContext } from '../context/DrawerContext'
+import { useDrawContext } from '../context/DrawerContext'
 
 const MobileView = () => {
     // const [isLessThan500] = useMediaQuery('(max-width: 500px)')
     const [utilRate, setUtilRate] = useState<any>();
     const [dashboardHover, setDashboardHover] = useState(0);
-    const { isDrawerOpen, toggleDrawer } = useDrawerContext();
+    const { isDrawerOpen, toggleDrawer } = useDrawContext();
     useEffect(() => {
         const fetchData = async () => {
             const promise = await OffchainAPI.httpGet('/api/metrics/urm_platform/daily')

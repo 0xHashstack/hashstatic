@@ -21,12 +21,12 @@ import QueryIcon from '../assets/Icons/queryIcon'
 import QueryIconWhite from '../assets/Icons/queryIconWhite'
 import TwitterIcon from '../assets/Icons/twitterIcon'
 import TwitterIconWhite from '../assets/Icons/twitterIconWhite'
-import { useDrawerContext } from '../context/DrawerContext'
+import { useDrawContext } from '../context/DrawerContext'
 
 const IpadView = () => {
     // const [isLessThan500] = useMediaQuery('(max-width: 500px)')
     const [utilRate, setUtilRate] = useState<any>();
-    const { isDrawerOpen, toggleDrawer } = useDrawerContext();
+    const { isDrawerOpen, toggleDrawer } = useDrawContext();
     console.log(isDrawerOpen,"opne")
     const [dashboardHover, setDashboardHover] = useState(0);
     useEffect(() => {
