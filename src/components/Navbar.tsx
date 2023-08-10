@@ -12,6 +12,7 @@ import {
   Text,
   useDisclosure,
   useMediaQuery,
+  Image,
 } from "@chakra-ui/react";
 import HashstackLogo from "../assets/Icons/hashstackLogo";
 import DicordLogo from "../assets/Icons/dicordLogo";
@@ -19,7 +20,6 @@ import { useRouter } from "next/router";
 import DiscordLogoWhite from "../assets/Icons/discordLogoWhite";
 import Link from "next/link";
 import HashstackLogoMobile from "../assets/Icons/hashstackLogoMobile";
-import Image from "next/image";
 import {useDrawContext} from '../context/DrawerContext'
 const Navbar = () => {
   const router = useRouter();
@@ -91,8 +91,7 @@ const Navbar = () => {
             </Link>
           </Box>}
 
-
-          <Box
+            {!isLessThan1210 ?          <Box
             display="flex"
             width="40px"
             height="40px"
@@ -109,21 +108,18 @@ const Navbar = () => {
             onMouseEnter={() => setDashboardHover(true)}
             onMouseLeave={() => setDashboardHover(false)}
           >
-            {!isLessThan1210 ? (
               <Link href="https://discord.gg/hashstack" target="_blank">
                 {dashboardHover ? <DiscordLogoWhite /> : <DicordLogo />}
               </Link>
-            ) : (
-              <Box onClick={() => handleClick("sm")}>
+          </Box>:              <Box onClick={() => handleClick("sm")}>
                 <Image
                   src="/hamburgerIcon.svg"
                   alt="picture of author"
-                  width={40}
-                  height={40}
+                  // width={40}
+                  // height={40}
                 />
-              </Box>
-            )}
-          </Box>
+              </Box>}
+
           <Drawer onClose={onClose} isOpen={isOpen} size={"sm"}>
             <DrawerOverlay  />
             <DrawerContent zIndex={500}>

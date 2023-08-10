@@ -699,7 +699,7 @@ const RunningBanner = () => {
                     </Marquee>}
 
                 </Box>
-                {isLessThan1210 && <Box display="flex" justifyContent="center" alignItems="center" flexDirection="row" gap="2.5rem" ml="1rem" mr="1rem">
+                {isLessThan1210 && <Box display="flex" justifyContent="center" alignItems="center" flexDirection="row" gap="2.5rem" ml="1rem" mr="2rem">
                     <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
                         onMouseEnter={() => setIconDashboardHover(1)}
                         onMouseLeave={() => setIconDashboardHover(0)}
