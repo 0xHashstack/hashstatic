@@ -20,10 +20,10 @@ import DiscordLogoWhite from "../assets/Icons/discordLogoWhite";
 import Link from "next/link";
 import HashstackLogoMobile from "../assets/Icons/hashstackLogoMobile";
 import Image from "next/image";
-import {useDrawerContext} from '../context/DrawerContext'
+import {useDrawContext} from '../context/DrawerContext'
 const Navbar = () => {
   const router = useRouter();
-  const { isDrawerOpen, toggleDrawer } = useDrawerContext();
+  const { isDrawerOpen, toggleDrawer } = useDrawContext();
   const [dashboardHover, setDashboardHover] = useState(false);
   const [isLessThan1210] = useMediaQuery("(max-width: 1210px)");
   const [isLessThan500] = useMediaQuery("(max-width: 500px)");

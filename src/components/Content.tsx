@@ -6,6 +6,8 @@ import BorrowTrade from '../assets/Images/Frame.png'
 const Content = () => {
   const [isLargerThan1475] = useMediaQuery('(min-width: 1475px)')
   const [isLargerThan1800] = useMediaQuery('(min-width: 1800px)')
+  const [isLargerThan1600] = useMediaQuery('(min-width: 1600px)')
+  const [isLargerThan1700] = useMediaQuery('(min-width: 1700px)')
   const [isLessThan1250] = useMediaQuery('(max-width: 1250px)')
   const [isLessThan1350] = useMediaQuery('(max-width: 1350px)')
   const [isLessThan500] = useMediaQuery('(max-width: 500px)')
@@ -28,21 +30,21 @@ const Content = () => {
           src="/maxBorrow.svg"
           alt="GHAF Logo"
           maxWidth="100%"
-          height={ isHeightLargerThan1000 && isLargerThan1800? "140": isLargerThan1800 ?"100":""}
+          height={ isHeightLargerThan1000 && isLargerThan1800? "110": isLargerThan1800 ?"100":isLargerThan1600 ?"90": ""}
         />}
         {isLessThan1250 ?        <Text color="#858786" fontFamily="inter" 
         fontSize={isLessThan1250?"28px": isHeightLargerThan1000 && isLargerThan1800 ?"46px": isLargerThan1800 ? "40px":"30px"} 
         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem">
           of your collateral for liquidity mining,
           trading needs.</Text>:        <Text color="#858786" fontFamily="inter" 
-        fontSize={isLessThan1250?"28px": isHeightLargerThan1000 && isLargerThan1800 ?"46px": isLargerThan1800 ? "40px":"30px"} 
+        fontSize={isLessThan1250?"28px": isHeightLargerThan1000 && isLargerThan1800 ?"46px": isLargerThan1800 ? "40px":isLargerThan1600?"36px": "30px"} 
         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem" whiteSpace="nowrap">
           of your collateral for liquidity mining,
           <br />
           trading needs.</Text>}
 
       </Box>
-      <Box mt="4rem" mr="1rem" ml="5rem"
+      <Box mt={isHeightLargerThan1000 && isLargerThan1800? "5rem":"4rem"} mr="1rem" ml={isLargerThan1800 ?"8rem":isLargerThan1700?"9rem": isLargerThan1600?"7rem":"5rem"}
         // display="flex"
         // justifyContent={isLessThan1250 ?"center":""}
       >
@@ -58,6 +60,7 @@ const Content = () => {
           src="/giftry.gif"
           alt="GHAF Logo"
           maxWidth="100%"
+          height={ isHeightLargerThan1000 && isLargerThan1800? "460": isLargerThan1800 ?"430":  isHeightLargerThan1000 && isLargerThan1600 ?"435": isLargerThan1600?"430":""}
         // maxHeight="100px"
 
         />

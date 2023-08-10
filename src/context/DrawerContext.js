@@ -16,4 +16,4 @@ export const DrawerContextProvider = ({ children }) => {
   );
 };
 
-export const useDrawerContext = () => useContext(DrawerContext);
+export const useDrawContext = () => useContext(DrawerContext);
