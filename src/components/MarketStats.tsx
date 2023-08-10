@@ -16,6 +16,7 @@ const MarketStats = () => {
     },[])
     const [isLargerThan1800] = useMediaQuery('(min-width: 1800px)')
     const [isLessThan1475] = useMediaQuery('(max-width: 1475px)')
+    const [isLessThan1375] = useMediaQuery('(max-width: 1375px)')
     const [isLargerThan750] = useMediaQuery('(min-height: 750px)')
     const [isLargerThan1600] = useMediaQuery('(min-width: 1600px)')
     const [isLargerThan1700] = useMediaQuery('(min-width: 1700px)')
@@ -23,7 +24,7 @@ const MarketStats = () => {
     const [isLessThan1250] = useMediaQuery('(max-width: 1250px)')
     const margTop=isLargerThan750 ? "2.5rem":"3rem"
     const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
-    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "51rem": isLargerThan1700 ?"47rem":   isLargerThan1600?"45rem": isLessThan1475==true?"32rem":"35rem";
+    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "51rem": isLargerThan1700 ?"48rem":   isLargerThan1600?"45rem":isLessThan1375?"26rem": isLessThan1475==true?"32rem":"35rem";
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
     const [isWidthLessThan1130] = useMediaQuery('(max-width: 1130px)')
 

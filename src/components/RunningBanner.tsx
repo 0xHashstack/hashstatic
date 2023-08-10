@@ -26,7 +26,7 @@ const RunningBanner = () => {
     const [isLargerThan1800] = useMediaQuery('(min-width: 1800px)')
     const [isLessThan1210] = useMediaQuery('(max-width: 1210px)')
     const [dashboardHover, setDashboardHover] = useState(0);
-    const [isHeightLargerThan850] = useMediaQuery('(min-height: 850px)')
+    const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
     const [iconDashboardHover, setIconDashboardHover] = useState(0);
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
     const { isDrawerOpen, toggleDrawer } = useDrawContext();
@@ -45,7 +45,7 @@ const RunningBanner = () => {
     //   });
     return (
         <Box>
-            {isHeightLargerThan850 && !isWidthLessThan1050 ? <Box display="flex" position="fixed" bottom="90">
+            {isHeightLargerThan880 && !isWidthLessThan1050 ? <Box display="flex" position="fixed" bottom="90">
                 <Box display="flex" bg="#000" padding="0px 10px">
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight="40px" textAlign="center">
                         We Work with
