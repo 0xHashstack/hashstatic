@@ -44,7 +44,7 @@ const Content = () => {
           trading needs.</Text>}
 
       </Box>
-      <Box mt={isHeightLargerThan1000 && isLargerThan1800? "6rem":"4rem"} mr="1rem" ml={isLargerThan1800 ?"8rem":isLargerThan1700?"9rem": isLargerThan1600?"7rem":"5rem"}
+      <Box mt={isHeightLargerThan1000 && isLargerThan1800? "5rem":"4rem"} mr="1rem" ml={isLargerThan1800 ?"8rem":isLargerThan1700?"9rem": isLargerThan1600?"7rem":"5rem"}
         // display="flex"
         // justifyContent={isLessThan1250 ?"center":""}
       >
