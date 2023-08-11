@@ -18,25 +18,32 @@ const Content = () => {
   // console.log(isLessThan1250,"less")
   return (
     <Box>
- <Box display="flex" flexDirection="row" p="0 2rem"  background="transparent" >
-      <Box display="flex" flexDirection="column" mt={isLessThan1250 ?"6rem":"12rem"}>
+ <Box display="flex" flexDirection="row"  background="transparent" >
+      <Box display="flex" flexDirection="column" mt={isLessThan1250 ?"6rem":"8rem"} >
+        <Box mb="4rem" background="linear-gradient(90deg, rgba(255, 255, 255,0.11) 0%, rgba(2, 1, 15, 0.00) 90%)" height="39px" display="flex" alignItems="center">
+        <Text fontSize="22px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" ml="1.5rem">
+          Update: Hashstack&apos;s v1 public testnet is live
+        </Text>
+        </Box>
         {isLessThan1250 ?        <Image
           src="/maxBorrowIpadView.svg"
           alt="GHAF Logo"
           maxWidth="100%"
           height="208px"
           width="295px"
+          p="0 2rem"
         />:        <Image
           src="/maxBorrow.svg"
           alt="GHAF Logo"
           maxWidth="100%"
+          p="0 2rem"
           height={ isHeightLargerThan1000 && isLargerThan1800? "110": isLargerThan1800 ?"100":isLargerThan1600 ?"90": ""}
         />}
-        {isLessThan1250 ?        <Text color="#858786" fontFamily="inter" 
+        {isLessThan1250 ?        <Text color="#858786" fontFamily="inter"  p="0 2rem"
         fontSize={isLessThan1250?"28px": isHeightLargerThan1000 && isLargerThan1800 ?"46px": isLargerThan1800 ? "40px":"30px"} 
         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem">
           of your collateral for liquidity mining,
-          trading needs.</Text>:        <Text color="#858786" fontFamily="inter" 
+          trading needs.</Text>:        <Text color="#858786" fontFamily="inter"  p="0 2rem"
         fontSize={isLessThan1250?"28px": isHeightLargerThan1000 && isLargerThan1800 ?"46px": isLargerThan1800 ? "40px":isLargerThan1600?"36px": "30px"} 
         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem" whiteSpace="nowrap">
           of your collateral for liquidity mining,

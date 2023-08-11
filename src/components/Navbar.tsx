@@ -68,13 +68,14 @@ const Navbar = () => {
             alignItems="center"
             justifyContent="center"
             gap="8px"
-            border="1px solid #4D59E8"
+            border="1px solid #CACAD1"
             borderRadius="4px"
-            color="#4D59E8"
+            color="#CACAD1"
             cursor="pointer"
             _hover={{
               background: "#4D59E8",
               color: "#fff",
+              border:"1px solid #4D59E8"
             }}
           >
             <Link href="https://testnet.hashstack.finance" target="_blank">
@@ -99,7 +100,7 @@ const Navbar = () => {
             justifyContent="center"
             alignItems="center"
             borderRadius="6px"
-            border="1px solid #2B2F35"
+            border="1px solid #161B22"
             bg="#161B22"
             cursor="pointer"
             _hover={{

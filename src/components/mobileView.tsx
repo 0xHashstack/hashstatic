@@ -26,7 +26,6 @@ const MobileView = () => {
     }, [])
     return (
         <Box >
-            <Banner />
             <Navbar />
             <Box display="flex" flexDirection="column" background="transparent" p="0 2rem">
                 <Box mt="2rem" display="flex" justifyContent="center" mb="1.5rem" 
@@ -45,6 +44,11 @@ const MobileView = () => {
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
                     </video> */}
                 </Box>
+                <Box mb="1rem" mt="1rem" background="linear-gradient(90deg, rgba(255, 255, 255, 0.25) 19%, rgba(2, 1, 15, 0.00) 100%)" height="35px" display="flex" alignItems="center" justifyContent="center">
+        <Text fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" >
+          Update: Hashstack&apos;s v1 public testnet is live
+        </Text>
+        </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
                         src="/maxBorrow.svg"
@@ -61,7 +65,7 @@ const MobileView = () => {
                         mining,trading needs.</Text>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center" mt="1rem">
-                    <Box display="flex" height="40px" width="109px" textAlign="center" alignItems="center" justifyContent="center" gap="8px" border="1px solid #4D59E8" borderRadius="4px" color="#4D59E8" cursor="pointer" bg="transparent"
+                    <Box display="flex" height="40px" width="109px" textAlign="center" alignItems="center" justifyContent="center" gap="8px" border="1px solid #CACAD1" borderRadius="4px" color="#CACAD1" cursor="pointer" bg="transparent"
                     >
                         <Link href="https://testnet.hashstack.finance" target="_blank">
                             <Text fontFamily="Inter" fontSize="14px" fontStyle="normal" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px">Launch App</Text>
