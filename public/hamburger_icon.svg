@@ -1,7 +1,5 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="39" height="39" rx="5.5" fill="#161B22"/>
-<line x1="9" y1="10" x2="29.9885" y2="10" stroke="#BDBFC1" stroke-width="2" stroke-linecap="round"/>
-<line x1="9" y1="19.1953" x2="29.9885" y2="19.1953" stroke="#BDBFC1" stroke-width="2" stroke-linecap="round"/>
-<line x1="9" y1="28.3906" x2="29.9885" y2="28.3906" stroke="#BDBFC1" stroke-width="2" stroke-linecap="round"/>
-<rect x="0.5" y="0.5" width="39" height="39" rx="5.5" stroke="#2B2F35"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#4C4C60"/>
 </svg>
+
+

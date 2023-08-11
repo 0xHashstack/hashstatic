@@ -12,6 +12,7 @@ import {
   Text,
   useDisclosure,
   useMediaQuery,
+  Image,
 } from "@chakra-ui/react";
 import HashstackLogo from "../assets/Icons/hashstackLogo";
 import DicordLogo from "../assets/Icons/dicordLogo";
@@ -19,7 +20,6 @@ import { useRouter } from "next/router";
 import DiscordLogoWhite from "../assets/Icons/discordLogoWhite";
 import Link from "next/link";
 import HashstackLogoMobile from "../assets/Icons/hashstackLogoMobile";
-import Image from "next/image";
 import {useDrawContext} from '../context/DrawerContext'
 const Navbar = () => {
   const router = useRouter();
@@ -68,13 +68,14 @@ const Navbar = () => {
             alignItems="center"
             justifyContent="center"
             gap="8px"
-            border="1px solid #4D59E8"
+            border="1px solid #CACAD1"
             borderRadius="4px"
-            color="#4D59E8"
+            color="#CACAD1"
             cursor="pointer"
             _hover={{
               background: "#4D59E8",
               color: "#fff",
+              border:"1px solid #4D59E8"
             }}
           >
             <Link href="https://testnet.hashstack.finance" target="_blank">
@@ -91,8 +92,7 @@ const Navbar = () => {
             </Link>
           </Box>}
 
-
-          <Box
+            {!isLessThan1210 ?          <Box
             display="flex"
             width="40px"
             height="40px"
@@ -100,7 +100,7 @@ const Navbar = () => {
             justifyContent="center"
             alignItems="center"
             borderRadius="6px"
-            border="1px solid #2B2F35"
+            border="1px solid #161B22"
             bg="#161B22"
             cursor="pointer"
             _hover={{
@@ -109,21 +109,18 @@ const Navbar = () => {
             onMouseEnter={() => setDashboardHover(true)}
             onMouseLeave={() => setDashboardHover(false)}
           >
-            {!isLessThan1210 ? (
               <Link href="https://discord.gg/hashstack" target="_blank">
                 {dashboardHover ? <DiscordLogoWhite /> : <DicordLogo />}
               </Link>
-            ) : (
-              <Box onClick={() => handleClick("sm")}>
+          </Box>:              <Box onClick={() => handleClick("sm")}>
                 <Image
                   src="/hamburgerIcon.svg"
                   alt="picture of author"
-                  width={40}
-                  height={40}
+                  // width={40}
+                  // height={40}
                 />
-              </Box>
-            )}
-          </Box>
+              </Box>}
+
           <Drawer onClose={onClose} isOpen={isOpen} size={"sm"}>
             <DrawerOverlay  />
             <DrawerContent zIndex={500}>

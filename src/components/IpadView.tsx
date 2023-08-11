@@ -39,9 +39,9 @@ const IpadView = () => {
     }, [])
     return (
         <Box >
-            <Banner />
             <Navbar />
-            <Box display="flex" flexDirection="column" background="transparent" p="0 2rem">
+            <Box display="flex" flexDirection="column" background="transparent" p="0 2rem" alignItems="center">
+                
                 <Box mt="2rem" display="flex" justifyContent="center" mb="1.5rem"
                 // display="flex"
                 // justifyContent={isLessThan1250 ?"center":""}
@@ -58,6 +58,11 @@ const IpadView = () => {
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
                     </video> */}
                 </Box>
+                <Box mb="2rem" mt="2rem" background="linear-gradient(90deg, rgba(255, 255, 255, 0.25) 19%, rgba(2, 1, 15, 0.00) 100%)" height="35px" display="flex" alignItems="center" justifyContent="center">
+        <Text fontSize="24px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" ml="1.5rem" whiteSpace="nowrap">
+          Update: Hashstack&apos;s v1 public testnet is live
+        </Text>
+        </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
                         src="/maxBorrow.svg"

@@ -25,7 +25,6 @@ const Home: NextPage = () => {
     >
       {isLessThan500 ? <MobileView /> : 
       isLessThan980  ?<IpadView/>:      <Box>
-        <Banner />
         <Navbar />
         <Box >
           <Content />

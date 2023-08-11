@@ -39,7 +39,7 @@ const Footer = () => {
         >
           <Box display="flex" flexDirection="row" gap="2.5rem">
             <Text
-              color="#4D59E8"
+              color="#00D395"
               fontSize="14px"
               fontStyle="normal"
               fontWeight="500"
