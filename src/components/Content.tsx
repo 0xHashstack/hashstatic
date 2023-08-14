@@ -21,8 +21,10 @@ const Content = () => {
  <Box display="flex" flexDirection="row"  background="transparent" >
       <Box display="flex" flexDirection="column" mt={isLessThan1250 ?"6rem":"8rem"} >
         <Box mb="4rem" background="linear-gradient(90deg, rgba(255, 255, 255,0.11) 0%, rgba(2, 1, 15, 0.00) 90%)" height="39px" display="flex" alignItems="center">
-        <Text fontSize="22px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" ml="1.5rem">
-          Update: Hashstack&apos;s v1 public testnet is live
+        <Text fontSize="22px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" ml="1.5rem" display="flex" alignItems="center">
+          <Text color="#00D395" mr="0.6rem">
+          Update:
+          </Text> Hashstack&apos;s v1 public testnet is live
         </Text>
         </Box>
         {isLessThan1250 ?        <Image

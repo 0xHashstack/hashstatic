@@ -101,7 +101,7 @@ const Navbar = () => {
             alignItems="center"
             borderRadius="6px"
             border="1px solid #161B22"
-            bg="#161B22"
+            bg="#100F1D"
             cursor="pointer"
             _hover={{
               background: "#4D59E8",
