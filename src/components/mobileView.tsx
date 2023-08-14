@@ -44,7 +44,7 @@ const MobileView = () => {
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
                     </video> */}
                 </Box>
-                <Box mb="1rem" mt="1rem" background="linear-gradient(90deg, rgba(255, 255, 255, 0.25) 19%, rgba(2, 1, 15, 0.00) 100%)" height="35px" display="flex" alignItems="center" justifyContent="center">
+                <Box mb="1rem" mt="1rem" background="linear-gradient(90deg, rgba(2, 1, 15, 0.00) 0%, rgba(255, 255, 255, 0.25) 44.18%, rgba(236, 236, 237, 0.23) 62.33%, rgba(2, 1, 15, 0.00) 100%)" height="35px" display="flex" alignItems="center" justifyContent="center">
         <Text fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" >
           Update: Hashstack&apos;s v1 public testnet is live
         </Text>

@@ -163,6 +163,9 @@ const Navbar = () => {
                     justifyContent="center"
                     border="1px solid rgb(26, 26, 31)"
                     margin="0"
+                    onClick={()=>{
+                      router.push('https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases')
+                    }}
                   >
                     Use Cases
                   </Text>

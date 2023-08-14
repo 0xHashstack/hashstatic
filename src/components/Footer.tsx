@@ -48,6 +48,8 @@ const Footer = () => {
             >
               HomePage
             </Text>
+            <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
+            
             <Text
               color="#fff"
               fontSize="14px"
@@ -58,6 +60,7 @@ const Footer = () => {
             >
               Use Cases
             </Text>
+            </Link>
             <Link href="https://docs.hashstack.finance/" target="_blank">
               <Text
                 color="#fff"
@@ -106,6 +109,8 @@ const Footer = () => {
             </Link>
           </Box>
           <Box display="flex" flexDirection="row" gap="2.5rem">
+            <Link href="https://docs.hashstack.finance/hub/" target="_blank">
+            
             <Box
               display="flex"
               width="40px"
@@ -125,6 +130,7 @@ const Footer = () => {
             >
               {dashboardHover == 1 ? <InfoIconWhite /> : <InfoIcon />}
             </Box>
+            </Link>
             <Link href="https://x.com/0xhashstack" target="_blank">
               <Box
                 display="flex"
@@ -260,6 +266,8 @@ const Footer = () => {
             >
               HomePage
             </Text>
+            <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
+            
             <Text
               color="#fff"
               fontSize="14px"
@@ -270,6 +278,7 @@ const Footer = () => {
             >
               Use Cases
             </Text>
+            </Link>
             <Link href="https://docs.hashstack.finance/" target="_blank">
               <Text
                 color="#fff"
@@ -318,6 +327,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box display="flex" flexDirection="row" gap="2.5rem">
+            <Link href="https://docs.hashstack.finance/hub/" target="_blank">
             <Box
               display="flex"
               width="40px"
@@ -338,7 +348,8 @@ const Footer = () => {
             >
               {dashboardHover == 1 ? <InfoIconWhite /> : <InfoIcon />}
             </Box>
-
+            </Link>
+            <Link href="https://x.com/0xhashstack" target="_blank">
             <Box
               display="flex"
               width="40px"
@@ -357,11 +368,11 @@ const Footer = () => {
               onMouseEnter={() => setDashboardHover(2)}
               onMouseLeave={() => setDashboardHover(0)}
             >
-              <Link href="https://x.com/0xhashstack" target="_blank">
+              
                 {dashboardHover == 2 ? <TwitterIconWhite /> : <TwitterIcon />}
-              </Link>
             </Box>
-
+              </Link>
+              <Link href="https://discord.gg/hashstack" target="_blank">
             <Box
               display="flex"
               width="40px"
@@ -380,11 +391,11 @@ const Footer = () => {
               onMouseEnter={() => setDashboardHover(3)}
               onMouseLeave={() => setDashboardHover(0)}
             >
-              <Link href="https://discord.gg/hashstack" target="_blank">
+              
                 {dashboardHover == 3 ? <DiscordLogoWhite /> : <DicordLogo />}
-              </Link>
             </Box>
-
+              </Link>
+              <Link href="https://github.com/0xHashstack/" target="_blank">
             <Box
               display="flex"
               width="40px"
@@ -403,11 +414,14 @@ const Footer = () => {
               onMouseEnter={() => setDashboardHover(4)}
               onMouseLeave={() => setDashboardHover(0)}
             >
-              <Link href="https://github.com/0xHashstack/" target="_blank">
+          
                 {dashboardHover == 4 ? <GithubIconWhite /> : <GithubIcon />}
-              </Link>
             </Box>
-
+              </Link>
+              <Link
+                href="https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro"
+                target="_blank"
+              >
             <Box
               display="flex"
               width="40px"
@@ -426,14 +440,14 @@ const Footer = () => {
               onMouseEnter={() => setDashboardHover(5)}
               onMouseLeave={() => setDashboardHover(0)}
             >
+
+                {dashboardHover == 5 ? <FileIconWhite /> : <FileIcon />}
+            </Box>
+              </Link>
               <Link
-                href="https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro"
+                href="https://docs.hashstack.finance/hub/faqs"
                 target="_blank"
               >
-                {dashboardHover == 5 ? <FileIconWhite /> : <FileIcon />}
-              </Link>
-            </Box>
-
             <Box
               display="flex"
               width="40px"
@@ -452,13 +466,10 @@ const Footer = () => {
               onMouseEnter={() => setDashboardHover(6)}
               onMouseLeave={() => setDashboardHover(0)}
             >
-              <Link
-                href="https://docs.hashstack.finance/hub/faqs"
-                target="_blank"
-              >
+
                 {dashboardHover == 6 ? <QueryIconWhite /> : <QueryIcon />}
-              </Link>
             </Box>
+              </Link>
           </Box>
         </Box>
       )}
