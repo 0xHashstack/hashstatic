@@ -700,6 +700,8 @@ const RunningBanner = () => {
 
                 </Box>
                 {isLessThan1210 && <Box display="flex" justifyContent="center" alignItems="center" flexDirection="row" gap="2.5rem" ml="1rem" mr="2rem">
+                    <Link href="https://docs.hashstack.finance/hub/" target="_blank">
+                    
                     <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
                         onMouseEnter={() => setIconDashboardHover(1)}
                         onMouseLeave={() => setIconDashboardHover(0)}
@@ -711,6 +713,7 @@ const RunningBanner = () => {
                         {iconDashboardHover == 1 ? <InfoIconWhite /> : <InfoIcon />}
 
                     </Box>
+                    </Link>
                     <Link href="https://x.com/0xhashstack" target="_blank">
                         <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
                             _hover={{
