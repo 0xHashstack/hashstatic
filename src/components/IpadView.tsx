@@ -48,7 +48,7 @@ const IpadView = () => {
                 >
                     {/* <AnimatedFrame/> */}
                     <Image
-          src="/giftry.gif"
+          src="/illustration.gif"
           alt="GHAF Logo"
           maxWidth="100%"
         // maxHeight="100px"
@@ -59,12 +59,12 @@ const IpadView = () => {
                     </video> */}
                 </Box>
                 <Box mb="2rem" mt="2rem" background="linear-gradient(90deg, rgba(255, 255, 255, 0.25) 19%, rgba(2, 1, 15, 0.00) 100%)" height="35px" display="flex" alignItems="center" justifyContent="center">
-        <Text fontSize="24px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" ml="1.5rem" whiteSpace="nowrap" display="flex" alignItems="center">
+        <Box fontSize="24px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" ml="1.5rem" whiteSpace="nowrap" display="flex" alignItems="center">
             <Text color="#00D395" mr="0.6rem">
             Update: 
             </Text>
           Hashstack&apos;s v1 public testnet is live
-        </Text>
+        </Box>
         </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
