@@ -24,7 +24,7 @@ const MarketStats = () => {
     const [isLessThan1250] = useMediaQuery('(max-width: 1250px)')
     const margTop=isLargerThan750 ? "2.5rem":"3rem"
     const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
-    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "53rem": isLargerThan1700 ?"50rem":   isLargerThan1600?"47rem":isLessThan1375?"26rem": isLessThan1475==true?"32rem":"38rem";
+    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "52rem": isLargerThan1700 ?"49rem":   isLargerThan1600?"46rem":isLessThan1375?"26rem": isLessThan1475==true?"31rem":"37rem";
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
     const [isWidthLessThan1130] = useMediaQuery('(max-width: 1130px)')
 
@@ -49,7 +49,7 @@ const MarketStats = () => {
                         Total value locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $16.44m
+                        $20.24m
                     </Text>
                 </Box>
 
@@ -92,7 +92,7 @@ const MarketStats = () => {
                         Total value locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $16.44m
+                        $20.24m
                     </Text>
                 </Box>
 

@@ -34,7 +34,7 @@ const MobileView = () => {
                 >
                     {/* <AnimatedFrame/> */}
                     <Image
-          src="/giftry.gif"
+          src="/illustration.gif"
           alt="GHAF Logo"
           maxWidth="100%"
         // maxHeight="100px"
@@ -45,9 +45,12 @@ const MobileView = () => {
                     </video> */}
                 </Box>
                 <Box mb="1rem" mt="1rem" background="linear-gradient(90deg, rgba(2, 1, 15, 0.00) 0%, rgba(255, 255, 255, 0.25) 44.18%, rgba(236, 236, 237, 0.23) 62.33%, rgba(2, 1, 15, 0.00) 100%)" height="35px" display="flex" alignItems="center" justifyContent="center">
-        <Text fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" >
-          Update: Hashstack&apos;s v1 public testnet is live
-        </Text>
+        <Box fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" display="flex" alignItems="center">
+            <Text color="#00D395" mr="0.4rem">
+            Update: 
+            </Text>
+          Hashstack&apos;s v1 public testnet is live
+        </Box>
         </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
@@ -87,7 +90,7 @@ const MobileView = () => {
                             Total value locked
                         </Text>
                         <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="24px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                            $16.44m
+                            $20.24m
                         </Text>
                     </Box>
                 </Box>

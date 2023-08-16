@@ -337,7 +337,7 @@ const Footer = () => {
               alignItems="center"
               borderRadius="6px"
               border="1px solid #2B2F35"
-              bg="#161B22"
+              bg="#100F1D"
               cursor="pointer"
               onMouseEnter={() => setDashboardHover(1)}
               onMouseLeave={() => setDashboardHover(0)}
@@ -359,7 +359,7 @@ const Footer = () => {
               alignItems="center"
               borderRadius="6px"
               border="1px solid #2B2F35"
-              bg="#161B22"
+              bg="#100F1D"
               cursor="pointer"
               _hover={{
                 background: "#4D59E8",
@@ -382,7 +382,7 @@ const Footer = () => {
               alignItems="center"
               borderRadius="6px"
               border="1px solid #2B2F35"
-              bg="#161B22"
+              bg="#100F1D"
               cursor="pointer"
               _hover={{
                 background: "#4D59E8",
@@ -405,7 +405,7 @@ const Footer = () => {
               alignItems="center"
               borderRadius="6px"
               border="1px solid #2B2F35"
-              bg="#161B22"
+              bg="#100F1D"
               cursor="pointer"
               _hover={{
                 background: "#4D59E8",
@@ -431,7 +431,7 @@ const Footer = () => {
               alignItems="center"
               borderRadius="6px"
               border="1px solid #2B2F35"
-              bg="#161B22"
+              bg="#100F1D"
               cursor="pointer"
               _hover={{
                 background: "#4D59E8",
@@ -457,7 +457,7 @@ const Footer = () => {
               alignItems="center"
               borderRadius="6px"
               border="1px solid #2B2F35"
-              bg="#161B22"
+              bg="#100F1D"
               cursor="pointer"
               _hover={{
                 background: "#4D59E8",
