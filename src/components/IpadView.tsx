@@ -83,7 +83,7 @@ const IpadView = () => {
                 </Box>
                 <Box display="flex" flexDirection="row" justifyContent="center" gap="3rem" mt="2rem">
                     <Box>
-                        <Text color="#BDBFC1" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
+                        <Text color="#8C8C9B" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
                             Utilization Rate
                         </Text>
                         <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="28px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
@@ -91,7 +91,7 @@ const IpadView = () => {
                         </Text>
                     </Box>
                     <Box>
-                        <Text color="#BDBFC1" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
+                        <Text color="#8C8C9B" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
                             Total value locked
                         </Text>
                         <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="28px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
@@ -100,7 +100,7 @@ const IpadView = () => {
                     </Box>
                 </Box>
                 <Box display="flex" flexDirection="column" mt="2rem">
-                <Box textAlign="center" mb="1rem" fontSize="20px">
+                <Box textAlign="center" mb="1rem" fontSize="20px" color="#8C8C9B">
                     Powered by
                 </Box>
                 <Box display="flex" flexDirection="row" justifyContent="center" gap="3rem" >

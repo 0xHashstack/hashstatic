@@ -22,11 +22,12 @@ const Home: NextPage = () => {
 
     
     <Box 
-    background={isLessThan500 ?"linear-gradient(to bottom,#7331ea47 0%,#000 55%),radial-gradient(circle at top right, #7331ea33 95%, transparent 100%)":"linear-gradient(to bottom left,rgba(115, 49, 234, 0.28) 0%,#000 55%, rgba(115, 49, 234, 0.28) 89%),radial-gradient(circle at top right, rgba(115, 49, 234, 0.28) 55%, transparent 100%)"} 
+    background={isLessThan500 ?"linear-gradient(to bottom,#7331ea47 0%,#000 55%),radial-gradient(circle at top right, #7331ea33 95%, transparent 100%)":"linear-gradient(to bottom left,rgba(115, 49, 234, 0.20) 0%,#000 58%, rgba(33, 19, 78, 0.39) 89%),radial-gradient(circle at top right, rgba(115, 49, 234, 0.10) 0%, transparent 55%),radial-gradient(circle at bottom left, rgba(115, 49, 234, 0.20) 90%, transparent 100%)"} 
       height="100vh"
       overflowX="hidden"
       overflowY="scroll"
       backgroundRepeat="no-repeat"
+
     >
       {isLessThan500 ? <MobileView /> : 
       isLessThan980  ?<IpadView/>:      <Box>

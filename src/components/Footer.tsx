@@ -45,25 +45,28 @@ const Footer = () => {
               fontWeight="500"
               lineHeight="20px"
               cursor="pointer"
+              
             >
               HomePage
             </Text>
             <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
             
             <Text
-              color="#fff"
+              color="#8C8C9B"
               fontSize="14px"
               fontStyle="normal"
               fontWeight="500"
               lineHeight="20px"
               cursor="pointer"
+              _hover={{color:"#00D395"}}
+              
             >
               Use Cases
             </Text>
             </Link>
             <Link href="https://docs.hashstack.finance/" target="_blank">
               <Text
-                color="#fff"
+                color="#8C8C9B"
                 fontSize="14px"
                 fontStyle="normal"
                 fontWeight="500"
@@ -74,7 +77,7 @@ const Footer = () => {
               </Text>
             </Link>
             <Text
-              color="#fff"
+              color="#8C8C9B"
               fontSize="14px"
               fontStyle="normal"
               fontWeight="500"
@@ -85,7 +88,7 @@ const Footer = () => {
             </Text>
             <Link href="https://hashstack.finance/c2e" target="_blank">
               <Text
-                color="#fff"
+                color="#8C8C9B"
                 fontSize="14px"
                 fontStyle="normal"
                 fontWeight="500"
@@ -97,7 +100,7 @@ const Footer = () => {
             </Link>
             <Link href="https://hashstack.finance/whitepaper" target="_blank">
               <Text
-                color="#fff"
+                color="#8C8C9B"
                 fontSize="14px"
                 fontStyle="normal"
                 fontWeight="500"
@@ -119,7 +122,7 @@ const Footer = () => {
               justifyContent="center"
               alignItems="center"
               borderRadius="6px"
-              border="1px solid #2B2F35"
+              
               bg="#161B22"
               cursor="pointer"
               onMouseEnter={() => setDashboardHover(1)}
@@ -140,7 +143,7 @@ const Footer = () => {
                 justifyContent="center"
                 alignItems="center"
                 borderRadius="6px"
-                border="1px solid #2B2F35"
+                
                 bg="#161B22"
                 cursor="pointer"
                 _hover={{
@@ -161,7 +164,7 @@ const Footer = () => {
                 justifyContent="center"
                 alignItems="center"
                 borderRadius="6px"
-                border="1px solid #2B2F35"
+                
                 bg="#161B22"
                 cursor="pointer"
                 _hover={{
@@ -182,7 +185,7 @@ const Footer = () => {
                 justifyContent="center"
                 alignItems="center"
                 borderRadius="6px"
-                border="1px solid #2B2F35"
+                
                 bg="#161B22"
                 cursor="pointer"
                 _hover={{
@@ -206,7 +209,7 @@ const Footer = () => {
                 justifyContent="center"
                 alignItems="center"
                 borderRadius="6px"
-                border="1px solid #2B2F35"
+                
                 bg="#161B22"
                 cursor="pointer"
                 _hover={{
@@ -230,7 +233,7 @@ const Footer = () => {
                 justifyContent="center"
                 alignItems="center"
                 borderRadius="6px"
-                border="1px solid #2B2F35"
+                
                 bg="#161B22"
                 cursor="pointer"
                 _hover={{
@@ -257,7 +260,7 @@ const Footer = () => {
         >
           <Box display="flex" flexDirection="row" gap="2.5rem">
             <Text
-              color="#4D59E8"
+              color="#00D395"
               fontSize="14px"
               fontStyle="normal"
               fontWeight="500"
@@ -269,58 +272,68 @@ const Footer = () => {
             <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
             
             <Text
-              color="#fff"
+              color="#8C8C9B"
               fontSize="14px"
               fontStyle="normal"
               fontWeight="500"
               lineHeight="20px"
               cursor="pointer"
+              _hover={{color:"#00D395"}}
+              
             >
               Use Cases
             </Text>
             </Link>
             <Link href="https://docs.hashstack.finance/" target="_blank">
               <Text
-                color="#fff"
+                color="#8C8C9B"
                 fontSize="14px"
                 fontStyle="normal"
                 fontWeight="500"
                 lineHeight="20px"
                 cursor="pointer"
+                _hover={{color:"#00D395"}}
+              
               >
                 Documentation
               </Text>
             </Link>
             <Text
-              color="#fff"
+              color="#8C8C9B"
               fontSize="14px"
               fontStyle="normal"
               fontWeight="500"
               lineHeight="20px"
               cursor="pointer"
+              _hover={{color:"#00D395"}}
+              
             >
               Tokenomics
             </Text>
             <Link href="https://hashstack.finance/c2e" target="_blank">
               <Text
-                color="#fff"
+                color="#8C8C9B"
                 fontSize="14px"
                 fontStyle="normal"
                 fontWeight="500"
                 lineHeight="20px"
                 cursor="pointer"
+                _hover={{color:"#00D395"}}
+              
               >
                 Contribute-2-Earn
               </Text>
             </Link>
             <Link href="https://hashstack.finance/whitepaper" target="_blank">
               <Text
-                color="#fff"
+                color="#8C8C9B"
                 fontSize="14px"
                 fontStyle="normal"
                 fontWeight="500"
                 lineHeight="20px"
                 cursor="pointer"
+                _hover={{color:"#00D395"}}
+              
               >
                 White Paper
               </Text>
@@ -336,7 +349,7 @@ const Footer = () => {
               justifyContent="center"
               alignItems="center"
               borderRadius="6px"
-              border="1px solid #2B2F35"
+              
               bg="#100F1D"
               cursor="pointer"
               onMouseEnter={() => setDashboardHover(1)}
@@ -358,7 +371,6 @@ const Footer = () => {
               justifyContent="center"
               alignItems="center"
               borderRadius="6px"
-              border="1px solid #2B2F35"
               bg="#100F1D"
               cursor="pointer"
               _hover={{
@@ -381,7 +393,7 @@ const Footer = () => {
               justifyContent="center"
               alignItems="center"
               borderRadius="6px"
-              border="1px solid #2B2F35"
+              
               bg="#100F1D"
               cursor="pointer"
               _hover={{
@@ -404,7 +416,7 @@ const Footer = () => {
               justifyContent="center"
               alignItems="center"
               borderRadius="6px"
-              border="1px solid #2B2F35"
+              
               bg="#100F1D"
               cursor="pointer"
               _hover={{
@@ -430,7 +442,7 @@ const Footer = () => {
               justifyContent="center"
               alignItems="center"
               borderRadius="6px"
-              border="1px solid #2B2F35"
+              
               bg="#100F1D"
               cursor="pointer"
               _hover={{
@@ -456,7 +468,7 @@ const Footer = () => {
               justifyContent="center"
               alignItems="center"
               borderRadius="6px"
-              border="1px solid #2B2F35"
+              
               bg="#100F1D"
               cursor="pointer"
               _hover={{
