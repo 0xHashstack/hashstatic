@@ -100,8 +100,7 @@ const Navbar = () => {
             justifyContent="center"
             alignItems="center"
             borderRadius="6px"
-            border="1px solid #161B22"
-            bg="#100F1D"
+            border="1px solid rgba(140, 140, 155, 0.70)"
             cursor="pointer"
             _hover={{
               background: "#4D59E8",
