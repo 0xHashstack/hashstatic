@@ -87,10 +87,10 @@ const MobileView = () => {
                     </Box>
                     <Box>
                         <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
-                            Total value locked
+                            Total Value Locked
                         </Text>
                         <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="24px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                            $20.24m
+                            $20.24Mn+
                         </Text>
                     </Box>
                 </Box>
@@ -124,7 +124,7 @@ const MobileView = () => {
             </Box>
             <Box  display="flex" justifyContent="center" textAlign="center" padding="0px 10px" mt="2rem">
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="14px" fontWeight="600" lineHeight="40px" textAlign="center">
-                        We Work with
+                        We work with
                     </Text>
             </Box>
 

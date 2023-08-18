@@ -145,7 +145,7 @@ const Navbar = () => {
                     border="1px solid rgb(26, 26, 31)"
                     mb="0rem"
                   >
-                    HomePage
+                    Homepage
                   </Text>
                   <Text
                     color="#fff"

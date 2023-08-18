@@ -22,6 +22,7 @@ const Footer = () => {
   const padBottom = isLargerThan750 ? "2.7rem" : "1rem";
   const padTop = isLargerThan750 ? "1rem" : "0rem";
   const [isWidthLessThan1050] = useMediaQuery("(max-width: 1050px)");
+  const [isWidthLessThan1350] = useMediaQuery("(max-width: 1350px)");
   return (
     <Box>
       {isHeightLargerThan880 && !isWidthLessThan1050 ? (
@@ -47,7 +48,7 @@ const Footer = () => {
               cursor="pointer"
               
             >
-              HomePage
+              Homepage
             </Text>
             <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
             
@@ -258,7 +259,7 @@ const Footer = () => {
           pb="1rem"
           width="100%"
         >
-          <Box display="flex" flexDirection="row" gap="2.5rem">
+          <Box display="flex" flexDirection="row" gap={isWidthLessThan1350 ?"2rem":"2.5rem"}>
             <Text
               color="#00D395"
               fontSize="14px"
@@ -267,7 +268,7 @@ const Footer = () => {
               lineHeight="20px"
               cursor="pointer"
             >
-              HomePage
+              Homepage
             </Text>
             <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
             
@@ -339,7 +340,7 @@ const Footer = () => {
               </Text>
             </Link>
           </Box>
-          <Box display="flex" flexDirection="row" gap="2.5rem">
+          <Box display="flex" flexDirection="row" gap={isWidthLessThan1350 ?"1.5rem":"2.5rem"}>
             <Link href="https://docs.hashstack.finance/hub/" target="_blank">
             <Box
               display="flex"

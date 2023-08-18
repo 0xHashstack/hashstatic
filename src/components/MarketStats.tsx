@@ -24,7 +24,7 @@ const MarketStats = () => {
     const [isLessThan1250] = useMediaQuery('(max-width: 1250px)')
     const margTop=isLargerThan750 ? "2.5rem":"3rem"
     const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
-    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "52rem": isLargerThan1700 ?"49rem":   isLargerThan1600?"46rem":isLessThan1375?"26rem": isLessThan1475==true?"31rem":"37rem";
+    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "49rem": isLargerThan1700 ?"46rem":   isLargerThan1600?"43rem":isLessThan1375?"26rem": isLessThan1475==true?"31rem":"34rem";
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
     const [isWidthLessThan1130] = useMediaQuery('(max-width: 1130px)')
 
@@ -46,10 +46,10 @@ const MarketStats = () => {
                 </Box>
                 <Box>
                     <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
-                        Total value locked
+                        Total Value Locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $20.24m
+                        $20.24Mn+
                     </Text>
                 </Box>
 
@@ -89,10 +89,10 @@ const MarketStats = () => {
                 </Box>
                 <Box>
                     <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
-                        Total value locked
+                        Total Value Locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $20.24m
+                        $20.24Mn+
                     </Text>
                 </Box>
 

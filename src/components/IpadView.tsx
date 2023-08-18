@@ -92,10 +92,10 @@ const IpadView = () => {
                     </Box>
                     <Box>
                         <Text color="#8C8C9B" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
-                            Total value locked
+                            Total Value Locked
                         </Text>
                         <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="28px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                            $20.24m
+                            $20.24Mn+
                         </Text>
                     </Box>
                 </Box>
@@ -133,7 +133,7 @@ const IpadView = () => {
             <Box display="flex" mt="2.5rem">
             <Box  display="flex" bg="#000" padding="0px 8px" height="63px">
                     <Text color="#fff" width="100px" fontFamily="inter" fontSize="12px" fontWeight="600" lineHeight="40px" textAlign="center">
-                        We Work with
+                        We work with
                     </Text>
             </Box>
             <Box width="100%" background="rgba(217, 217, 217, 0.06)" overflow="hidden" paddingY="0.8rem" mb="2rem">
