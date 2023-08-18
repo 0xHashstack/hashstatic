@@ -24,7 +24,7 @@ const MarketStats = () => {
     const [isLessThan1250] = useMediaQuery('(max-width: 1250px)')
     const margTop=isLargerThan750 ? "2.5rem":"3rem"
     const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
-    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "49rem": isLargerThan1700 ?"46rem":   isLargerThan1600?"43rem":isLessThan1375?"26rem": isLessThan1475==true?"31rem":"34rem";
+    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "50rem": isLargerThan1700 ?"48rem":   isLargerThan1600?"45rem":isLessThan1375?"26rem": isLessThan1475==true?"31rem":"36rem";
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
     const [isWidthLessThan1130] = useMediaQuery('(max-width: 1130px)')
 
