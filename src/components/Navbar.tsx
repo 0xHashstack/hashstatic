@@ -253,7 +253,7 @@ const Navbar = () => {
                         router.push('https://hashstack.finance/whitepaper')
                       }}
                     >
-                      White Paper
+                      Whitepaper
                     </Text>
                   <DrawerCloseButton width="48px" height="48px" borderRadius="8px"  bg="rgba(255, 255, 255, 0.04)"  mt="5rem" onClick={toggleDrawer}/>
                 </Box>

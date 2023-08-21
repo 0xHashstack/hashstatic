@@ -112,7 +112,7 @@ const Footer = () => {
                 cursor="pointer"
                 _hover={{color:"#00D395"}}
               >
-                White Paper
+                Whitepaper
               </Text>
             </Link>
           </Box>
@@ -340,7 +340,7 @@ const Footer = () => {
                 _hover={{color:"#00D395"}}
               
               >
-                White Paper
+                Whitepaper
               </Text>
             </Link>
           </Box>
