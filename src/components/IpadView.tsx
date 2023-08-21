@@ -63,7 +63,9 @@ const IpadView = () => {
             <Text color="#00D395" mr="0.6rem">
             Update: 
             </Text>
-          Hashstack&apos;s v1 public testnet is live
+            <Link href="https://testnet.hashstack.finance/" target='_blank'>
+            Hashstack&apos;s v1 public testnet is live
+          </Link>
         </Box>
         </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">

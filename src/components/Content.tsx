@@ -3,6 +3,7 @@ import React from 'react'
 import MaxBorrow from '../assets/Icons/maxBorrow'
 
 import BorrowTrade from '../assets/Images/Frame.png'
+import Link from 'next/link'
 const Content = () => {
   const [isLargerThan1475] = useMediaQuery('(min-width: 1475px)')
   const [isLargerThan1800] = useMediaQuery('(min-width: 1800px)')
@@ -24,7 +25,13 @@ const Content = () => {
         <Box fontSize="20px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" ml="2rem" display="flex" alignItems="center">
           <Text color="#00D395" mr="0.6rem">
           Update:
-          </Text> Hashstack&apos;s v1 public testnet is live
+          </Text> 
+          <Text _hover={{color:"#8C8C9B"}}>
+
+          <Link href="https://testnet.hashstack.finance/" target='_blank'>
+            Hashstack&apos;s v1 public testnet is live
+          </Link>
+          </Text>
         </Box>
         </Box>
         {isLessThan1250 ?        <Image
