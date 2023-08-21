@@ -104,6 +104,7 @@ const Navbar = () => {
             cursor="pointer"
             _hover={{
               background: "#4D59E8",
+              border:"1px solid #4D59E8"
             }}
             onMouseEnter={() => setDashboardHover(true)}
             onMouseLeave={() => setDashboardHover(false)}
