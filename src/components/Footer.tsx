@@ -73,6 +73,7 @@ const Footer = () => {
                 fontWeight="500"
                 lineHeight="20px"
                 cursor="pointer"
+                _hover={{color:"#00D395"}}
               >
                 Documentation
               </Text>
@@ -84,6 +85,7 @@ const Footer = () => {
               fontWeight="500"
               lineHeight="20px"
               cursor="pointer"
+              _hover={{color:"#00D395"}}
             >
               Tokenomics
             </Text>
@@ -95,6 +97,7 @@ const Footer = () => {
                 fontWeight="500"
                 lineHeight="20px"
                 cursor="pointer"
+                _hover={{color:"#00D395"}}
               >
                 Contribute-2-Earn
               </Text>
@@ -107,6 +110,7 @@ const Footer = () => {
                 fontWeight="500"
                 lineHeight="20px"
                 cursor="pointer"
+                _hover={{color:"#00D395"}}
               >
                 White Paper
               </Text>

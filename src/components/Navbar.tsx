@@ -131,7 +131,7 @@ const Navbar = () => {
                     {isLessThan500 ? <HashstackLogoMobile /> : <HashstackLogo />}
                   </Box>
                   <Text
-                    color="#4D59E8"
+                    color="#00D395"
                     fontSize="14px"
                     fontStyle="normal"
                     fontWeight="500"
