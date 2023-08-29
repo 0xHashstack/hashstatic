@@ -203,7 +203,7 @@ const Footer = () => {
               </Box>
             </Link>
             <Link
-              href="https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro"
+              href="https://drive.google.com/drive/folders/1ysun5L45Ib4MZAOGr8v9BK-CpZuMpXJr"
               target="_blank"
             >
               <Box
@@ -436,7 +436,7 @@ const Footer = () => {
             </Box>
               </Link>
               <Link
-                href="https://drive.google.com/drive/folders/1MwIGFymRuE8FWGDRCJjPBQwNBjhX_Dro"
+                href="https://drive.google.com/drive/folders/1ysun5L45Ib4MZAOGr8v9BK-CpZuMpXJr"
                 target="_blank"
               >
             <Box
