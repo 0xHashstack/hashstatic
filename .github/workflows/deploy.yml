@@ -31,7 +31,7 @@ jobs:
       - name: Deploy
         # if deployment successful, you should find the site hosted at
         # http://www.hashstack.finance
-        run: aws s3 sync ./out s3://www.hashstack.finance
+        run: aws s3 sync --delete ./out s3://www.hashstack.finance
 
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
