@@ -33,4 +33,4 @@ jobs:
       - name: Deploy
         # if deployment successful, you should find the site hosted at
         # http://landing-page-dev-hashstack.s3-website-ap-southeast-1.amazonaws.com
-        run: aws s3 sync ./out s3://landing-page-dev-hashstack
+        run: aws s3 sync --delete ./out s3://landing-page-dev-hashstack
