@@ -49,7 +49,7 @@ const MarketStats = () => {
                         Total Value Locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $20.24Mn+
+                        $193.0Mn+
                     </Text>
                 </Box>
 
@@ -92,7 +92,7 @@ const MarketStats = () => {
                         Total Value Locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $20.24Mn+
+                        $193.0Mn+
                     </Text>
                 </Box>
 
