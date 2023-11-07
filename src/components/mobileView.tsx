@@ -92,7 +92,7 @@ const MobileView = () => {
                             Total Value Locked
                         </Text>
                         <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="24px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $1700+
+                        $1.8K+
                         </Text>
                     </Box>
                 </Box>
