@@ -10,15 +10,19 @@ import RunningBanner from './RunningBanner'
 import Marquee from 'react-fast-marquee'
 import { urls } from '../consts/urls'
 import { useDrawContext } from '../context/DrawerContext'
+import numberFormatter from './numberFormater'
 
 const MobileView = () => {
     // const [isLessThan500] = useMediaQuery('(max-width: 500px)')
-    const [utilRate, setUtilRate] = useState<any>();
+    const [utilRate, setUtilRate] = useState<any>(9);
     const [dashboardHover, setDashboardHover] = useState(0);
     const { isDrawerOpen, toggleDrawer } = useDrawContext();
+    const [tvl, seTtvl] = useState<any>(3000)
     useEffect(() => {
         const fetchData = async () => {
             const promise = await OffchainAPI.httpGet('/api/metrics/urm_platform/daily')
+            const promiseTvl=await OffchainAPI.httpGet('/api/get-main-metrics');
+            seTtvl(promiseTvl?.tvl)
             const response: any = promise[promise?.length - 1];
             setUtilRate(Number(response?.totalPlatformURM / 100))
         }
@@ -92,7 +96,7 @@ const MobileView = () => {
                             Total Value Locked
                         </Text>
                         <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="24px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                        $1.8K+
+                        ${numberFormatter(tvl)}+
                         </Text>
                     </Box>
                 </Box>
