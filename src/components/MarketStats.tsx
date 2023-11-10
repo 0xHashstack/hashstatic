@@ -4,11 +4,15 @@ import StarknetLogo from '../assets/Icons/starknetLogo'
 import AlchemyLogo from '../assets/Icons/alchemyLogo'
 import Link from 'next/link'
 import OffchainAPI from '../services/offChainApiCalls'
+import numberFormatter from './numberFormater'
 const MarketStats = () => {
-    const [utilRate, setUtilRate] = useState<any>();
+    const [utilRate, setUtilRate] = useState<any>(9);
+    const [tvl, seTtvl] = useState<any>(3000)
     useEffect(()=>{
         const fetchData=async()=>{
             const promise=await OffchainAPI.httpGet('/api/metrics/urm_platform/daily')
+            const promiseTvl=await OffchainAPI.httpGet('/api/get-main-metrics');
+            seTtvl(promiseTvl?.tvl)
             const response:any=promise[promise?.length-1];
             setUtilRate(Number(response?.totalPlatformURM/100))
         }
@@ -24,7 +28,7 @@ const MarketStats = () => {
     const [isLessThan1250] = useMediaQuery('(max-width: 1250px)')
     const margTop=isLargerThan750 ? "2.5rem":"3rem"
     const [isHeightLargerThan880] = useMediaQuery('(min-height: 880px)')
-    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "49rem": isLargerThan1700 ?"46rem":   isLargerThan1600?"43rem":isLessThan1375?"26rem": isLessThan1475==true?"30rem":"34rem";
+    const gap=isHeightLargerThan1000 && isLargerThan1800?"57rem": isLargerThan1800==true ? "51rem": isLargerThan1700 ?"49rem":   isLargerThan1600?"43rem":isLessThan1375?"26rem": isLessThan1475==true?"30rem":"36rem";
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
     const [isWidthLessThan1130] = useMediaQuery('(max-width: 1130px)')
 
@@ -49,7 +53,7 @@ const MarketStats = () => {
                         Total Value Locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                    $1.8K+
+                    ${numberFormatter(tvl)}+
                     </Text>
                 </Box>
 
@@ -92,7 +96,7 @@ const MarketStats = () => {
                         Total Value Locked
                     </Text>
                     <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
-                    $1.8K+
+                    ${numberFormatter(tvl)}+
                     </Text>
                 </Box>
 
