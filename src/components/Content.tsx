@@ -29,7 +29,7 @@ const Content = () => {
           <Text _hover={{color:"#8C8C9B"}}>
 
           <Link href="https://app.hashstack.finance//" target='_blank'>
-            Hashstack&apos;s v1 public mainnet is live
+            Hashstack&apos;s V1 mainnet is live
           </Link>
           </Text>
         </Box>

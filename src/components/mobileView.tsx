@@ -53,8 +53,8 @@ const MobileView = () => {
             <Text color="#00D395" mr="0.4rem">
             Update: 
             </Text>
-            <Link href="https://app.hashstack.finance//" target='_blank'>
-            Hashstack&apos;s v1 public mainnet is live
+            <Link href="https://app.hashstack.finance/" target='_blank'>
+            Hashstack&apos;s V1 mainnet is live
           </Link>
         </Box>
         </Box>
