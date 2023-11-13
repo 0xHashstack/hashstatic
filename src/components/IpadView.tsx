@@ -67,7 +67,7 @@ const IpadView = () => {
             Update: 
             </Text>
             <Link href="https://app.hashstack.finance//" target='_blank'>
-            Hashstack&apos;s V1 mainnet is live
+            V1 mainnet is live
           </Link>
         </Box>
         </Box>

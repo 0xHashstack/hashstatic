@@ -25,7 +25,7 @@ const Banner = () => {
         fontFamily="inter"
         margin="0"
     >
-        Update: Hashstack&apos;s V1 mainnet is live
+        Update: V1 mainnet is live
     </Box>
   )
 }
