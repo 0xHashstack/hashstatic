@@ -66,8 +66,8 @@ const IpadView = () => {
             <Text color="#00D395" mr="0.6rem">
             Update: 
             </Text>
-            <Link href="https://testnet.hashstack.finance/" target='_blank'>
-            Hashstack&apos;s v1 public testnet is live
+            <Link href="https://app.hashstack.finance//" target='_blank'>
+            V1 mainnet is live
           </Link>
         </Box>
         </Box>
@@ -84,7 +84,7 @@ const IpadView = () => {
                         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem" whiteSpace="nowrap">
                         of your collateral for liquidity
                         <br />
-                        mining,trading needs.</Text>
+                        mining & trading needs.</Text>
                 </Box>
                 <Box display="flex" flexDirection="row" justifyContent="center" gap="3rem" mt="2rem">
                     <Box>
@@ -465,7 +465,7 @@ const IpadView = () => {
             </Box>
             </Box>
             <Box display="flex" flexDirection="row" justifyContent="center" gap="2.5rem" mb="2rem">
-        <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
+        {/* <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer"
 
           _hover={{
             background:"#4D59E8",
@@ -474,7 +474,7 @@ const IpadView = () => {
         >
           <InfoIcon/>
   
-        </Box>
+        </Box> */}
         <Link href="https://x.com/0xhashstack" target="_blank">
           <Box display="flex" width="40px" height="40px" padding="8px" justifyContent="center" alignItems="center" borderRadius="6px" border="1px solid #2B2F35" bg="#161B22" cursor="pointer" 
                     _hover={{

@@ -48,23 +48,8 @@ const Footer = () => {
               cursor="pointer"
               
             >
-              Homepage
+              Home
             </Text>
-            <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
-            
-            <Text
-              color="#8C8C9B"
-              fontSize="14px"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="20px"
-              cursor="pointer"
-              _hover={{color:"#00D395"}}
-              
-            >
-              Use Cases
-            </Text>
-            </Link>
             <Link href="https://docs.hashstack.finance/" target="_blank">
               <Text
                 color="#8C8C9B"
@@ -75,8 +60,35 @@ const Footer = () => {
                 cursor="pointer"
                 _hover={{color:"#00D395"}}
               >
-                Documentation
+                Docs
               </Text>
+            </Link>
+            <Link href="https://docs.hashstack.finance/developers" target="_blank">
+              <Text
+                color="#8C8C9B"
+                fontSize="14px"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="20px"
+                cursor="pointer"
+                _hover={{color:"#00D395"}}
+              >
+                Developers
+              </Text>
+            </Link>
+            <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
+            <Text
+              color="#8C8C9B"
+              fontSize="14px"
+              fontStyle="normal"
+              fontWeight="500"
+              lineHeight="20px"
+              cursor="pointer"
+              _hover={{color:"#00D395"}}
+              
+            >
+              Use-cases
+            </Text>
             </Link>
             <Text
               color="#8C8C9B"
@@ -102,22 +114,10 @@ const Footer = () => {
                 Contribute-2-Earn
               </Text>
             </Link>
-            <Link href="https://hashstack.finance/whitepaper" target="_blank">
-              <Text
-                color="#8C8C9B"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="500"
-                lineHeight="20px"
-                cursor="pointer"
-                _hover={{color:"#00D395"}}
-              >
-                Whitepaper
-              </Text>
-            </Link>
+
           </Box>
           <Box display="flex" flexDirection="row" gap="2.5rem">
-            <Link href="https://docs.hashstack.finance/hub/" target="_blank">
+            {/* <Link href="https://docs.hashstack.finance/hub/" target="_blank">
             
             <Box
               display="flex"
@@ -138,7 +138,7 @@ const Footer = () => {
             >
               {dashboardHover == 1 ? <InfoIconWhite /> : <InfoIcon />}
             </Box>
-            </Link>
+            </Link> */}
             <Link href="https://x.com/0xhashstack" target="_blank">
               <Box
                 display="flex"
@@ -272,8 +272,36 @@ const Footer = () => {
               lineHeight="20px"
               cursor="pointer"
             >
-              Homepage
+              Home
             </Text>
+            <Link href="https://docs.hashstack.finance/" target="_blank">
+              <Text
+                color="#8C8C9B"
+                fontSize="14px"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="20px"
+                cursor="pointer"
+                _hover={{color:"#00D395"}}
+              
+              >
+                Docs
+              </Text>
+            </Link>
+            <Link href="https://docs.hashstack.finance/developers" target="_blank">
+              <Text
+                color="#8C8C9B"
+                fontSize="14px"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="20px"
+                cursor="pointer"
+                _hover={{color:"#00D395"}}
+              
+              >
+                Developers
+              </Text>
+            </Link>
             <Link href="https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases" target="_blank">
             
             <Text
@@ -286,23 +314,10 @@ const Footer = () => {
               _hover={{color:"#00D395"}}
               
             >
-              Use Cases
+              Use-cases
             </Text>
             </Link>
-            <Link href="https://docs.hashstack.finance/" target="_blank">
-              <Text
-                color="#8C8C9B"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="500"
-                lineHeight="20px"
-                cursor="pointer"
-                _hover={{color:"#00D395"}}
-              
-              >
-                Documentation
-              </Text>
-            </Link>
+
             <Text
               color="#8C8C9B"
               fontSize="14px"
@@ -329,23 +344,10 @@ const Footer = () => {
                 Contribute-2-Earn
               </Text>
             </Link>
-            <Link href="https://hashstack.finance/whitepaper" target="_blank">
-              <Text
-                color="#8C8C9B"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="500"
-                lineHeight="20px"
-                cursor="pointer"
-                _hover={{color:"#00D395"}}
-              
-              >
-                Whitepaper
-              </Text>
-            </Link>
+
           </Box>
           <Box display="flex" flexDirection="row" gap={isWidthLessThan1350 ?"1.5rem":"2.5rem"}>
-            <Link href="https://docs.hashstack.finance/hub/" target="_blank">
+            {/* <Link href="https://docs.hashstack.finance/hub/" target="_blank">
             <Box
               display="flex"
               width="40px"
@@ -366,7 +368,7 @@ const Footer = () => {
             >
               {dashboardHover == 1 ? <InfoIconWhite /> : <InfoIcon />}
             </Box>
-            </Link>
+            </Link> */}
             <Link href="https://x.com/0xhashstack" target="_blank">
             <Box
               display="flex"

@@ -28,8 +28,8 @@ const Content = () => {
           </Text> 
           <Text _hover={{color:"#8C8C9B"}}>
 
-          <Link href="https://testnet.hashstack.finance/" target='_blank'>
-            Hashstack&apos;s v1 public testnet is live
+          <Link href="https://app.hashstack.finance//" target='_blank'>
+            V1 mainnet is live
           </Link>
           </Text>
         </Box>
@@ -51,11 +51,11 @@ const Content = () => {
         {isLessThan1250 ?        <Text color="#858786" fontFamily="inter"  p="0 2rem"
         fontSize={isLessThan1250?"28px": isHeightLargerThan1000 && isLargerThan1800 ?"46px": isLargerThan1800 ? "40px":"30px"} 
         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem">
-          of your collateral for liquidity mining,
+          of your collateral for liquidity mining &
           trading needs.</Text>:        <Text color="#858786" fontFamily="inter"  p="0 2rem"
         fontSize={isLessThan1250?"28px": isHeightLargerThan1000 && isLargerThan1800 ?"46px": isLargerThan1800 ? "40px":isLargerThan1600?"36px": "30px"} 
         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem" whiteSpace="nowrap">
-          of your collateral for liquidity mining,
+          of your collateral for liquidity mining &
           <br />
           trading needs.</Text>}
 
