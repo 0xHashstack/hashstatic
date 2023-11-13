@@ -53,8 +53,8 @@ const MobileView = () => {
             <Text color="#00D395" mr="0.4rem">
             Update: 
             </Text>
-            <Link href="https://testnet.hashstack.finance/" target='_blank'>
-            Hashstack&apos;s v1 public testnet is live
+            <Link href="https://app.hashstack.finance//" target='_blank'>
+            Hashstack&apos;s v1 public mainnet is live
           </Link>
         </Box>
         </Box>
@@ -71,12 +71,12 @@ const MobileView = () => {
                         fontStyle="normal" fontWeight="300" lineHeight="normal" letterSpacing="0.64px" mt="0.7rem" whiteSpace="nowrap">
                         of your collateral for liquidity
                         <br />
-                        mining,trading needs.</Text>
+                        mining & trading needs.</Text>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center" mt="1rem">
                     <Box display="flex" height="40px" width="109px" textAlign="center" alignItems="center" justifyContent="center" gap="8px" border="1px solid #CACAD1" borderRadius="4px" color="#CACAD1" cursor="pointer" bg="transparent"
                     >
-                        <Link href="https://testnet.hashstack.finance" target="_blank">
+                        <Link href="https://app.hashstack.finance/" target="_blank">
                             <Text fontFamily="Inter" fontSize="14px" fontStyle="normal" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px">Launch App</Text>
                         </Link>
                     </Box>
