@@ -36,14 +36,14 @@ const Content = () => {
         </Box>
         {isLessThan1250 ?        <Image
           src="/maxBorrowIpadView.svg"
-          alt="GHAF Logo"
+          alt="MAX Borrow detail"
           maxWidth="100%"
           height="208px"
           width="295px"
           p="0 2rem"
         />:        <Image
           src="/maxBorrow.svg"
-          alt="GHAF Logo"
+          alt="MAX Borrow detail"
           maxWidth="100%"
           p="0 2rem"
           height={ isHeightLargerThan1000 && isLargerThan1800? "110": isLargerThan1800 ?"100":isLargerThan1600 ?"90": ""}
@@ -67,14 +67,14 @@ const Content = () => {
         {/* <AnimatedFrame/> */}
         {/* <Image
           src="/frame.svg"
-          alt="GHAF Logo"
+          alt="Animation Logo"
           maxWidth="100%"
         // maxHeight="100px"
 
         /> */}
                             <Image
           src="/illustration.gif"
-          alt="GHAF Logo"
+          alt="Provider-Borrower Illustration animation"
           maxWidth="100%"
           height={ isHeightLargerThan1000 && isLargerThan1800? "460": isLargerThan1800 ?"430":  isHeightLargerThan1000 && isLargerThan1600 ?"435": isLargerThan1600?"430":""}
         // maxHeight="100px"
