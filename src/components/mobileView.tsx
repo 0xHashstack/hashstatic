@@ -45,7 +45,7 @@ const MobileView = () => {
                     {/* <AnimatedFrame/> */}
                     <Image
                         src="/illustration.gif"
-                        alt="GHAF Logo"
+                        alt="Provider-Borrower Illustration animation"
                         maxWidth="100%"
                     // maxHeight="100px"
 
@@ -67,7 +67,7 @@ const MobileView = () => {
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
                         src="/maxBorrow.svg"
-                        alt="GHAF Logo"
+                        alt="MAX Borrow detail"
                         maxWidth="100%"
                         height={40}
                     />
@@ -137,7 +137,7 @@ const MobileView = () => {
                             <Link href="https://www.starknet.io/en" target="_blank">
                                 <Image
                                     src="/logos/starknetLogo.svg"
-                                    alt="GHAF Logo"
+                                    alt="Starknet Logo"
                                     maxWidth="100%"
                                     height={25}
                                 />
@@ -147,7 +147,7 @@ const MobileView = () => {
                             <Link href="https://www.alchemy.com" target="_blank">
                                 <Image
                                     src="/logos/alchemyLogo.svg"
-                                    alt="GHAF Logo"
+                                    alt="Alchemy Logo"
                                     maxWidth="100%"
                                     height={25}
                                 />
@@ -201,7 +201,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="JediSwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
 
@@ -213,7 +213,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="JediSwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -229,7 +229,7 @@ const MobileView = () => {
                                     src="/logos/mySwapLogoActive.svg"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="MySwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -239,7 +239,7 @@ const MobileView = () => {
                                     src="/logos/mySwapLogo.svg"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="MySwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -256,7 +256,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Yagi Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -267,7 +267,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Yagi Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -287,7 +287,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Pragma Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -298,7 +298,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Pragma Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -315,7 +315,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="JediSwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
 
@@ -327,7 +327,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="JediSwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -343,7 +343,7 @@ const MobileView = () => {
                                     src="/logos/mySwapLogoActive.svg"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="MySwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -353,7 +353,7 @@ const MobileView = () => {
                                     src="/logos/mySwapLogo.svg"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="MySwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -370,7 +370,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Yagi Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -381,7 +381,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Yagi Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -401,7 +401,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Pragma Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -412,7 +412,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="Pragma Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -431,7 +431,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="JediSwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
 
@@ -443,7 +443,7 @@ const MobileView = () => {
                                     opacity="70%"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="JediSwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -459,7 +459,7 @@ const MobileView = () => {
                                     src="/logos/mySwapLogoActive.svg"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="MySwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
@@ -469,7 +469,7 @@ const MobileView = () => {
                                     src="/logos/mySwapLogo.svg"
                                     _hover={{ opacity: "100%" }}
                                     transition="0.2s"
-                                    alt="GHAF Logo"
+                                    alt="MySwap Logo"
                                     maxWidth="100%"
                                 // maxHeight="100px"
                                 />
