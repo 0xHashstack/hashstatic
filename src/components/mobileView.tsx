@@ -67,7 +67,7 @@ const MobileView = () => {
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
                         src="/maxBorrow.svg"
-                        alt="MAX Borrow detail"
+                        alt="hero title text"
                         maxWidth="100%"
                         height={40}
                     />

@@ -36,14 +36,14 @@ const Content = () => {
         </Box>
         {isLessThan1250 ?        <Image
           src="/maxBorrowIpadView.svg"
-          alt="MAX Borrow detail"
+          alt="hero title text"
           maxWidth="100%"
           height="208px"
           width="295px"
           p="0 2rem"
         />:        <Image
           src="/maxBorrow.svg"
-          alt="MAX Borrow detail"
+          alt="hero title text"
           maxWidth="100%"
           p="0 2rem"
           height={ isHeightLargerThan1000 && isLargerThan1800? "110": isLargerThan1800 ?"100":isLargerThan1600 ?"90": ""}
