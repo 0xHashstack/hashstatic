@@ -30,7 +30,6 @@ const RunningBanner = () => {
     const [iconDashboardHover, setIconDashboardHover] = useState(0);
     const [isWidthLessThan1050] = useMediaQuery('(max-width: 1050px)')
     const { isDrawerOpen, toggleDrawer } = useDrawContext();
-    console.log(isDrawerOpen,"open")
     // const speed = useBreakpointValue({
     //     base: 20,
     //     md: 40,
