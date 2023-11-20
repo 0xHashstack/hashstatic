@@ -67,15 +67,15 @@ const Navbar = () => {
           width="109px"
           alignItems="center"
           justifyContent="center"
+          background="#EEEFF2"
+          box-shadow= "0px 1px 0px 0px rgba(27, 31, 35, 0.10)"
           gap="8px"
-          border="1px solid #CACAD1"
-          borderRadius="4px"
-          color="#CACAD1"
+          borderRadius="6px"
+          color="#060216"
           cursor="pointer"
           _hover={{
-            background: "#4D59E8",
-            color: "#fff",
-            border: "1px solid #4D59E8"
+            background:"#EEEFF2",
+            color: "#060216",
           }}
         >
           <Link href="https://app.hashstack.finance/" target="_blank">
@@ -92,27 +92,7 @@ const Navbar = () => {
           </Link>
         </Box>}
 
-        {!isLessThan1210 ? <Box
-          display="flex"
-          width="40px"
-          height="40px"
-          padding="8px"
-          justifyContent="center"
-          alignItems="center"
-          borderRadius="6px"
-          border="1px solid rgba(140, 140, 155, 0.70)"
-          cursor="pointer"
-          _hover={{
-            background: "#4D59E8",
-            border: "1px solid #4D59E8"
-          }}
-          onMouseEnter={() => setDashboardHover(true)}
-          onMouseLeave={() => setDashboardHover(false)}
-        >
-          <Link href="https://discord.gg/hashstack" target="_blank">
-            {dashboardHover ? <DiscordLogoWhite /> : <DicordLogo />}
-          </Link>
-        </Box> : <Box onClick={() => handleClick("sm")}>
+        {isLessThan1210 && <Box onClick={() => handleClick("sm")}>
           <Image
             src="/hamburgerIcon.svg"
             alt="picture of author"

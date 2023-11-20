@@ -1,4 +1,4 @@
-import { Box, useMediaQuery, Image, Text, Skeleton } from '@chakra-ui/react'
+import { Box, useMediaQuery, Image, Text, Skeleton, Fade } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import Banner from './Banner'
 import Navbar from './Navbar'
@@ -18,6 +18,31 @@ const MobileView = () => {
     const [dashboardHover, setDashboardHover] = useState(0);
     const { isDrawerOpen, toggleDrawer } = useDrawContext();
     const [tvl, seTtvl] = useState<any>()
+    const [showText1, setShowText1] = useState(true);
+
+    // Array of texts and links
+    const texts = [
+        {
+            text: 'V1 mainnet is live ',
+            link: 'https://app.hashstack.finance//',
+        },
+        {
+            text: 'Referral Campaign is live ',
+            link: 'https://your-other-link.com//',
+        },
+    ];
+
+    // Function to toggle texts
+    const toggleTexts = () => {
+        setShowText1((prev: any) => !prev);
+    };
+
+    // Toggle texts every 4 seconds
+    useEffect(() => {
+        const interval = setInterval(toggleTexts, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -54,15 +79,48 @@ const MobileView = () => {
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
                     </video> */}
                 </Box>
-                <Box mb="1rem" mt="1rem" background="linear-gradient(90deg, rgba(2, 1, 15, 0.00) 0%, rgba(255, 255, 255, 0.25) 44.18%, rgba(236, 236, 237, 0.23) 62.33%, rgba(2, 1, 15, 0.00) 100%)" height="35px" display="flex" alignItems="center" justifyContent="center">
+                <Box mt="1rem" height="35px" display="flex" alignItems="center" justifyContent="center">
                     <Box fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" display="flex" alignItems="center">
-                        <Text color="#00D395" mr="0.4rem">
-                            Update:
+                        <Text color="#00D395" mr="0.4rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px">
+                            Latest
                         </Text>
-                        <Link href="https://app.hashstack.finance/" target='_blank'>
-                            V1 mainnet is live
-                        </Link>
+
+                        <Text
+                            _hover={{ color: '#8C8C9B' }}
+                            mr="0.6rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px"
+                        >
+                            <Link href={texts[0].link} target="_blank">
+                                {texts[0].text}
+                                <Image
+                                    src="/party_icon-01.svg"
+                                    alt="GHAF Logo"
+                                    // mt="0.2rem"
+                                    maxWidth="100%"
+                                    height="20px"
+                                // maxHeight="100px"
+                                />
+                            </Link>
+                        </Text>
                     </Box>
+                </Box>
+                <Box mb="2rem" mt="1rem" mr="1.3rem" height="35px" display="flex" alignItems="center" justifyContent="center"  >
+                    <Text
+                        _hover={{ color: '#8C8C9B' }}
+                        background="rgba(217, 217, 217, 0.10)" padding="9px 23px" borderRadius="10px"
+                        fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" display="flex" alignItems="center"
+                    >
+                        <Link href={texts[1].link} target="_blank">
+                            {texts[1].text}
+                            <Image
+                                src="/dancing_man-01.svg"
+                                alt="GHAF Logo"
+                                // mt="0.2rem"
+                                maxWidth="100%"
+                                height="20px"
+                            // maxHeight="100px"
+                            />
+                        </Link>
+                    </Text>
                 </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
@@ -80,7 +138,7 @@ const MobileView = () => {
                         mining & trading needs.</Text>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center" mt="1rem">
-                    <Box display="flex" height="40px" width="109px" textAlign="center" alignItems="center" justifyContent="center" gap="8px" border="1px solid #CACAD1" borderRadius="4px" color="#CACAD1" cursor="pointer" bg="transparent"
+                    <Box display="flex" height="40px" width="109px" textAlign="center" alignItems="center" justifyContent="center" gap="8px" borderRadius="6px" color="#060216" cursor="pointer" background="#EEEFF2"
                     >
                         <Link href="https://app.hashstack.finance/" target="_blank">
                             <Text fontFamily="Inter" fontSize="14px" fontStyle="normal" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px">Launch App</Text>
@@ -88,8 +146,8 @@ const MobileView = () => {
                     </Box>
 
                 </Box>
-                <Box display="flex" flexDirection="row" justifyContent="space-around" mt="2rem">
-                    <Box>
+                <Box display="flex" flexDirection="row" justifyContent="center" mt="2rem">
+                    {/* <Box>
                         <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
                             Utilization Rate
                         </Text>
@@ -107,9 +165,9 @@ const MobileView = () => {
                                 />
                             </Box>
                         }
-                    </Box>
-                    <Box>
-                        <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
+                    </Box> */}
+                    <Box display="flex" flexDirection="row" justifyContent="center">
+                        <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap" mr="0.5rem" mt="1.2rem">
                             Total Value Locked
                         </Text>
                         {tvl ?
