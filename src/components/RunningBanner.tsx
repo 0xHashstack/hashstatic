@@ -88,7 +88,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -100,7 +100,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -116,7 +116,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -126,7 +126,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -143,7 +143,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -154,7 +154,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -174,7 +174,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -185,7 +185,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -202,7 +202,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -214,7 +214,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -230,7 +230,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -240,7 +240,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -257,7 +257,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -268,7 +268,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -288,7 +288,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -299,7 +299,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -318,7 +318,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -330,7 +330,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -346,7 +346,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -356,7 +356,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -416,7 +416,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -428,7 +428,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -444,7 +444,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -454,7 +454,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -471,7 +471,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -482,7 +482,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -502,7 +502,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -513,7 +513,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -530,7 +530,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -542,7 +542,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -558,7 +558,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -568,7 +568,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -585,7 +585,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -596,7 +596,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -616,7 +616,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -627,7 +627,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -646,7 +646,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -658,7 +658,7 @@ const RunningBanner = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="JediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -674,7 +674,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -684,7 +684,7 @@ const RunningBanner = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />

@@ -84,7 +84,7 @@ const IpadView = () => {
                     {/* <AnimatedFrame/> */}
                     <Image
                         src="/illustration.gif"
-                        alt="GHAF Logo"
+                        alt="Provider-Borrower Illustration animation"
                         maxWidth="100%"
                     // maxHeight="100px"
 
@@ -140,7 +140,7 @@ const IpadView = () => {
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
                         src="/maxBorrow.svg"
-                        alt="GHAF Logo"
+                        alt="hero title text"
                         maxWidth="100%"
                         height={70}
                     />
@@ -201,7 +201,7 @@ const IpadView = () => {
                             <Link href="https://www.starknet.io/en" target="_blank">
                                 <Image
                                     src="/logos/starknetLogo.svg"
-                                    alt="GHAF Logo"
+                                    alt="Starknet Logo"
                                     maxWidth="100%"
                                     height={30}
                                 />
@@ -211,7 +211,7 @@ const IpadView = () => {
                             <Link href="https://www.alchemy.com" target="_blank">
                                 <Image
                                     src="/logos/alchemyLogo.svg"
-                                    alt="GHAF Logo"
+                                    alt="Alchemy Logo"
                                     maxWidth="100%"
                                     height={30}
                                 />
@@ -269,7 +269,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Jediswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -281,7 +281,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Jediswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -297,7 +297,7 @@ const IpadView = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Myswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -307,7 +307,7 @@ const IpadView = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Myswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -324,7 +324,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -335,7 +335,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -355,7 +355,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -366,7 +366,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -383,7 +383,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Jediswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -395,7 +395,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="jediSwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -411,7 +411,7 @@ const IpadView = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="MySwap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -421,7 +421,7 @@ const IpadView = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Myswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -438,7 +438,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -449,7 +449,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Yagi Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -469,7 +469,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -480,7 +480,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Pragma Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -499,7 +499,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Jediswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
 
@@ -511,7 +511,7 @@ const IpadView = () => {
                                         opacity="70%"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Jediswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -527,7 +527,7 @@ const IpadView = () => {
                                         src="/logos/mySwapLogoActive.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Myswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />
@@ -537,7 +537,7 @@ const IpadView = () => {
                                         src="/logos/mySwapLogo.svg"
                                         _hover={{ opacity: "100%" }}
                                         transition="0.2s"
-                                        alt="GHAF Logo"
+                                        alt="Myswap Logo"
                                         maxWidth="100%"
                                     // maxHeight="100px"
                                     />

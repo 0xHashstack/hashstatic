@@ -121,17 +121,17 @@ const Content = () => {
           {/* <AnimatedFrame/> */}
           {/* <Image
           src="/frame.svg"
-          alt="GHAF Logo"
+          alt="Animation Logo"
           maxWidth="100%"
         // maxHeight="100px"
 
         /> */}
-          <Image
-            src="/illustration.gif"
-            alt="GHAF Logo"
-            maxWidth="100%"
-            height={isHeightLargerThan1000 && isLargerThan1800 ? "460" : isLargerThan1800 ? "430" : isHeightLargerThan1000 && isLargerThan1600 ? "435" : isLargerThan1600 ? "430" : ""}
-          // maxHeight="100px"
+                            <Image
+          src="/illustration.gif"
+          alt="Provider-Borrower Illustration animation"
+          maxWidth="100%"
+          height={ isHeightLargerThan1000 && isLargerThan1800? "460": isLargerThan1800 ?"430":  isHeightLargerThan1000 && isLargerThan1600 ?"435": isLargerThan1600?"430":""}
+        // maxHeight="100px"
 
           />
           {/* <video autoPlay loop height={isLessThan1350 ? 300:""}>
