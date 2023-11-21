@@ -207,7 +207,25 @@ const Navbar = () => {
                   border="1px solid rgb(26, 26, 31)"
                   margin="0"
                 >
-                  Tokenomics
+                  Hashtokens
+                </Text>
+                <Text
+                  color="#fff"
+                  fontSize="14px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="20px"
+                  cursor="pointer"
+                  width="100%"
+                  textAlign="center"
+                  height="64px"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  border="1px solid rgb(26, 26, 31)"
+                  margin="0"
+                >
+                  Referral Leaderboard
                 </Text>
                 <Box>
                 </Box>

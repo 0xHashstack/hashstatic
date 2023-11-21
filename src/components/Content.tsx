@@ -22,12 +22,12 @@ const Content = () => {
   // Array of texts and links
   const texts = [
     {
-      text: 'V1 mainnet is live ',
-      link: 'https://app.hashstack.finance//',
+      text: 'Airdrop for mainnet v1 ',
+      link: 'https://app.hashstack.finance/',
     },
     {
       text: 'Referral Campaign is live ',
-      link: 'https://your-other-link.com//',
+      link: 'https://your-other-link.com/',
     },
   ];
 
@@ -49,7 +49,7 @@ const Content = () => {
           <Box mb="4rem" height="44px" display="flex" alignItems="center">
             <Box fontSize="20px" fontWeight="500" lineHeight="20px" letterSpacing="-0.10px" ml="2rem" display="flex" alignItems="center">
               <Text color="#00D395" mr="0.6rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px">
-                Latest
+                Launched
               </Text>
               <Text
                 _hover={{ color: '#8C8C9B' }}
@@ -68,7 +68,7 @@ const Content = () => {
           />
                 </Link>
               </Text>
-              <Text
+              {/* <Text
                 _hover={{ color: '#8C8C9B' }}
                 mr="0.6rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px"
                 cursor="pointer"
@@ -84,7 +84,7 @@ const Content = () => {
           // maxHeight="100px"
           />
                 </Link>
-              </Text>
+              </Text> */}
 
             </Box>
           </Box>

@@ -23,7 +23,7 @@ const MobileView = () => {
     // Array of texts and links
     const texts = [
         {
-            text: 'V1 mainnet is live ',
+            text: 'Airdrop for mainnet v1 ',
             link: 'https://app.hashstack.finance//',
         },
         {
@@ -79,10 +79,10 @@ const MobileView = () => {
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
                     </video> */}
                 </Box>
-                <Box mt="1rem" height="35px" display="flex" alignItems="center" justifyContent="center">
+                <Box mt="1rem" mb="2rem" height="35px" display="flex" alignItems="center" justifyContent="center">
                     <Box fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" display="flex" alignItems="center">
                         <Text color="#00D395" mr="0.4rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px">
-                            Latest
+                            Launched
                         </Text>
 
                         <Text
@@ -103,7 +103,7 @@ const MobileView = () => {
                         </Text>
                     </Box>
                 </Box>
-                <Box mb="2rem" mt="1rem" mr="1.3rem" height="35px" display="flex" alignItems="center" justifyContent="center"  >
+                {/* <Box mb="2rem" mt="1rem" mr="1.3rem" height="35px" display="flex" alignItems="center" justifyContent="center"  >
                     <Text
                         _hover={{ color: '#8C8C9B' }}
                         background="rgba(217, 217, 217, 0.10)" padding="9px 23px" borderRadius="10px"
@@ -121,7 +121,7 @@ const MobileView = () => {
                             />
                         </Link>
                     </Text>
-                </Box>
+                </Box> */}
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
                         src="/maxBorrow.svg"
