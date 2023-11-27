@@ -99,7 +99,19 @@ const Footer = () => {
               cursor="pointer"
               _hover={{color:"#00D395"}}
             >
-              Tokenomics
+              HASH token
+            </Text>
+            <Text
+              color="#8C8C9B"
+              fontSize="14px"
+              fontStyle="normal"
+              fontWeight="500"
+              lineHeight="20px"
+              cursor="pointer"
+              _hover={{color:"#00D395"}}
+              
+            >
+              Referral Leaderboard
             </Text>
             <Link href="https://hashstack.finance/c2e" target="_blank">
               <Text
@@ -328,7 +340,19 @@ const Footer = () => {
               _hover={{color:"#00D395"}}
               
             >
-              Tokenomics
+              HASH token
+            </Text>
+            <Text
+              color="#8C8C9B"
+              fontSize="14px"
+              fontStyle="normal"
+              fontWeight="500"
+              lineHeight="20px"
+              cursor="pointer"
+              _hover={{color:"#00D395"}}
+              
+            >
+              Referral Leaderboard
             </Text>
             <Link href="https://hashstack.finance/c2e" target="_blank">
               <Text
