@@ -207,7 +207,7 @@ const Navbar = () => {
                   border="1px solid rgb(26, 26, 31)"
                   margin="0"
                 >
-                  Hashtokens
+                  HASH token
                 </Text>
                 <Text
                   color="#fff"

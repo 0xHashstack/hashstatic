@@ -99,7 +99,7 @@ const Footer = () => {
               cursor="pointer"
               _hover={{color:"#00D395"}}
             >
-              Hashtokens
+              HASH token
             </Text>
             <Text
               color="#8C8C9B"
@@ -340,7 +340,7 @@ const Footer = () => {
               _hover={{color:"#00D395"}}
               
             >
-              Hashtokens
+              HASH token
             </Text>
             <Text
               color="#8C8C9B"
