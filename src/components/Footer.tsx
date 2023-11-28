@@ -101,18 +101,19 @@ const Footer = () => {
             >
               HASH token
             </Text>
-            <Text
-              color="#8C8C9B"
-              fontSize="14px"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="20px"
-              cursor="pointer"
-              _hover={{color:"#00D395"}}
-              
-            >
-              Referral Leaderboard
-            </Text>
+            <Link href="https://app.hashstack.finance/v1/airdrop_leaderboard" target="_blank">
+              <Text
+                color="#8C8C9B"
+                fontSize="14px"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="20px"
+                cursor="pointer"
+                _hover={{color:"#00D395"}}
+              >
+                Airdrop Leaderboard
+              </Text>
+            </Link>
             <Link href="https://hashstack.finance/c2e" target="_blank">
               <Text
                 color="#8C8C9B"
@@ -342,18 +343,20 @@ const Footer = () => {
             >
               HASH token
             </Text>
-            <Text
-              color="#8C8C9B"
-              fontSize="14px"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="20px"
-              cursor="pointer"
-              _hover={{color:"#00D395"}}
+            <Link href="https://app.hashstack.finance/v1/airdrop_leaderboard" target="_blank">
+              <Text
+                color="#8C8C9B"
+                fontSize="14px"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="20px"
+                cursor="pointer"
+                _hover={{color:"#00D395"}}
               
-            >
-              Referral Leaderboard
-            </Text>
+              >
+                Airdrop Leaderboard
+              </Text>
+            </Link>
             <Link href="https://hashstack.finance/c2e" target="_blank">
               <Text
                 color="#8C8C9B"

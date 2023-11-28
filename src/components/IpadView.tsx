@@ -174,7 +174,7 @@ const IpadView = () => {
                     </Box> */}
                     <Box display="flex" flexDirection="row" justifyContent="center">
                         <Text color="#8C8C9B" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap" mr="1rem">
-                            Liquidation Locked
+                        Liquidity Locked
                         </Text>
                         {tvl ?
                             <Text  color="#00D395" textAlign="center" fontFamily="inter" fontSize="28px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.6rem" whiteSpace="nowrap">

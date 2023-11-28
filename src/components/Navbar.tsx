@@ -224,8 +224,11 @@ const Navbar = () => {
                   justifyContent="center"
                   border="1px solid rgb(26, 26, 31)"
                   margin="0"
+                  onClick={() => {
+                    router.push('https://app.hashstack.finance/v1/airdrop_leaderboard')
+                  }}
                 >
-                  Referral Leaderboard
+                  Airdrop Leaderboard
                 </Text>
                 <Box>
                 </Box>
