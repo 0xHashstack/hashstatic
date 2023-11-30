@@ -149,7 +149,7 @@ const MobileView = () => {
                 <Box display="flex" flexDirection="row" justifyContent="space-around" mt="2rem">
 <Box>
                         <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
-                            Utilization Rate
+                            Utilization
                         </Text>
                         {utilRate ?
                             <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="24px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
