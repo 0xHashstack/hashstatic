@@ -152,8 +152,8 @@ const IpadView = () => {
                         <br />
                         mining & trading needs.</Text>
                 </Box>
-                <Box display="flex" flexDirection="row" justifyContent="center" gap="3rem" mt="2rem">
-                    {/* <Box>
+                <Box display="flex" flexDirection="row" justifyContent="space-around" gap="3rem" mt="2rem">
+                <Box>
                         <Text color="#8C8C9B" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
                             Utilization Rate
                         </Text>
@@ -171,13 +171,13 @@ const IpadView = () => {
                                 />
                             </Box>
                         }
-                    </Box> */}
-                    <Box display="flex" flexDirection="row" justifyContent="center">
-                        <Text color="#8C8C9B" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap" mr="1rem">
-                        Liquidity Locked
+                    </Box>
+                    <Box>
+                        <Text color="#8C8C9B" fontSize="20px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
+                            Total Value Locked
                         </Text>
                         {tvl ?
-                            <Text  color="#00D395" textAlign="center" fontFamily="inter" fontSize="28px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.6rem" whiteSpace="nowrap">
+                            <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="28px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
                                 {tvl ? `$${numberFormatter(tvl)}+` : ""}
                             </Text> :
                             <Box color="#00D395" textAlign="center" fontFamily="inter" fontSize="28px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
