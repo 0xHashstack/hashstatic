@@ -146,8 +146,8 @@ const MobileView = () => {
                     </Box>
 
                 </Box>
-                <Box display="flex" flexDirection="row" justifyContent="center" mt="2rem">
-                    {/* <Box>
+                <Box display="flex" flexDirection="row" justifyContent="space-around" mt="2rem">
+<Box>
                         <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
                             Utilization Rate
                         </Text>
@@ -165,10 +165,10 @@ const MobileView = () => {
                                 />
                             </Box>
                         }
-                    </Box> */}
-                    <Box display="flex" flexDirection="row" justifyContent="center">
-                        <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap" mr="0.5rem" mt="1.2rem">
-                            Total Value Locked
+                    </Box>
+                    <Box>
+                        <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
+                            Liquidity Locked
                         </Text>
                         {tvl ?
                             <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="24px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
