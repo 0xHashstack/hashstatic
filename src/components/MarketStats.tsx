@@ -48,7 +48,7 @@ const MarketStats = () => {
                 <Box display="flex" flexDirection="row" gap="50px">
                 <Box>
                         <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
-                            Utilization Rate
+                            Utilization
                         </Text>
                         {utilRate ?
                             <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
@@ -115,7 +115,7 @@ const MarketStats = () => {
                 <Box display="flex" flexDirection="row" gap="50px">
                 <Box>
                         <Text color="#8C8C9B" fontSize="14px" fontWeight="500" fontStyle="normal" fontFamily="inter" mb="0" whiteSpace="nowrap">
-                            Utilization Rate
+                            Utilization
                         </Text>
                         {utilRate ?
                             <Text color="#00D395" textAlign="center" fontFamily="inter" fontSize="36px" fontStyle="normal" fontWeight="600" lineHeight="40px" mt="0.4rem" whiteSpace="nowrap">
