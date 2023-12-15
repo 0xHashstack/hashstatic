@@ -89,7 +89,7 @@ const MobileView = () => {
                             _hover={{ color: '#8C8C9B' }}
                             mr="0.6rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px"
                         >
-                            <Link href={texts[0].link} target="_blank">
+                            <Link href={texts[0].link} target="_blank" style={{ display: 'flex',whiteSpace:"nowrap" }}>
                                 {texts[0].text}
                                 <Image
                                     src="/party_icon-01.svg"
