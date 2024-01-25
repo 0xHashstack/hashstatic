@@ -60,7 +60,7 @@ const Content = () => {
                   {texts[0].text}
                   <Image
             src="/party_icon-01.svg"
-            alt="GHAF Logo"
+            alt="Mainnet V1 Celebration Icon"
             // mt="0.2rem"
             maxWidth="100%"
             height="20px"
@@ -78,7 +78,7 @@ const Content = () => {
                   {texts[1].text}
                 <Image
             src="/dancing_man-01.svg"
-            alt="GHAF Logo"
+            alt=""
             maxWidth="100%"
             height="20px"
           // maxHeight="100px"
@@ -90,14 +90,14 @@ const Content = () => {
           </Box>
           {isLessThan1250 ? <Image
             src="/maxBorrowIpadView.svg"
-            alt="GHAF Logo"
+            alt="hero title text"
             maxWidth="100%"
             height="208px"
             width="295px"
             p="0 2rem"
           /> : <Image
             src="/maxBorrow.svg"
-            alt="GHAF Logo"
+            alt="hero title text"
             maxWidth="100%"
             p="0 2rem"
             height={isHeightLargerThan1000 && isLargerThan1800 ? "110" : isLargerThan1800 ? "100" : isLargerThan1600 ? "90" : ""}
