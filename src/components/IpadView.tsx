@@ -35,8 +35,8 @@ const IpadView = () => {
     // Array of texts and links
     const texts = [
         {
-            text: 'Airdrop for mainnet v1 ',
-            link: 'https://app.hashstack.finance//',
+            text: 'Restake - Cross-chain liquid staking solution ',
+            link: 'https://testnet.restake.it/',
         },
         {
             text: 'Referral Campaign is live ',
