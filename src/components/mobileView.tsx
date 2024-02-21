@@ -23,8 +23,8 @@ const MobileView = () => {
     // Array of texts and links
     const texts = [
         {
-            text: 'Airdrop for mainnet v1 ',
-            link: 'https://app.hashstack.finance//',
+            text: 'Restake - Cross-chain liquid staking solution ',
+            link: 'https://testnet.restake.it/',
         },
         {
             text: 'Referral Campaign is live ',
@@ -79,24 +79,30 @@ const MobileView = () => {
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
                     </video> */}
                 </Box>
-                <Box mt="1rem" mb="2rem" height="35px" display="flex" alignItems="center" justifyContent="center">
-                    <Box fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" display="flex" alignItems="center">
-                        <Text color="#00D395" mr="0.4rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px">
-                            Launched
-                        </Text>
+                <Box mt="2rem" mb="3.5rem" height="35px" display="flex" alignItems="center" justifyContent="center">
+                    <Box fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px">
+                        <Box width="100%" display="flex" justifyContent="center">
+                            <Text color="#00D395" mr="0.4rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px" width="28%" >
+                                Launched
+                            </Text>
+                        </Box>
 
                         <Text
                             _hover={{ color: '#8C8C9B' }}
                             mr="0.6rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px"
+                            mt="-0.1rem"
+                            width="100%"
+                            
                         >
                             <Link href={texts[0].link} target="_blank" style={{ display: 'flex',whiteSpace:"nowrap" }}>
                                 {texts[0].text}
                                 <Image
                                     src="/party_icon-01.svg"
-                                    alt="GHAF Logo"
+                                    alt="mainnet v1 celebration icon"
                                     // mt="0.2rem"
                                     maxWidth="100%"
                                     height="20px"
+                                    marginLeft="0.5rem"
                                 // maxHeight="100px"
                                 />
                             </Link>
@@ -113,7 +119,7 @@ const MobileView = () => {
                             {texts[1].text}
                             <Image
                                 src="/dancing_man-01.svg"
-                                alt="GHAF Logo"
+                                alt=""
                                 // mt="0.2rem"
                                 maxWidth="100%"
                                 height="20px"

@@ -35,8 +35,8 @@ const IpadView = () => {
     // Array of texts and links
     const texts = [
         {
-            text: 'Airdrop for mainnet v1 ',
-            link: 'https://app.hashstack.finance//',
+            text: 'Restake - Cross-chain liquid staking solution ',
+            link: 'https://testnet.restake.it/',
         },
         {
             text: 'Referral Campaign is live ',
@@ -106,7 +106,7 @@ const IpadView = () => {
                                 {texts[0].text}
                                 <Image
                                     src="/party_icon-01.svg"
-                                    alt="GHAF Logo"
+                                    alt="mainnet v1 celebration icon"
                                     // mt="0.2rem"
                                     maxWidth="100%"
                                     height="20px"
@@ -127,7 +127,7 @@ const IpadView = () => {
                             {texts[1].text}
                             <Image
                                 src="/dancing_man-01.svg"
-                                alt="GHAF Logo"
+                                alt=""
                                 // mt="0.2rem"
                                 maxWidth="100%"
                                 height="20px"
