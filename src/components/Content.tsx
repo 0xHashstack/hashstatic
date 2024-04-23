@@ -21,13 +21,17 @@ const Content = () => {
 
   // Array of texts and links
   const texts = [
+    // {
+    //   text: 'Restake - Cross-chain liquid staking solution ',
+    //   link: 'https://testnet.restake.it/',
+    // },
     {
-      text: 'Restake - Cross-chain liquid staking solution ',
-      link: 'https://testnet.restake.it/',
+      text: 'Content creators program ',
+      link: 'https://hashstack.medium.com/introducing-hashstacks-content-creator-program-ccp-435aea9c9d83',
     },
     {
-      text: 'Referral Campaign is live ',
-      link: 'https://your-other-link.com/',
+      text: 'Degen mode ',
+      link: 'https://hashstack.medium.com/execute-optimal-strategies-with-degen-mode-eb63c6f23322',
     },
   ];
 
@@ -68,13 +72,13 @@ const Content = () => {
           />
                 </Link>
               </Text>
-              {/* <Text
+               <Text
                 _hover={{ color: '#8C8C9B' }}
                 mr="0.6rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px"
                 cursor="pointer"
                 whiteSpace="nowrap"
               >
-                <Link href={texts[1].link} target="_blank">
+                <Link href={texts[1].link} target="_blank" style={{display:"flex",justifyContent:"center",gap:"0.3rem"}}>
                   {texts[1].text}
                 <Image
             src="/dancing_man-01.svg"
@@ -84,8 +88,7 @@ const Content = () => {
           // maxHeight="100px"
           />
                 </Link>
-              </Text> */}
-
+              </Text> 
             </Box>
           </Box>
           {isLessThan1250 ? <Image
