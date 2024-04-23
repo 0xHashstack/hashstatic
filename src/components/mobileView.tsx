@@ -22,14 +22,18 @@ const MobileView = () => {
 
     // Array of texts and links
     const texts = [
+        // {
+        //     text: 'Restake - Cross-chain liquid staking solution ',
+        //     link: 'https://testnet.restake.it/',
+        // },
         {
-            text: 'Restake - Cross-chain liquid staking solution ',
-            link: 'https://testnet.restake.it/',
-        },
-        {
-            text: 'Referral Campaign is live ',
-            link: 'https://your-other-link.com//',
-        },
+            text: 'Content creators program ',
+            link: 'https://hashstack.medium.com/introducing-hashstacks-content-creator-program-ccp-435aea9c9d83',
+          },
+          {
+            text: 'Degen mode ',
+            link: 'https://hashstack.medium.com/execute-optimal-strategies-with-degen-mode-eb63c6f23322',
+          },
     ];
 
     // Function to toggle texts
@@ -79,10 +83,10 @@ const MobileView = () => {
                         <source src="/landingPage_illustration.mp4" type="video/mp4" />
                     </video> */}
                 </Box>
-                <Box mt="2rem" mb="3.5rem" height="35px" display="flex" alignItems="center" justifyContent="center">
+                <Box mt="2rem" mb="3rem" height="35px" display="flex" alignItems="center" justifyContent="center">
                     <Box fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px">
                         <Box width="100%" display="flex" justifyContent="center">
-                            <Text color="#00D395" mr="0.4rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px" width="28%" >
+                            <Text color="#00D395" mr="0.4rem" background="rgba(217, 217, 217, 0.10)" padding="9px 16px" borderRadius="10px" width="38%" >
                                 Launched
                             </Text>
                         </Box>
@@ -109,13 +113,13 @@ const MobileView = () => {
                         </Text>
                     </Box>
                 </Box>
-                {/* <Box mb="2rem" mt="1rem" mr="1.3rem" height="35px" display="flex" alignItems="center" justifyContent="center"  >
+                <Box mb="2rem" ml="1.5rem" mr="1.3rem" height="35px" display="flex" alignItems="center" justifyContent="center"  >
                     <Text
                         _hover={{ color: '#8C8C9B' }}
                         background="rgba(217, 217, 217, 0.10)" padding="9px 23px" borderRadius="10px"
                         fontSize="16px" fontWeight="500" lineHeight="20px" letterSpacing="-0.15px" display="flex" alignItems="center"
                     >
-                        <Link href={texts[1].link} target="_blank">
+                        <Link href={texts[1].link} target="_blank" style={{display:"flex",justifyContent:"center",gap:"0.3rem"}}>
                             {texts[1].text}
                             <Image
                                 src="/dancing_man-01.svg"
@@ -127,7 +131,7 @@ const MobileView = () => {
                             />
                         </Link>
                     </Text>
-                </Box> */}
+                </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center">
                     <Image
                         src="/maxBorrow.svg"
