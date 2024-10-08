@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hashstack.finance/
+
+# Sitemaps
+Sitemap: https://hashstack.finance/sitemap.xml
