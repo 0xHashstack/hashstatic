@@ -4,7 +4,7 @@ module.exports = {
     generateRobotsTxt: true, // (optional)
     transform: async (config, path) => {
         const additionalLinks = [
-            { loc: 'https://discord.gg/aPAH4mkT', changefreq: 'weekly', priority: 0.9 },
+            { loc: 'https://discord.gg/FpBhQ7M3d4', changefreq: 'weekly', priority: 0.9 },
             { loc: 'https://docs.hashstack.finance', changefreq: 'weekly', priority: 0.8 },
             { loc: 'https://twitter.com/0xHashstack', changefreq: 'weekly', priority: 0.7 },
             { loc: 'https://blog.hashstack.finance', changefreq: 'weekly', priority: 0.6 },
