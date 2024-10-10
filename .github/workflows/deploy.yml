@@ -27,8 +27,6 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
-      - name: Generate Sitemap
-        run: npx next-sitemap generate
 
       - name: Deploy
         # if deployment successful, you should find the site hosted at
