@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useDrawContext } from '../context/DrawerContext';
-import Logo from './common/Logo';
+import { useDrawContext } from '../../../context/DrawerContext';
+import Logo from '../../../components/common/Logo';
 import Image from 'next/image';
 import { IMAGES } from '@/constants/assets.constant';
 import { EXTERNAL_URLS } from '@/constants/config.constant';
-import { Btn } from './ui/button';
-import { MobileMenu } from './ui/drawer/MobileMenu';
-import { Drawer } from './ui/drawer/Drawer';
+import { Btn } from '../../../components/ui/button';
+import { MobileMenu } from '../../../components/ui/drawer/MobileMenu';
+import { Drawer } from '../../../components/ui/drawer/Drawer';
 
 const Navbar = () => {
 	const { isDrawerOpen, toggleDrawer } = useDrawContext();
@@ -16,7 +16,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='flex items-center justify-between w-full px-4 py-4 sm:px-8 sm:py-4'>
+		<nav className='flex items-center justify-between w-full px-4 py-8 sm:px-8 sm:py-4'>
 			<Logo />
 			<div className='flex gap-2 items-center flex-shrink-0'>
 				<div className='hidden sm:block'>

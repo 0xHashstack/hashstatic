@@ -48,6 +48,12 @@
 
 		--chart-5: 340 75% 55%;
 
+		--badge-success: #00D395;
+
+		--badge-hover: #8C8C9B;
+
+		--badge-bg: rgba(217, 217, 217, 0.1);
+
 		--btn-primary: #EEEFF2;
 
 		--bg: linear-gradient(to bottom, #7331ea47 0%, #000 55%),
@@ -73,6 +79,8 @@
 				rgba(115, 49, 234, 0.2) 90%,
 				transparent 100%
 			);
+
+		--text-secondary: #858786;
 	}
 	.dark {
 		--background: 0 0% 3.9%;

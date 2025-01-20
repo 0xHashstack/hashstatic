@@ -14,6 +14,9 @@ module.exports = {
 			lg: '1210px',
 		},
 		extend: {
+			fontSize: {
+				hero: 'clamp(1.5rem, 3.5vw, 2.5rem)',
+			},
 			backgroundImage: {
 				'gradient-primary': 'var(--bg)',
 				'gradient-primary-md': 'var(--bg-md)',
@@ -67,6 +70,14 @@ module.exports = {
 					3: 'hsl(var(--chart-3))',
 					4: 'hsl(var(--chart-4))',
 					5: 'hsl(var(--chart-5))',
+				},
+				badge: {
+					success: 'var(--badge-success)',
+					hover: 'var(--badge-hover)',
+					bg: 'var(--badge-bg)',
+				},
+				text: {
+					secondary: 'var(--text-secondary)',
 				},
 			},
 		},
