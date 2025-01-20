@@ -1,31 +1,33 @@
 {
-  "name": "landingpage",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@chakra-ui/react": "^2.8.0",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@next/font": "^13.4.12",
-    "axios": "^1.4.0",
-    "framer-motion": "^10.15.0",
-    "next": "^14.2.23",
-    "react": "18",
-    "react-dom": "18",
-    "react-fast-marquee": "^1.6.0"
-  },
-  "devDependencies": {
-    "@types/node": "20.4.5",
-    "@types/react": "18.2.18",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.46.0",
-    "eslint-config-next": "^14.2.23",
-    "typescript": "5.1.6"
-  }
+	"name": "landingpage",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@chakra-ui/react": "^2.8.0",
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@next/font": "^13.4.12",
+		"axios": "^1.4.0",
+		"framer-motion": "^10.15.0",
+		"next": "^14.2.23",
+		"react": "18",
+		"react-dom": "18",
+		"react-fast-marquee": "^1.6.0"
+	},
+	"devDependencies": {
+		"@types/node": "20.4.5",
+		"@types/react": "18.2.18",
+		"@types/react-dom": "18.2.7",
+		"eslint": "8.46.0",
+		"eslint-config-next": "^14.2.23",
+		"prettier": "^3.4.2",
+		"sass": "^1.83.4",
+		"typescript": "5.1.6"
+	}
 }

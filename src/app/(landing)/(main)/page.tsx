@@ -1,0 +1,51 @@
+'use client';
+import Content from '@/components/Content';
+import Footer from '@/components/Footer';
+import IpadView from '@/components/IpadView';
+import MarketStats from '@/components/MarketStats';
+import MobileView from '@/components/mobileView';
+import Navbar from '@/components/Navbar';
+import RunningBanner from '@/components/RunningBanner';
+import { Box, useMediaQuery } from '@chakra-ui/react';
+import type { NextPage } from 'next';
+
+import { useEffect, useState } from 'react';
+const Home: NextPage = () => {
+	const [isLargerThan1700] = useMediaQuery('(min-width: 1700px)');
+	const [isLessThan1210] = useMediaQuery('(max-width: 1210px)');
+	const [isLessThan500] = useMediaQuery('(max-width: 500px)');
+	const [render, setRender] = useState(true);
+	const [isLessThan980] = useMediaQuery('(max-width: 980px)');
+	useEffect(() => {
+		setRender(true);
+	}, []);
+	return (
+		<Box
+			background={
+				isLessThan500 ?
+					'linear-gradient(to bottom,#7331ea47 0%,#000 55%),radial-gradient(circle at top right, #7331ea33 95%, transparent 100%)'
+				:	'linear-gradient(to bottom left,rgba(115, 49, 234, 0.20) 0%,#000 58%, rgba(33, 19, 78, 0.39) 89%),radial-gradient(circle at top right, rgba(115, 49, 234, 0.10) 0%, transparent 55%),radial-gradient(circle at bottom left, rgba(115, 49, 234, 0.20) 90%, transparent 100%)'
+			}
+			height='100vh'
+			overflowX='hidden'
+			overflowY='scroll'
+			backgroundRepeat='no-repeat'>
+			{isLessThan500 ?
+				<MobileView />
+			: isLessThan980 ?
+				<IpadView />
+			:	<Box>
+					<Navbar />
+					<Box>
+						<Content />
+						<MarketStats />
+					</Box>
+					<RunningBanner />
+					{!isLessThan1210 && <Footer />}
+				</Box>
+			}
+		</Box>
+	);
+};
+
+export default Home;
