@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import '@/styles/globals.css';
+import '@/styles/globals.scss';
 import { DrawerContextProvider } from '@/context/DrawerContext';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -17,7 +17,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={`${inter.variable} `}>
+		<html
+			lang='en'
+			className={`${inter.className} ${inter.variable}`}>
 			<body>
 				<DrawerContextProvider>{children}</DrawerContextProvider>
 			</body>
