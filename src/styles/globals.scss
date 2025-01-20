@@ -5,6 +5,12 @@
 @import './core/_core.scss';
 
 @layer base {
+	:root {
+		--radius: 8px;
+	}
+}
+
+@layer base {
 	* {
 		@apply border-border;
 	}

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useDrawContext } from '../../../context/DrawerContext';
 import Logo from '../../../components/common/Logo';
 import Image from 'next/image';
 import { IMAGES } from '@/constants/assets.constant';
@@ -9,7 +8,11 @@ import { MobileMenu } from '../../../components/ui/drawer/MobileMenu';
 import { Drawer } from '../../../components/ui/drawer/Drawer';
 
 const Navbar = () => {
-	const { isDrawerOpen, toggleDrawer } = useDrawContext();
+	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+	const toggleDrawer = () => {
+		setIsDrawerOpen((prevState) => !prevState);
+	};
 
 	const launchApp = () => {
 		window.open(EXTERNAL_URLS.APP, '_blank');

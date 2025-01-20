@@ -19,3 +19,10 @@ export const EXTERNAL_URLS = {
 	MEDIUM: 'https://hashstack.medium.com',
 	DISCORD: 'https://discord.gg/aPAH4mkT',
 } as const;
+
+export const BANNER_URL = {
+	JediSwap: 'https://www.jediswap.xyz',
+	MySwap: 'https://www.myswap.xyz/',
+	Yagi: 'https://yagi.fi/',
+	Pragma: 'https://www.pragma.build/',
+} as const;

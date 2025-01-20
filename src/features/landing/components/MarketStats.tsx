@@ -4,9 +4,10 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import StarknetLogo from '@/assets/Icons/starknetLogo';
 import AlchemyLogo from '@/assets/Icons/alchemyLogo';
-import OffchainAPI from '@/services/offChainApiCalls';
-import numberFormatter from '@/components/numberFormater';
 import { server } from '@/services/data.service';
+import { Btn } from '@/components/ui/button';
+import { EXTERNAL_URLS } from '@/constants/config.constant';
+import { numberFormatter } from '@/utils/number.utils';
 
 interface StatItemProps {
 	label: string;
@@ -30,7 +31,7 @@ const StatItem = ({ label, value, isLoading }: StatItemProps) => (
 const PoweredBy = () => (
 	<div className='flex flex-col items-center flex-1'>
 		<p className='text-text-secondary mb-4'>Powered by</p>
-		<div className='flex gap-8'>
+		<div className='flex gap-8 flex-wrap justify-center md:justify-start'>
 			<Link
 				href='https://www.starknet.io/en'
 				target='_blank'
@@ -72,10 +73,17 @@ const MarketStats = () => {
 		fetchData();
 	}, []);
 
+	const launchApp = () => {
+		window.open(EXTERNAL_URLS.APP, '_blank');
+	};
+
 	return (
-		<div className='mt-16 md:mt-20'>
-			<div className='px-8 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16'>
-				<div className='flex gap-12 flex-1'>
+		<div className='mt-10 md:mt-20 px-8'>
+			<div className='flex justify-center sm:hidden mb-10'>
+				<Btn.PrimaryLG onClick={launchApp}>Launch App</Btn.PrimaryLG>
+			</div>
+			<div className='flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16'>
+				<div className='flex gap-12 flex-1 flex-wrap justify-center md:justify-start'>
 					<StatItem
 						label='Utilization'
 						value={utilRate ? `${utilRate}%` : null}

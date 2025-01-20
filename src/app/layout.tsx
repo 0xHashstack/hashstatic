@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.scss';
-import { DrawerContextProvider } from '@/context/DrawerContext';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -20,9 +19,7 @@ export default function RootLayout({
 		<html
 			lang='en'
 			className={`${inter.className} ${inter.variable}`}>
-			<body>
-				<DrawerContextProvider>{children}</DrawerContextProvider>
-			</body>
+			<body>{children}</body>
 		</html>
 	);
 }
