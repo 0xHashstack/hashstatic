@@ -5,7 +5,16 @@ import { IMAGES } from '@/constants/assets.constant';
 import { EXTERNAL_URLS } from '@/constants/config.constant';
 import { Btn } from '../../../components/ui/button';
 import { MobileMenu } from '../../../components/ui/drawer/MobileMenu';
-import { Drawer } from '../../../components/ui/drawer/Drawer';
+import dynamic from 'next/dynamic';
+const Drawer = dynamic(
+	() =>
+		import('../../../components/ui/drawer/Drawer').then(
+			(mod) => mod.Drawer
+		),
+	{
+		ssr: false,
+	}
+);
 
 const Navbar = () => {
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);

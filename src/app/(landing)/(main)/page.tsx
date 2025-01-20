@@ -1,3 +1,4 @@
+'use client';
 import LandingView from '@/features/landing/LandingView';
 
 const Page = () => {
