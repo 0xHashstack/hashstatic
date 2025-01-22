@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { LaunchBadges } from './LaunchBadges';
 
@@ -28,14 +27,16 @@ const HeroText = () => {
 
 const HeroIllustration = () => {
 	return (
-		<div className='mb-8  md:mb-0 md:mt-10 2xl:mt-24 md:ml-20 xl:ml-32 2xl:ml-40'>
-			<Image
-				src='/illustration.gif'
-				alt='Provider-Borrower Illustration animation'
-				width={730}
-				height={730}
-				className='max-w-full w-auto'
-				priority
+		<div className='flex justify-end mb-8 md:mb-0 md:mt-10 2xl:mt-24 md:ml-20 xl:ml-32 2xl:ml-40'>
+			<video
+				src='/assets/media/illustration.webm'
+				autoPlay
+				muted
+				loop
+				playsInline
+				className='max-w-full w-auto h-[200px] sm:h-[300px]'
+				style={{ pointerEvents: 'none' }}
+				preload='auto'
 			/>
 		</div>
 	);

@@ -16,13 +16,13 @@ interface StatItemProps {
 }
 
 const StatItem = ({ label, value, isLoading }: StatItemProps) => (
-	<div className='flex flex-col items-center md:items-start'>
+	<div className='flex flex-col items-center md:items-start min-w-[120px] sm:min-w-[140px]'>
 		<p className='text-text-secondary text-sm font-medium font-inter whitespace-nowrap'>
 			{label}
 		</p>
-		<div className='text-badge-success text-center font-inter text-4xl font-semibold mt-1.5 whitespace-nowrap'>
+		<div className='text-badge-success text-center font-inter text-3xl sm:text-4xl font-semibold mt-1.5 whitespace-nowrap'>
 			{isLoading ?
-				<div className='h-10 w-[120px] bg-gradient-to-r from-[#101216] to-[#2B2F35] rounded-md animate-pulse' />
+				<div className='h-9 sm:h-10 w-[120px] bg-gradient-to-r from-[#101216] to-[#2B2F35] rounded-md animate-pulse' />
 			:	value}
 		</div>
 	</div>
