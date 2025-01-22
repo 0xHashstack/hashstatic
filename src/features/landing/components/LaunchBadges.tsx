@@ -7,12 +7,12 @@ export const LaunchBadges = () => {
 		{
 			text: 'Content creators program',
 			link: 'https://hashstack.medium.com/introducing-hashstacks-content-creator-program-ccp-435aea9c9d83',
-			icon: '/party_icon-01.svg',
+			icon: '🎉',
 		},
 		{
 			text: 'Degen mode',
 			link: 'https://hashstack.medium.com/execute-optimal-strategies-with-degen-mode-eb63c6f23322',
-			icon: '/dancing_man-01.svg',
+			icon: '🕺',
 		},
 	];
 
@@ -37,15 +37,7 @@ interface LaunchBadgeProps {
 const LaunchBadge = ({ text, link, icon }: LaunchBadgeProps) => {
 	const content = (
 		<div className='flex items-center gap-1'>
-			{text}
-			{icon && (
-				<Image
-					src={icon}
-					alt={`${text} icon`}
-					width={20}
-					height={20}
-				/>
-			)}
+			{text} {icon || null}
 		</div>
 	);
 

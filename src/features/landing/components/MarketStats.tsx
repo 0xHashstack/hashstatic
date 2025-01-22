@@ -22,7 +22,7 @@ const StatItem = ({ label, value, isLoading }: StatItemProps) => (
 		</p>
 		<div className='text-badge-success text-center font-inter text-4xl font-semibold mt-1.5 whitespace-nowrap'>
 			{isLoading ?
-				<div className='h-6 w-24 bg-gradient-to-r from-[#101216] to-[#2B2F35] rounded-md animate-pulse' />
+				<div className='h-10 w-[120px] bg-gradient-to-r from-[#101216] to-[#2B2F35] rounded-md animate-pulse' />
 			:	value}
 		</div>
 	</div>

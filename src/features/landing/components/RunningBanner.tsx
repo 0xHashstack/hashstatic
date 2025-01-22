@@ -84,7 +84,7 @@ const RunningBanner = () => {
 			<div className='flex w-full '>
 				{/* Partner logos section */}
 
-				<div className='flex flex-1 bg-[rgba(217,217,217,0.06)]'>
+				<div className='flex flex-1 bg-[rgba(217,217,217,0.06)] h-[61px]'>
 					<div className='hidden sm:flex items-center bg-black px-8'>
 						<p className='font-inter text-sm font-semibold text-white'>
 							We work with
