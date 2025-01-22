@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { LaunchBadges } from './LaunchBadges';
+import { useIsSafari } from '@/hooks/useIsSafari';
 
 const HeroText = () => {
 	return (
@@ -26,18 +28,30 @@ const HeroText = () => {
 };
 
 const HeroIllustration = () => {
+	const isSafari = useIsSafari();
+
 	return (
 		<div className='flex justify-end mb-8 md:mb-0 md:mt-10 2xl:mt-24 md:ml-20 xl:ml-32 2xl:ml-40'>
-			<video
-				src='/assets/media/illustration.webm'
-				autoPlay
-				muted
-				loop
-				playsInline
-				className='max-w-full w-auto h-[200px] sm:h-[300px]'
-				style={{ pointerEvents: 'none' }}
-				preload='auto'
-			/>
+			{isSafari ?
+				<Image
+					src='/illustration.gif'
+					alt='Provider-Borrower Illustration animation'
+					width={300}
+					height={300}
+					className='max-w-full w-auto h-[200px] sm:h-[300px] object-contain'
+					priority
+				/>
+			:	<video
+					src='/assets/media/illustration.webm'
+					autoPlay
+					muted
+					loop
+					playsInline
+					className='max-w-full w-auto h-[200px] sm:h-[300px]'
+					style={{ pointerEvents: 'none' }}
+					preload='auto'
+				/>
+			}
 		</div>
 	);
 };
