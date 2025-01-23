@@ -22,7 +22,7 @@ const footerLinks = [
 		text: 'Use-cases',
 		href: 'https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases',
 	},
-	{ text: 'HASH token', href: '#' },
+	{ text: 'HASH token', href: 'https://token.hashstack.finance/provisions/' },
 	{
 		text: 'Airdrop Leaderboard',
 		href: 'https://app.hashstack.finance/v1/airdrop_leaderboard',

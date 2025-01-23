@@ -27,7 +27,10 @@ const MENU_ITEMS: MenuItem[] = [
 		label: 'Use-cases',
 		href: 'https://docs.hashstack.finance/developers/supply-and-borrow/borrow/use-cases',
 	},
-	{ label: 'HASH token', href: '#' },
+	{
+		label: 'HASH token',
+		href: 'https://token.hashstack.finance/provisions/',
+	},
 	{
 		label: 'Airdrop Leaderboard',
 		href: 'https://app.hashstack.finance/v1/airdrop_leaderboard',
