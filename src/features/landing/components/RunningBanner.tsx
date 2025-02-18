@@ -48,34 +48,6 @@ const RunningBanner = () => {
 		},
 	];
 
-	const socials = [
-		{
-			href: 'https://x.com/0xhashstack',
-			Icon: TwitterIcon,
-			IconWhite: TwitterIconWhite,
-		},
-		{
-			href: 'https://discord.gg/aPAH4mkT',
-			Icon: DicordLogo,
-			IconWhite: DiscordLogoWhite,
-		},
-		{
-			href: 'https://github.com/0xHashstack/',
-			Icon: GithubIcon,
-			IconWhite: GithubIconWhite,
-		},
-		{
-			href: 'https://drive.google.com/drive/folders/1ysun5L45Ib4MZAOGr8v9BK-CpZuMpXJr',
-			Icon: FileIcon,
-			IconWhite: FileIconWhite,
-		},
-		{
-			href: 'https://docs.hashstack.finance/hub/faqs',
-			Icon: QueryIcon,
-			IconWhite: QueryIconWhite,
-		},
-	];
-
 	return (
 		<div className='flex flex-col mt-10 gap-5 w-screen overflow-clip'>
 			<div className='flex sm:hidden justify-center'>

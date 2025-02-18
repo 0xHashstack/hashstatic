@@ -17,7 +17,7 @@ export const EXTERNAL_URLS = {
 	WHITEPAPER:
 		'https://github.com/0xHashstack/whitepaper/blob/main/Open protocol/v0.2/Open protocol v0.2.7.pdf',
 	MEDIUM: 'https://hashstack.medium.com',
-	DISCORD: 'https://discord.gg/aPAH4mkT',
+	DISCORD: 'https://hashstack.community/',
 } as const;
 
 export const BANNER_URL = {
