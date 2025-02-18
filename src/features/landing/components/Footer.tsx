@@ -13,6 +13,7 @@ import DiscordLogoWhite from '@/assets/Icons/discordLogoWhite';
 import GithubIconWhite from '@/assets/Icons/githubIconWhite';
 import FileIconWhite from '@/assets/Icons/fileIconWhite';
 import QueryIconWhite from '@/assets/Icons/queryIconWhite';
+import { EXTERNAL_URLS } from '@/constants/urls';
 
 const footerLinks = [
 	{ text: 'Home', href: '/', isActive: true },
@@ -37,7 +38,7 @@ const socialLinks = [
 		IconWhite: TwitterIconWhite,
 	},
 	{
-		href: 'https://discord.gg/aPAH4mkT',
+		href: EXTERNAL_URLS.DISCORD,
 		Icon: DicordLogo,
 		IconWhite: DiscordLogoWhite,
 	},
