@@ -54,19 +54,24 @@ const MarketStats = () => {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			try {
-				const [metricsRes, tvlRes] = await Promise.all([
-					server.getUtilRate(),
-					server.getTvl(),
-				]);
+			const results = await Promise.allSettled([
+				server.getUtilRate(),
+				server.getTvl(),
+			]);
 
-				const latestMetric = metricsRes.pop();
+			const [metricsRes, tvlRes] = results;
+
+			if (metricsRes.status === 'fulfilled') {
+				const latestMetric = metricsRes.value.pop();
 				setUtilRate(Number(latestMetric?.totalPlatformURM / 100));
-				setTvl(tvlRes?.tvl);
-			} catch (err) {
-				console.error('Failed to fetch market stats:', err);
-				setUtilRate(9);
-				setTvl(9000);
+			} else {
+				setUtilRate(null);
+			}
+
+			if (tvlRes.status === 'fulfilled') {
+				setTvl(tvlRes.value?.tvl);
+			} else {
+				setTvl(null);
 			}
 		};
 
