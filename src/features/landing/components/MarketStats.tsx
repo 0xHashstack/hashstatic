@@ -50,7 +50,7 @@ const PoweredBy = () => (
 
 const MarketStats = () => {
 	const [utilRate, setUtilRate] = useState<number | null>(null);
-	const [tvl, setTvl] = useState<number | null>(null);
+	const [tvl, setTvl] = useState<string | null>(null);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -69,7 +69,7 @@ const MarketStats = () => {
 			}
 
 			if (tvlRes.status === 'fulfilled') {
-				setTvl(tvlRes.value?.tvl);
+				setTvl(tvlRes.value);
 			} else {
 				setTvl(null);
 			}
@@ -96,7 +96,7 @@ const MarketStats = () => {
 					/>
 					<StatItem
 						label='Liquidity Locked'
-						value={tvl ? `$${numberFormatter(tvl)}+` : null}
+						value={tvl ? `$${tvl}+` : null}
 						isLoading={!tvl}
 					/>
 				</div>
