@@ -65,20 +65,18 @@ export const server = {
 	getTvl: async () => {
 		const metricsContract = new Contract(
 			metricsAbi,
-			'0x548f38cb45720a101a1ec2edfaf608b47d2b39d137d0d3134087315f1b5f4a5',
+			'0x55eda1d714ffd97ebdd6a0bb6dd75de91255697a848e15004eed985b0e5ed38',
 			rpcProvider
 		);
 
-		const { protocol_reserves }: any = await metricsContract.call(
+		const { total_reserves }: any = await metricsContract.call(
 			'get_protocol_reserves',
 			[],
 			{
 				blockIdentifier: 'pending',
 			}
 		);
-		if (!protocol_reserves)
-			throw new Error('Failed to get protocol reserves');
-		const { total_reserves } = protocol_reserves;
+		if (!total_reserves) throw new Error('Failed to get protocol reserves');
 		const totalReserveParsed = uint256.uint256ToBN(total_reserves);
 		// Using token decimals of 18 and display decimals of 2
 		const formattedReserves = formatBigNumber(totalReserveParsed, 8, 2);
