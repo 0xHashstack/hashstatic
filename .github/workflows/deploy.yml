@@ -10,7 +10,7 @@ on:
 jobs:
     deploy-landing-page-staging:
         name: deployment
-        runs-on: ubuntu-20.04
+        runs-on: ubuntu-latest
         environment: testnet
         steps:
             - uses: actions/checkout@v2

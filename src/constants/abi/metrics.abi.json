@@ -1,442 +1,417 @@
 [
 	{
+		"name": "MetricsImpl",
+		"type": "impl",
+		"interface_name": "common::interfaces::imetrics::IMetrics"
+	},
+	{
+		"name": "core::integer::u256",
+		"type": "struct",
 		"members": [
 			{
 				"name": "low",
-				"offset": 0,
-				"type": "felt"
+				"type": "core::integer::u128"
 			},
 			{
 				"name": "high",
-				"offset": 1,
-				"type": "felt"
+				"type": "core::integer::u128"
 			}
-		],
-		"name": "Uint256",
-		"size": 2,
-		"type": "struct"
+		]
 	},
 	{
+		"name": "common::interfaces::imetrics::Market_Info",
+		"type": "struct",
 		"members": [
 			{
 				"name": "borrow_rate",
-				"offset": 0,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "supply_rate",
-				"offset": 2,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "staking_rate",
-				"offset": 4,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "total_supply",
-				"offset": 6,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "lent_assets",
-				"offset": 8,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "total_borrow",
-				"offset": 10,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "utilisation_per_market",
-				"offset": 12,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "exchange_rate_rToken_to_asset",
-				"offset": 14,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "exchange_rate_dToken_to_asset",
-				"offset": 16,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "exchange_rate_asset_to_rToken",
-				"offset": 18,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "exchange_rate_asset_to_dToken",
-				"offset": 20,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "token_address",
-				"offset": 22,
-				"type": "felt"
+				"type": "core::starknet::contract_address::ContractAddress"
 			}
-		],
-		"name": "Market_Info",
-		"size": 23,
-		"type": "struct"
+		]
 	},
 	{
+		"name": "common::interfaces::imetrics::ProtocolReserves",
+		"type": "struct",
 		"members": [
 			{
 				"name": "total_reserves",
-				"offset": 0,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "available_reserves",
-				"offset": 2,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "avg_asset_utilisation",
-				"offset": 4,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			}
-		],
-		"name": "ProtocolReserves",
-		"size": 6,
-		"type": "struct"
+		]
 	},
 	{
+		"name": "common::interfaces::imetrics::Deposit",
+		"type": "struct",
 		"members": [
 			{
 				"name": "asset_address",
-				"offset": 0,
-				"type": "felt"
+				"type": "core::starknet::contract_address::ContractAddress"
 			},
 			{
 				"name": "rToken_amount",
-				"offset": 1,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "rToken_free",
-				"offset": 3,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "rToken_locked",
-				"offset": 5,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "rToken_staked",
-				"offset": 7,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "supply_asset_amount",
-				"offset": 9,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			}
-		],
-		"name": "Deposit",
-		"size": 11,
-		"type": "struct"
+		]
 	},
 	{
+		"name": "common::interfaces::imetrics::UserDepositStats",
+		"type": "struct",
 		"members": [
 			{
 				"name": "your_supply",
-				"offset": 0,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "net_supply_apr",
-				"offset": 2,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			}
-		],
-		"name": "UserDepositStats",
-		"size": 4,
-		"type": "struct"
+		]
 	},
 	{
+		"name": "common::interfaces::imetrics::UserLoanStats",
+		"type": "struct",
 		"members": [
 			{
 				"name": "your_borrow",
-				"offset": 0,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "net_borrow_apr",
-				"offset": 2,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			},
 			{
 				"name": "net_current_amount",
-				"offset": 4,
-				"type": "Uint256"
+				"type": "core::integer::u256"
 			}
-		],
-		"name": "UserLoanStats",
-		"size": 6,
-		"type": "struct"
+		]
 	},
 	{
-		"data": [
+		"name": "common::interfaces::imetrics::IMetrics",
+		"type": "interface",
+		"items": [
 			{
-				"name": "from_",
-				"type": "felt"
+				"name": "initializer",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "router",
+						"type": "core::starknet::contract_address::ContractAddress"
+					},
+					{
+						"name": "governor",
+						"type": "core::starknet::contract_address::ContractAddress"
+					},
+					{
+						"name": "dial",
+						"type": "core::starknet::contract_address::ContractAddress"
+					},
+					{
+						"name": "pricer",
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"outputs": [],
+				"state_mutability": "external"
 			},
 			{
-				"name": "to",
-				"type": "felt"
+				"name": "upgrade_class_hash",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "new_class_hash",
+						"type": "core::starknet::class_hash::ClassHash"
+					}
+				],
+				"outputs": [],
+				"state_mutability": "external"
 			},
 			{
-				"name": "value",
-				"type": "Uint256"
+				"name": "set_token_addresses",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "index",
+						"type": "core::felt252"
+					},
+					{
+						"name": "token_addr_len",
+						"type": "core::felt252"
+					},
+					{
+						"name": "token_addr",
+						"type": "core::array::Array::<core::starknet::contract_address::ContractAddress>"
+					}
+				],
+				"outputs": [],
+				"state_mutability": "external"
+			},
+			{
+				"name": "transfer_ownership",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "new_owner",
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"outputs": [],
+				"state_mutability": "external"
+			},
+			{
+				"name": "set_token_address",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "token_addr",
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"outputs": [],
+				"state_mutability": "external"
+			},
+			{
+				"name": "get_tokens_len",
+				"type": "function",
+				"inputs": [],
+				"outputs": [
+					{
+						"type": "core::felt252"
+					}
+				],
+				"state_mutability": "view"
+			},
+			{
+				"name": "get_token_by_index",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "index",
+						"type": "core::felt252"
+					}
+				],
+				"outputs": [
+					{
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"state_mutability": "view"
+			},
+			{
+				"name": "get_protocol_stats",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "token_add",
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"outputs": [
+					{
+						"type": "common::interfaces::imetrics::Market_Info"
+					}
+				],
+				"state_mutability": "view"
+			},
+			{
+				"name": "get_protocol_reserves",
+				"type": "function",
+				"inputs": [],
+				"outputs": [
+					{
+						"type": "common::interfaces::imetrics::ProtocolReserves"
+					}
+				],
+				"state_mutability": "view"
+			},
+			{
+				"name": "get_user_deposit",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "rToken",
+						"type": "core::starknet::contract_address::ContractAddress"
+					},
+					{
+						"name": "account",
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"outputs": [
+					{
+						"type": "common::interfaces::imetrics::Deposit"
+					}
+				],
+				"state_mutability": "view"
+			},
+			{
+				"name": "get_user_deposit_stats_info",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "rToken",
+						"type": "core::starknet::contract_address::ContractAddress"
+					},
+					{
+						"name": "account",
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"outputs": [
+					{
+						"type": "common::interfaces::imetrics::UserDepositStats"
+					}
+				],
+				"state_mutability": "view"
+			},
+			{
+				"name": "get_user_loan_stats_info",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "user",
+						"type": "core::starknet::contract_address::ContractAddress"
+					},
+					{
+						"name": "index",
+						"type": "core::felt252"
+					}
+				],
+				"outputs": [
+					{
+						"type": "common::interfaces::imetrics::UserLoanStats"
+					}
+				],
+				"state_mutability": "view"
+			},
+			{
+				"name": "get_user_loan_ids_length",
+				"type": "function",
+				"inputs": [
+					{
+						"name": "user",
+						"type": "core::starknet::contract_address::ContractAddress"
+					}
+				],
+				"outputs": [
+					{
+						"type": "core::felt252"
+					}
+				],
+				"state_mutability": "view"
 			}
-		],
-		"keys": [],
-		"name": "Transfer",
-		"type": "event"
+		]
 	},
 	{
-		"data": [
+		"name": "constructor",
+		"type": "constructor",
+		"inputs": [
 			{
 				"name": "owner",
-				"type": "felt"
-			},
-			{
-				"name": "spender",
-				"type": "felt"
-			},
-			{
-				"name": "value",
-				"type": "Uint256"
+				"type": "core::starknet::contract_address::ContractAddress"
 			}
-		],
-		"keys": [],
-		"name": "Approval",
-		"type": "event"
+		]
 	},
 	{
-		"data": [
+		"kind": "struct",
+		"name": "openzeppelin::upgrades::upgradeable::UpgradeableComponent::Upgraded",
+		"type": "event",
+		"members": [
 			{
-				"name": "previousOwner",
-				"type": "felt"
-			},
-			{
-				"name": "newOwner",
-				"type": "felt"
+				"kind": "data",
+				"name": "class_hash",
+				"type": "core::starknet::class_hash::ClassHash"
 			}
-		],
-		"keys": [],
-		"name": "OwnershipTransferred",
-		"type": "event"
+		]
 	},
 	{
-		"data": [
+		"kind": "enum",
+		"name": "openzeppelin::upgrades::upgradeable::UpgradeableComponent::Event",
+		"type": "event",
+		"variants": [
 			{
-				"name": "implementation",
-				"type": "felt"
+				"kind": "nested",
+				"name": "Upgraded",
+				"type": "openzeppelin::upgrades::upgradeable::UpgradeableComponent::Upgraded"
 			}
-		],
-		"keys": [],
-		"name": "Upgraded",
-		"type": "event"
+		]
 	},
 	{
-		"data": [
+		"kind": "enum",
+		"name": "v1_core::contracts::metrics::Metrics::Event",
+		"type": "event",
+		"variants": [
 			{
-				"name": "previousAdmin",
-				"type": "felt"
-			},
-			{
-				"name": "newAdmin",
-				"type": "felt"
+				"kind": "flat",
+				"name": "UpgradeableEvent",
+				"type": "openzeppelin::upgrades::upgradeable::UpgradeableComponent::Event"
 			}
-		],
-		"keys": [],
-		"name": "AdminChanged",
-		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"name": "diamond_address",
-				"type": "felt"
-			}
-		],
-		"name": "initializer",
-		"outputs": [],
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "index",
-				"type": "felt"
-			},
-			{
-				"name": "token_addr_len",
-				"type": "felt"
-			},
-			{
-				"name": "token_addr",
-				"type": "felt*"
-			}
-		],
-		"name": "set_token_addresses",
-		"outputs": [],
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "token_addr",
-				"type": "felt"
-			}
-		],
-		"name": "set_token_address",
-		"outputs": [],
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "get_tokens_len",
-		"outputs": [
-			{
-				"name": "len",
-				"type": "felt"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "index",
-				"type": "felt"
-			}
-		],
-		"name": "get_token_by_index",
-		"outputs": [
-			{
-				"name": "address",
-				"type": "felt"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "token_add",
-				"type": "felt"
-			}
-		],
-		"name": "get_protocol_stats",
-		"outputs": [
-			{
-				"name": "market_info",
-				"type": "Market_Info"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "get_protocol_reserves",
-		"outputs": [
-			{
-				"name": "protocol_reserves",
-				"type": "ProtocolReserves"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "rToken",
-				"type": "felt"
-			},
-			{
-				"name": "account",
-				"type": "felt"
-			}
-		],
-		"name": "get_user_deposit",
-		"outputs": [
-			{
-				"name": "deposit",
-				"type": "Deposit"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "rToken",
-				"type": "felt"
-			},
-			{
-				"name": "account",
-				"type": "felt"
-			}
-		],
-		"name": "get_user_deposit_stats_info",
-		"outputs": [
-			{
-				"name": "user_deposit_stats",
-				"type": "UserDepositStats"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "user",
-				"type": "felt"
-			},
-			{
-				"name": "index",
-				"type": "felt"
-			}
-		],
-		"name": "get_user_loan_stats_info",
-		"outputs": [
-			{
-				"name": "user_loan_stats",
-				"type": "UserLoanStats"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"name": "user",
-				"type": "felt"
-			}
-		],
-		"name": "get_user_loan_ids_length",
-		"outputs": [
-			{
-				"name": "loan_ids_len",
-				"type": "felt"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
+		]
 	}
 ]
